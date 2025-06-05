@@ -2,12 +2,6 @@
 
 Este repositório contém o projeto da disciplina **Introdução à Ciência de Dados**, do curso de **Ciência de Dados e Inteligência Artificial** do **Instituto de Educação Superior de Brasília (IESB)**. O objetivo é realizar uma análise exploratória sobre a população indígena no Brasil, com foco em localização e situação do domicílio, considerando os dados dos anos de 2010 e 2022.
 
----
-
-## 📁 Estrutura do Repositório
-
-
----
 
 ## 🧠 Objetivos
 
