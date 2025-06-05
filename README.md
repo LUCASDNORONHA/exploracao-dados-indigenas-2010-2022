@@ -11,7 +11,13 @@ Este repositório contém o projeto da disciplina **Introdução à Ciência de 
 
 ---
 
+## 📌 Status do Projeto
+
+> ✅ Em desenvolvimento.  
+> Os dados já foram carregados. O tratamento dos dados e as análises gráficas estão em progresso.
 ## 🔍 Fonte dos Dados
+
+---
 
 - **IBGE – Instituto Brasileiro de Geografia e Estatística**  
   [Censo Demográfico 2022 – Resultados](https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html?edicao=42267&t=resultados)
@@ -49,11 +55,6 @@ Em breve nesta seção: gráficos gerados no notebook, como:
 - **Instituição**: Instituto de Educação Superior de Brasília – IESB  
 - **Ano**: 2025
 
----
 
-## 📌 Status do Projeto
-
-> ✅ Em desenvolvimento.  
-> Os dados já foram carregados. O tratamento dos dados e as análises gráficas estão em progresso.
 
 
