@@ -54,6 +54,6 @@ Em breve nesta seção: gráficos gerados no notebook, como:
 ## 📌 Status do Projeto
 
 > ✅ Em desenvolvimento.  
-> Os dados já foram carregados e tratados. As análises gráficas estão em progresso.
+> Os dados já foram carregados. O tratamento dos dados e as análises gráficas estão em progresso.
 
 
