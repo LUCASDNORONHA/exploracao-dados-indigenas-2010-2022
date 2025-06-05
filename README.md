@@ -62,15 +62,4 @@ Em breve nesta seção: gráficos gerados no notebook, como:
 > ✅ Em desenvolvimento.  
 > Os dados já foram carregados e tratados. As análises gráficas estão em progresso.
 
----
-
-## 📬 Contato
-
-Caso deseje trocar ideia sobre o projeto ou compartilhar sugestões:
-
-**Lucas Dias Noronha**  
-[LinkedIn (opcional)](https://www.linkedin.com/)  
-[E-mail (opcional)](mailto:lucas@email.com)
-
----
 
