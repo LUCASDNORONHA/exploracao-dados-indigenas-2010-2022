@@ -2,13 +2,6 @@
 
 Este repositório contém o projeto da disciplina **Introdução à Ciência de Dados**, do curso de **Ciência de Dados e Inteligência Artificial** do **Instituto de Educação Superior de Brasília (IESB)**. O objetivo é realizar uma análise exploratória sobre a população indígena no Brasil, com foco em localização e situação do domicílio, considerando os dados dos anos de 2010 e 2022.
 
-
-## 🧠 Objetivos
-
-- Explorar os dados da população indígena brasileira ao longo do tempo.
-- Identificar variações por **localização geográfica** e **situação do domicílio**.
-- Gerar gráficos e insights relevantes sobre a realidade dos povos indígenas nas **Grandes Regiões** e **Unidades da Federação**.
-
 ---
 
 ## 📌 Status do Projeto
@@ -16,6 +9,13 @@ Este repositório contém o projeto da disciplina **Introdução à Ciência de 
 > ✅ Em desenvolvimento.  
 > Os dados já foram carregados. O tratamento dos dados e as análises gráficas estão em progresso.
 ## 🔍 Fonte dos Dados
+---
+## 🧠 Objetivos
+
+- Explorar os dados da população indígena brasileira ao longo do tempo.
+- Identificar variações por **localização geográfica** e **situação do domicílio**.
+- Gerar gráficos e insights relevantes sobre a realidade dos povos indígenas nas **Grandes Regiões** e **Unidades da Federação**.
+
 
 ---
 
@@ -55,6 +55,17 @@ Em breve nesta seção: gráficos gerados no notebook, como:
 - **Instituição**: Instituto de Educação Superior de Brasília – IESB  
 - **Ano**: 2025
 
+
+## 📌 Introdução
+
+Esta análise explora dados sobre a população indígena no Brasil entre 2010 e 2022, com foco em:
+
+- Comparação do crescimento populacional
+- Evolução da distribuição urbano vs rural
+- Distribuição dentro vs fora de Terras Indígenas (TIs)
+- Variações percentuais na composição urbana e rural entre as duas datas
+
+Os dados foram limpos para remover entradas inválidas (`Não informado`, títulos, regiões, país) e organizar por localidade (Brasil, Regiões, Estados).
 
 
 
