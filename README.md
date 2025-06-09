@@ -7,7 +7,7 @@ Este repositório contém o projeto da disciplina **Introdução à Ciência de 
 ## 📌 Status do Projeto
 
 > ✅ Em desenvolvimento.  
-> Os dados já foram carregados. O tratamento dos dados e as análises gráficas estão em progresso.
+> Os dados já foram carregados. O tratamento dos dados e as análises gráficas foram feitas, mas faltam fazer alguns ajustes finais na formatação.
 ## 🔍 Fonte dos Dados
 ---
 ## 🧠 Objetivos
