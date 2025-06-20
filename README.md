@@ -26,12 +26,11 @@ Este repositório contém o projeto da disciplina **Introdução à Ciência de 
 
 ## 🛠️ Tecnologias e Bibliotecas Utilizadas
 
-- Python 3.x
-- Jupyter Notebook
+- Python 3
+- Colab
 - Pandas
 - NumPy
 - Matplotlib
-- Seaborn
 
 ---
 
