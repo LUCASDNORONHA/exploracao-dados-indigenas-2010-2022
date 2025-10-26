@@ -12,7 +12,7 @@
 ### **Discente:** Lucas Dias Noronha  
 ### **Semestre:** 1  
 ### **Ano:** 2025  
-### **Tipo:** Projeto de Análise Explorátoria de Dados
+### **Tipo:** Projeto de Análise Explorátoria
 
 
 ---
