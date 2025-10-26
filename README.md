@@ -16,18 +16,12 @@
 
 ---
 
-## **Análise Exploratória de Dados Demográficos: População Indígena Brasileira (2010–2022)**
-
 ### **Tema da Base de Dados**  
 **Pessoas indígenas por localização e situação do domicílio, segundo as Grandes Regiões e Unidades da Federação – Brasil – 2010/2022**
 
 ### **Fonte dos Dados**  
 [Instituto Brasileiro de Geografia e Estatística – IBGE](https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html?edicao=42267&t=resultados)
-
----
-
-### **Local e Data**  
-Brasília – DF | 2025  
+  
 
 ---
 
