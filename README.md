@@ -1,5 +1,5 @@
 # **INSTITUTO DE EDUCAÇÃO SUPERIOR DE BRASÍLIA – IESB**
-### Curso de Ciência de Dados e Inteligência Artificial  
+### Bacharelado em Ciência de Dados e Inteligência Artificial  
 ### Disciplina: Introdução à Ciência de Dados  
 ### Professor: Alexandre Vaz Roriz  
 ### Aluno: Lucas Dias Noronha  
