@@ -68,3 +68,9 @@ A análise contempla:
 ## **5. Considerações**
 
 O presente trabalho constitui uma aplicação prática dos princípios da análise exploratória de dados, com ênfase na interpretação estatística de fenômenos demográficos e sociais. A investigação propicia uma leitura empírica da realidade indígena brasileira recente, ao mesmo tempo em que ilustra o potencial metodológico da Ciência de Dados para subsidiar políticas públicas baseadas em evidências.
+
+<!-- Autor -->
+## Autor
+
+Lucas Dias Noronha - [Linkedin](https://www.linkedin.com/in/lucasdiasnoronha/) - lucas.noronha [at] iesb.edu.br
+Project Link: [Repo link](https://github.com/LUCASDNORONHA/exploracao-dados-indigenas-2010-2022)
