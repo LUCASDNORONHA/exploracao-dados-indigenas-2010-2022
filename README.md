@@ -1,4 +1,11 @@
-# **INSTITUTO DE EDUCAÇÃO SUPERIOR DE BRASÍLIA – IESB**  
+<!-- Cabeçalho -->
+<br />
+<p align="center">
+  <a href="https://github.com/LUCASDNORONHA/exploracao-dados-indigenas-2010-2022">
+    <img src="assets/IESB_Logo.png" alt="Logo" width="150" height="150">
+  </a>
+</p>
+
 ### **Curso:** Bacharelado em Ciência de Dados e Inteligência Artificial  
 ### **Disciplina:** Introdução à Ciência de Dados  
 ### **Professor:** Alexandre Vaz Roriz  
