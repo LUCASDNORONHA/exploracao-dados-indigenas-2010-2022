@@ -1,4 +1,4 @@
-# **INSTITUTO DE EDUCAÇÃO SUPERIOR DE BRASÍLIA – IESB**
+# INSTITUTO DE EDUCAÇÃO SUPERIOR DE BRASÍLIA – IESB
 ### Bacharelado em Ciência de Dados e Inteligência Artificial  
 ### Disciplina: Introdução à Ciência de Dados  
 ### Professor: Alexandre Vaz Roriz  
