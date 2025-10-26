@@ -10,7 +10,9 @@
 ### **Disciplina:** Introdução à Ciência de Dados  
 ### **Professor:** Alexandre Vaz Roriz  
 ### **Discente:** Lucas Dias Noronha  
+### **Semestre:** 1  
 ### **Ano:** 2025  
+
 
 ---
 
