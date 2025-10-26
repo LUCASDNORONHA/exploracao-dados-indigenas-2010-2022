@@ -1,26 +1,30 @@
-# 📊 Análise Exploratória da População Indígena no Brasil (2010–2022)
-
-Este repositório contém o projeto da disciplina **Introdução à Ciência de Dados**, do curso de **Ciência de Dados e Inteligência Artificial** do **Instituto de Educação Superior de Brasília (IESB)**. O objetivo é realizar uma análise exploratória sobre a população indígena no Brasil, com foco em localização e situação do domicílio, considerando os dados dos anos de 2010 e 2022.
+# **INSTITUTO DE EDUCAÇÃO SUPERIOR DE BRASÍLIA – IESB**
+### Curso de Ciência de Dados e Inteligência Artificial  
+### Disciplina: Introdução à Ciência de Dados  
+### Professor: Alexandre Vaz Roriz  
+### Turma: CIANM1A  
+### Aluno: Lucas Dias Noronha  
 
 ---
 
-## 📌 Status do Projeto
+## 🧪 Projeto de Análise de Dados Exploratória
 
-> ✅ Em desenvolvimento.  
-> Os dados já foram carregados. O tratamento dos dados e as análises gráficas foram feitas, mas faltam fazer alguns ajustes finais na formatação.
-## 🔍 Fonte dos Dados
+### **Tema da Base de Dados**  
+**Pessoas indígenas, por localização e situação do domicílio, segundo as Grandes Regiões e as Unidades da Federação – Brasil – 2010/2022**
+
+### **Fonte dos Dados**  
+[Instituto Brasileiro de Geografia e Estatística – IBGE](https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html?edicao=42267&t=resultados)
+
+---
+
+### 📅 Brasília – DF | 2025
+
 ---
 ## 🧠 Objetivos
 
 - Explorar os dados da população indígena brasileira ao longo do tempo.
 - Identificar variações por **localização geográfica** e **situação do domicílio**.
 - Gerar gráficos e insights relevantes sobre a realidade dos povos indígenas nas **Grandes Regiões** e **Unidades da Federação**.
-
-
----
-
-- **IBGE – Instituto Brasileiro de Geografia e Estatística**  
-  [Censo Demográfico 2022 – Resultados](https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html?edicao=42267&t=resultados)
 
 ---
 
