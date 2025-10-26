@@ -2,7 +2,6 @@
 ### Curso de Ciência de Dados e Inteligência Artificial  
 ### Disciplina: Introdução à Ciência de Dados  
 ### Professor: Alexandre Vaz Roriz  
-### Turma: CIANM1A  
 ### Aluno: Lucas Dias Noronha  
 
 ---
