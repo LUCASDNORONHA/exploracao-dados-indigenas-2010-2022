@@ -73,4 +73,5 @@ O presente trabalho constitui uma aplicação prática dos princípios da análi
 ## Autor
 
 Lucas Dias Noronha - [Linkedin](https://www.linkedin.com/in/lucasdiasnoronha/) - lucas.noronha [at] iesb.edu.br
+
 Project Link: [Repo link](https://github.com/LUCASDNORONHA/exploracao-dados-indigenas-2010-2022)
