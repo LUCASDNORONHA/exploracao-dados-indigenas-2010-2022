@@ -48,7 +48,7 @@ A análise exploratória de dados — etapa preliminar da investigação cientí
 
 ### **Ferramentas e Bibliotecas Utilizadas**
 - **Linguagem:** Python 3  
-- **Ambiente de execução:** Google Colab  
+- **Ambiente de execução:** Jupyter Notebook  
 - **Bibliotecas:** `pandas`, `numpy`, `matplotlib`, `seaborn`
 
 Os dados originais foram submetidos a um processo de limpeza e padronização, que incluiu a remoção de registros não informados, títulos e agregações superiores (como Brasil e Grandes Regiões), mantendo-se a granularidade por Unidade da Federação. Em seguida, foram estruturados em formato adequado à análise exploratória e à geração de visualizações gráficas.
