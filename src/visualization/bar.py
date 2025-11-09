@@ -144,6 +144,7 @@ class PlotBar:
 
             ax.set_yticks(y_pos)
             ax.set_yticklabels(categorias)
+            ax.invert_yaxis()
  
             ax.set_title(
                 f'Crescimento da População Indígena no {localidade} (2010–2022)\n'
@@ -173,10 +174,10 @@ class PlotBar:
                 f"   • Rural:  {int(diferenca_rural.iloc[0]):+,.0f} ({float(crescimento_pct_rural.iloc[0]):+.2f}%)"
             )
 
-            ax.text(0.99, 0.75, texto_resumo_1, transform=ax.transAxes, # Ajuste na posição X e Y
-                    fontsize=9, ha='left', va='top', color=self.cor[0], fontweight='bold',
+            ax.text(0.99, 0.85, texto_resumo_1, transform=ax.transAxes, # Ajuste na posição X e Y
+                    fontsize=9, ha='left', va='top', color=self.cor[0], fontstyle='italic',
                     bbox=dict(boxstyle='round,pad=0.5',
-                            facecolor=self.cor[1], edgecolor='none'))
+                            facecolor=self.cor[1],alpha=0.999, edgecolor='none'))
 
             texto_resumo_2 = (
                 "Variação na Composição Relativa:\n"
@@ -184,10 +185,10 @@ class PlotBar:
                 f"   • Rural:  {float(percentual_rural_2010.iloc[0]):.2f}% → {float(percentual_rural_2022.iloc[0]):.2f}%"
             )
 
-            ax.text(0.99, 0.55, texto_resumo_2, transform=ax.transAxes, # Ajuste na posição X e Y
+            ax.text(0.99, 0.50, texto_resumo_2, transform=ax.transAxes, # Ajuste na posição X e Y
                     fontsize=9, ha='left', va='top', color=self.cor[1], fontweight='bold',
                     bbox=dict(boxstyle='round,pad=0.5',
-                            facecolor=self.cor[0], edgecolor='none'))
+                            facecolor=self.cor[0], alpha=0.6, edgecolor='none'))
 
             self._adicionar_fonte()
             self._adicionar_logo(fig)
