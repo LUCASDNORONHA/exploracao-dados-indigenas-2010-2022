@@ -67,11 +67,16 @@ class PlotBar:
 
         ax.xaxis.set_major_formatter(ticker.FuncFormatter(self._formatter_milhoes))
 
-        for bar in bars:
-            width = bar.get_width()
-            ax.text(width * 1.02, bar.get_y() + bar.get_height()/2,
-                    f"{width:,.0f}", ha='left', va='center', fontsize=12, color=self.cor[1], fontweight='bold')
-
+     
+        for i, bar in enumerate(bars):
+            width = bar.get_width()   
+            cor_invertida = self.cor[1 - i] 
+            ax.text(width * 0.98, bar.get_y() + bar.get_height()/2,
+                    f"{width:,.0f}",
+                    ha='right', va='center',
+                    fontsize=12, fontweight='bold',
+                    color=cor_invertida) 
+            
         ax.set_title(
                 f'Variação Absoluta da População Indígena\nResidente no Brasil (2010–2022)',
                 fontsize=14,
@@ -97,9 +102,9 @@ class PlotBar:
 
         # Ajuste: Alinhamento pela direita (ha='right') para ancorar melhor na borda
         ax.text(0.92, 0.35, texto_resumo, transform=ax.transAxes,
-                fontsize=9, ha='left', va='center', color=self.cor[0], fontweight='bold',
+                fontsize=9, ha='left', va='center', color=self.cor[0], fontstyle='italic',
                 bbox=dict(boxstyle='round,pad=0.5',
-                          facecolor=self.cor[1], edgecolor='none'))
+                          facecolor=self.cor[1], alpha=0.999, edgecolor='none'))
 
         self._adicionar_fonte()
         self._adicionar_logo(fig)
@@ -196,58 +201,9 @@ class PlotBar:
             plt.savefig('../reports/figures/grafico_crescimento_pop_indigena_area.png',
                         dpi=300, bbox_inches='tight')
             plt.show()
-            
+
     # -------------------------------------------------------
-    def plot_crescimento_ti(self):
-        db_pais = self.db[self.db['Localidade'] == 'Brasil']
-
-        diferenca = db_pais['Indígenas 2022 TI Total'] - db_pais['Indígenas 2010 TI Total']
-        crescimento_pct = (diferenca / db_pais['Indígenas 2010 TI Total']) * 100
-
-        anos = ['2010', '2022']
-        valores = [
-            db_pais['Indígenas 2010 TI Total'].values[0],
-            db_pais['Indígenas 2022 TI Total'].values[0]
-        ]
-        localidade = db_pais['Localidade'].values[0]
-
-        fig, ax = plt.subplots(figsize=(10, 5))
-        bars = ax.barh(anos, valores, color=self.cor, height=0.6)
-        ax.xaxis.set_major_formatter(ticker.FuncFormatter(self._formatter_milhoes))
-
-        for bar in bars:
-            width = bar.get_width()
-            ax.text(width * 1.02, bar.get_y() + bar.get_height()/2,
-                    f"{width:,.0f}", ha='left', va='center', fontsize=12, color=self.cor[0])
-
-        ax.set_title(f'Crescimento da População Indígena em Terras Indígenas ({localidade}, 2010–2022)')
-        ax.set_xlabel(self.rotulo_x or 'População total')
-        ax.set_ylabel(self.rotulo_y or 'Ano')
-
-        sns.despine(top=True, right=True, left=True, bottom=False)
-        ax.xaxis.grid(True, linestyle='--', alpha=0.7)
-        ax.yaxis.grid(False)
-        ax.tick_params(axis='y', length=0)
-        ax.set_xlim(right=max(valores) * 1.20)
-
-        texto_resumo = (
-            f"Crescimento Absoluto: {int(diferenca.iloc[0])}\n"
-            f"Crescimento Percentual: {float(crescimento_pct.iloc[0]):.2f}%"
-        )
-
-        ax.text(0.75, 0.40, texto_resumo, transform=ax.transAxes,
-                fontsize=8, fontweight='bold',
-                bbox=dict(boxstyle='round,pad=0.5',
-                          facecolor='#C6D9F1', alpha=0.8, edgecolor='none'))
-
-        self._adicionar_fonte()
-        self._adicionar_logo(fig)
-        plt.tight_layout(rect=[0, 0.05, 1, 0.93])
-        plt.savefig('../reports/figures/grafico_crescimento_populacao_indigena_ti.png',
-                    dpi=300, bbox_inches='tight')
-        plt.show()
-
-    def plot_distribuicao_detalhada(self):
+    def plot_distribuicao_detalhada_ti(self):
         db_pais = self.db[self.db['Localidade'] == 'Brasil']
 
         # 1. Preparando os dados (Absolutos para o tamanho das barras)
@@ -314,7 +270,6 @@ class PlotBar:
         # 6. Estilização final
         ax.set_yticks(y_pos)
         ax.set_yticklabels(cats, fontsize=11)
-        ax.set_xlabel('População Indígena')
         ax.set_title('Distribuição Detalhada da População Indígena (2010–2022)\npor Situação de Domicílio e Localização (TI)', 
                      pad=20)
         ax.xaxis.set_major_formatter(ticker.FuncFormatter(self._formatter_milhoes))
@@ -333,3 +288,88 @@ class PlotBar:
         plt.savefig('../reports/figures/grafico_distribuicao_detalhada_indigena.png', 
                     dpi=300, bbox_inches='tight', facecolor=fig.get_facecolor())
         plt.show()
+
+        def plot_comparativo_detalhado(self):
+            db_brasil = self.db[self.db['Localidade'] == 'Brasil']
+
+            # 1. Definindo as 4 categorias de análise
+            # Usamos quebras de linha (\n) para os rótulos do eixo Y não ficarem muito longos
+            categorias = [
+                'Dentro TI\n(Rural)',
+                'Dentro TI\n(Urbano)',
+                'Fora de TI\n(Rural)',
+                'Fora de TI\n(Urbano)'
+            ]
+
+            # 2. Extraindo os dados (na mesma ordem das categorias acima)
+            val_2010 = [
+                db_brasil['Indígenas 2010 TI Rural'].values[0],
+                db_brasil['Indígenas 2010 TI Urbano'].values[0],
+                db_brasil['Indígenas 2010 Fora TI Rural'].values[0],
+                db_brasil['Indígenas 2010 Fora TI Urbano'].values[0]
+            ]
+            val_2022 = [
+                db_brasil['Indígenas 2022 TI Rural'].values[0],
+                db_brasil['Indígenas 2022 TI Urbano'].values[0],
+                db_brasil['Indígenas 2022 Fora TI Rural'].values[0],
+                db_brasil['Indígenas 2022 Fora TI Urbano'].values[0]
+            ]
+
+            # 3. Configuração da Plotagem
+            # Aumentamos um pouco a altura (figsize=(12, 8)) pois temos mais barras agora
+            fig, ax = plt.subplots(figsize=(12, 8))
+
+            y_pos = np.arange(len(categorias))
+            height = 0.35  # Altura de cada barra individual
+            gap = 0.05     # Pequeno espaço entre os grupos de categorias
+
+            # Barras de 2010 (deslocadas para cima)
+            rects1 = ax.barh(y_pos - height/2 - gap/2, val_2010, height,
+                            label='2010', color=self.cor[0])
+            # Barras de 2022 (deslocadas para baixo)
+            rects2 = ax.barh(y_pos + height/2 + gap/2, val_2022, height,
+                            label='2022', color=self.cor[1])
+
+            # 4. Adicionando Rótulos
+            # OBS: Neste gráfico com muitas categorias e escalas diferentes,
+            # rótulos EXTERNOS (alinhados à esquerda, logo após a barra) geralmente são mais seguros
+            # para garantir que tudo seja legível, mesmo nas barras pequenas.
+
+            for rect in rects1: # Rótulos 2010
+                width = rect.get_width()
+                ax.text(width * 1.02, rect.get_y() + rect.get_height()/2,
+                        f"{width:,.0f}",
+                        ha='left', va='center', fontsize=11, color=self.cor[1], fontweight='bold')
+
+            for rect in rects2: # Rótulos 2022
+                width = rect.get_width()
+                ax.text(width * 1.02, rect.get_y() + rect.get_height()/2,
+                        f"{width:,.0f}",
+                        ha='left', va='center', fontsize=11, color=self.cor[1], fontweight='bold')
+
+            # 5. Ajustes Finais
+            ax.set_yticks(y_pos)
+            ax.set_yticklabels(categorias, fontsize=12)
+            ax.invert_yaxis()  # Inverte para que a primeira categoria da lista fique no topo do gráfico
+
+            ax.set_title('Dinâmica Detalhada da População Indígena (2010–2022)\npor Localização (TI) e Situação de Domicílio',
+                        pad=25, wrap=True)
+            ax.set_xlabel('População Indígena Total')
+
+            ax.xaxis.set_major_formatter(ticker.FuncFormatter(self._formatter_milhoes))
+            # Aumenta bastante o limite lateral para caberem os rótulos externos confortavelmente
+            ax.set_xlim(right=max(max(val_2010), max(val_2022)) * 1.25)
+
+            ax.legend(frameon=False, loc='lower right', fontsize=12)
+
+            sns.despine(ax=ax, top=True, right=True, left=True, bottom=False)
+            ax.xaxis.grid(True, linestyle='--', alpha=0.7)
+            ax.yaxis.grid(False)
+            ax.tick_params(axis='y', length=0)
+
+            self._adicionar_fonte()
+            self._adicionar_logo(fig)
+            plt.tight_layout(rect=[0, 0.05, 1, 0.95])
+            plt.savefig('../reports/figures/grafico_comparativo_detalhado_indigena.png',
+                        dpi=300, bbox_inches='tight', facecolor=fig.get_facecolor())
+            plt.show()
