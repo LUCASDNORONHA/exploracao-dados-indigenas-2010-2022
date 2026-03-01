@@ -11,7 +11,7 @@
 ### **Professor:** Alexandre Vaz Roriz  
 ### **Discente:** Lucas Dias Noronha  
 ### **Semestre/Ano:** 01/2025  
-### **Tipo:** Projeto de Análise Explorátoria
+### **Tipo:** Análise Explorátoria
 
 
 ---
