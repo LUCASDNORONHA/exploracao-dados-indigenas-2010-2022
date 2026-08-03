@@ -6,71 +6,170 @@
   </a>
 </p>
 
-### **Curso:** Bacharelado em Ciência de Dados e Inteligência Artificial  
-### **Disciplina:** Introdução à Ciência de Dados  
-### **Professor:** Alexandre Vaz Roriz  
-### **Discente:** Lucas Dias Noronha  
-### **Semestre/Ano:** 01/2025  
-### **Tipo:** Análise Explorátoria
+<h1 align="center">
+Panorama da População Indígena Brasileira (2010–2022)
+</h1>
 
+<p align="center">
+Análise exploratória e explicativa baseada nos Censos Demográficos de 2010 e 2022 do IBGE.
+</p>
 
 ---
 
-### **Tema da Base de Dados**  
+## Sobre o Projeto
+
+Este repositório reúne um conjunto de estudos sobre a população indígena brasileira a partir dos dados dos Censos Demográficos de **2010** e **2022**, publicados pelo **Instituto Brasileiro de Geografia e Estatística (IBGE)**.
+
+O projeto investiga a evolução da população indígena sob diferentes perspectivas, utilizando técnicas de **Análise Exploratória de Dados (EDA)**, **Data Storytelling** e visualização de dados para transformar informações estatísticas em narrativas analíticas acessíveis.
+
+Embora tenha sido inicialmente desenvolvido como um trabalho da disciplina **Introdução à Ciência de Dados**, do curso de **Bacharelado em Ciência de Dados e Inteligência Artificial** do **IESB**, o projeto foi posteriormente expandido e evoluiu para um estudo independente, incorporando novas análises, melhorias na arquitetura do código e futuras integrações com dashboards e análises espaciais.
+
+---
+
+## Motivação
+
+A escolha deste tema decorre da relevância social e demográfica da população indígena brasileira, bem como da disponibilidade dos dados publicados pelo Censo Demográfico de 2022. A divulgação dessa nova base pelo IBGE oferece a oportunidade de investigar as transformações ocorridas ao longo de doze anos, permitindo analisar mudanças na distribuição espacial, na urbanização e na ocupação de Terras Indígenas. Além de sua importância para a formulação de políticas públicas, o conjunto de dados apresenta características adequadas para a aplicação de técnicas de análise exploratória, visualização de dados e data storytelling.
+
+...
+
+# Objetivos
+
+O projeto busca responder questões como:
+
+- O crescimento da população indígena entre 2010 e 2022 foi realmente significativo?
+- Esse crescimento ocorreu igualmente em áreas urbanas e rurais?
+- Onde a população indígena está concentrada: dentro ou fora das Terras Indígenas?
+- Como essa distribuição varia entre estados e regiões brasileiras?
+- Quais padrões espaciais podem ser observados a partir dos dados do Censo?
+
+---
+
+# Estrutura do Projeto
+
+```text
+.
+├── assets/
+├── data/
+├── notebooks/
+│   ├── 01_preprocessing.ipynb
+│   ├── 02_demographic_analysis.ipynb
+│   ├── 03_spatial_analysis.ipynb
+│   ├── 04_interactive_dashboard.ipynb
+│   └── 05_statistical_analysis.ipynb
+├── reports/
+├── src/
+│   ├── analise_dados/
+│   └── visualization/
+└── README.md
+```
+
+---
+
+# Estudos Desenvolvidos
+
+## 1. Pré-processamento dos Dados
+
+- Limpeza dos dados do Censo.
+- Padronização das variáveis.
+- Criação das bases nacionais, regionais e estaduais.
+- Organização da estrutura utilizada nas análises posteriores.
+
+---
+
+## 2. Análise Demográfica
+
+Investiga:
+
+- crescimento da população indígena;
+- distribuição urbano × rural;
+- população residente em Terras Indígenas;
+- população residente fora das Terras Indígenas.
+
+Utiliza princípios de **Data Storytelling** para responder perguntas orientadas pelos dados.
+
+---
+
+## 3. Análise Espacial *(em desenvolvimento)*
+
+Objetivos:
+
+- mapas coropléticos;
+- distribuição por estados;
+- distribuição por regiões;
+- crescimento absoluto;
+- crescimento percentual.
+
+---
+
+## 4. Dashboard Interativo *(planejado)*
+
+Construção de um dashboard em Streamlit contendo:
+
+- KPIs;
+- filtros por estado e região;
+- mapas;
+- gráficos interativos.
+
+---
+
+## 5. Análise Estatística *(planejada)*
+
+Exploração estatística da base por meio de:
+
+- estatística descritiva;
+- correlação;
+- análise de distribuições;
+- identificação de padrões.
+
+---
+
+# Tecnologias
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
+---
+
+# Fonte dos Dados
+
+Instituto Brasileiro de Geografia e Estatística (IBGE)
+
 **Pessoas indígenas por localização e situação do domicílio, segundo as Grandes Regiões e Unidades da Federação – Brasil – 2010/2022**
 
-**Fonte dos Dados:** [Instituto Brasileiro de Geografia e Estatística – IBGE](https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html?edicao=42267&t=resultados)
-  
+https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html
 
 ---
 
-## **1. Objetivos**
+# Origem do Projeto
 
-O presente estudo tem por finalidade realizar uma análise exploratória de dados (AED) sobre a população indígena brasileira, tomando como base as informações dos Censos Demográficos de 2010 e 2022. São objetivos específicos:
+Este projeto teve origem como trabalho da disciplina **Introdução à Ciência de Dados**, do curso de **Bacharelado em Ciência de Dados e Inteligência Artificial** do **IESB**, ministrada pelo professor **Alexandre Vaz Roriz** no primeiro semestre de 2025.
 
-- Examinar a evolução da população indígena no período considerado.  
-- Investigar a distribuição dessa população segundo a **localização geográfica** e a **situação do domicílio** (urbano/rural).  
-- Identificar variações regionais nas **Grandes Regiões** e **Unidades da Federação**.  
-- Produzir representações gráficas e inferências descritivas que contribuam para a compreensão das transformações demográficas entre os dois censos.
+Após a conclusão da disciplina, o projeto passou a ser desenvolvido de forma independente como parte do portfólio profissional do autor, recebendo novas análises, melhorias na organização do código e expansão do escopo original.
 
 ---
 
-## **2. Fundamentação e Contexto**
+# Próximos Estudos
 
-O estudo da população indígena constitui elemento essencial para a formulação de políticas públicas voltadas à preservação cultural, à proteção territorial e à inclusão social. A comparação dos censos de 2010 e 2022 permite observar deslocamentos populacionais, mudanças nas condições de moradia e variações no grau de urbanização, refletindo processos históricos, sociais e ambientais que impactam diretamente os povos originários.
-
-A análise exploratória de dados — etapa preliminar da investigação científica — visa identificar padrões, tendências e anomalias nos dados brutos, fornecendo subsídios para etapas posteriores de modelagem estatística ou inferência.
-
----
-
-## **3. Materiais e Métodos**
-
-### **Ferramentas e Bibliotecas Utilizadas**
-- **Linguagem:** Python 3  
-- **Ambiente de execução:** Jupyter Notebook  
-- **Bibliotecas:** `pandas`, `numpy`, `matplotlib`, `seaborn`
-
-Os dados originais foram submetidos a um processo de limpeza e padronização, que incluiu a remoção de registros não informados, títulos e agregações superiores (como Brasil e Grandes Regiões), mantendo-se a granularidade por Unidade da Federação. Em seguida, foram estruturados em formato adequado à análise exploratória e à geração de visualizações gráficas.
+- Análise espacial da população indígena.
+- Comparação entre estados brasileiros.
+- Comparação entre regiões.
+- Dashboard interativo.
+- Integração com outras bases públicas (IBGE, FUNAI, INPE, entre outras).
 
 ---
 
-## **4. Estrutura da Análise**
+# Autor
 
-A análise contempla:  
-- A comparação do crescimento populacional indígena entre 2010 e 2022.  
-- A avaliação da evolução da distribuição urbano-rural.  
-- O exame da proporção de domicílios situados **dentro** e **fora** de Terras Indígenas (TIs).  
-- A identificação de variações percentuais nas composições regionais e estaduais ao longo do período.
+**Lucas Dias Noronha**
 
----
+LinkedIn:
 
-## **5. Considerações**
+https://www.linkedin.com/in/lucasdiasnoronha/
 
-O presente trabalho constitui uma aplicação prática dos princípios da análise exploratória de dados, com ênfase na interpretação estatística de fenômenos demográficos e sociais. A investigação propicia uma leitura empírica da realidade indígena brasileira recente, ao mesmo tempo em que ilustra o potencial metodológico da Ciência de Dados para subsidiar políticas públicas baseadas em evidências.
+GitHub:
 
-<!-- Autor -->
-## Autor
-
-Lucas Dias Noronha - [Linkedin](https://www.linkedin.com/in/lucasdiasnoronha/)
-
-Project Link: [https://github.com/LUCASDNORONHA/exploracao-dados-indigenas-2010-2022](https://github.com/LUCASDNORONHA/exploracao-dados-indigenas-2010-2022)
+https://github.com/LUCASDNORONHA/exploracao-dados-indigenas-2010-2022
