@@ -22,8 +22,6 @@ Este repositório reúne um conjunto de estudos sobre a população indígena br
 
 O projeto investiga a evolução da população indígena sob diferentes perspectivas, utilizando técnicas de **Análise Exploratória de Dados (EDA)**, **Data Storytelling** e visualização de dados para transformar informações estatísticas em narrativas analíticas acessíveis.
 
-Embora tenha sido inicialmente desenvolvido como um trabalho da disciplina **Introdução à Ciência de Dados**, do curso de **Bacharelado em Ciência de Dados e Inteligência Artificial** do **IESB**, o projeto foi posteriormente expandido e evoluiu para um estudo independente, incorporando novas análises, melhorias na arquitetura do código e futuras integrações com dashboards e análises espaciais.
-
 ---
 
 ## Motivação
@@ -47,18 +45,25 @@ O projeto busca responder questões como:
 # Estrutura do Projeto
 
 ```text
-.
+
 ├── assets/
 ├── data/
+│   ├── external/
+│   ├── geo/
+│   ├── processed/
+│   └── raw/
 ├── notebooks/
-│   ├── 01_preprocessing.ipynb
-│   ├── 02_demographic_analysis.ipynb
-│   ├── 03_spatial_analysis.ipynb
-│   ├── 04_interactive_dashboard.ipynb
-│   └── 05_statistical_analysis.ipynb
-├── reports/
+│   ├── 01-01_preprocessing_data_base.ipynb
+│   ├── 01-02_demographic_analysis.ipynb
+│   ├── 02-01_preprocessing_geo_ibge.ipynb
+│   └── 02-02_spatial_analysis.ipynb
+├── outputs/
+│   ├── figures/
+│   │   ├── graphic/
+│   │   └── map/
+│   └── tables/
 ├── src/
-│   ├── analise_dados/
+│   ├── geospatial/
 │   └── visualization/
 └── README.md
 ```
@@ -72,6 +77,7 @@ O projeto busca responder questões como:
 - Limpeza dos dados do Censo.
 - Padronização das variáveis.
 - Criação das bases nacionais, regionais e estaduais.
+- integração entre a malha territorial oficial do IBGE e a base demográfica.
 - Organização da estrutura utilizada nas análises posteriores.
 
 ---
@@ -85,11 +91,9 @@ Investiga:
 - população residente em Terras Indígenas;
 - população residente fora das Terras Indígenas.
 
-Utiliza princípios de **Data Storytelling** para responder perguntas orientadas pelos dados.
-
 ---
 
-## 3. Análise Espacial *(em desenvolvimento)*
+## 3. Análise Espacial
 
 Objetivos:
 
@@ -101,7 +105,7 @@ Objetivos:
 
 ---
 
-## 4. Dashboard Interativo *(planejado)*
+## 4. Dashboard Interativo *(Em andamento)*
 
 Construção de um dashboard em Streamlit contendo:
 
@@ -142,21 +146,14 @@ Instituto Brasileiro de Geografia e Estatística (IBGE)
 
 https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html
 
----
+**Malha Municipal Digital e Áreas Territoriais 2025**
 
-# Origem do Projeto
-
-Este projeto teve origem como trabalho da disciplina **Introdução à Ciência de Dados**, do curso de **Bacharelado em Ciência de Dados e Inteligência Artificial** do **IESB**, ministrada pelo professor **Alexandre Vaz Roriz** no primeiro semestre de 2025.
-
-Após a conclusão da disciplina, o projeto passou a ser desenvolvido de forma independente como parte do portfólio profissional do autor, recebendo novas análises, melhorias na organização do código e expansão do escopo original.
+https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html
 
 ---
 
 # Próximos Estudos
 
-- Análise espacial da população indígena.
-- Comparação entre estados brasileiros.
-- Comparação entre regiões.
 - Dashboard interativo.
 - Integração com outras bases públicas (IBGE, FUNAI, INPE, entre outras).
 
