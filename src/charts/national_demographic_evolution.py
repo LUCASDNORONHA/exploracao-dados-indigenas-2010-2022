@@ -8,37 +8,29 @@ from pathlib import Path
 
 class PlotBar:
     """
-    Classe responsável pela criação dos gráficos de barras do projeto.
-
-    A estrutura visual segue princípios de storytelling com dados:
-    - título conclusivo;
-    - subtítulo contextual;
-    - destaque seletivo dos dados;
-    - anotações ligadas aos elementos do gráfico;
-    - caixa com síntese interpretativa;
-    - fonte e autoria padronizadas.
+    Classe responsável pela criação dos gráficos de barras.
     """
 
     def __init__(
         self,
-        db,
-        titulo="",
-        rotulo_x="",
-        rotulo_y="",
-        cor=None,
-        caminho_logo="../assets/IESB_Logo.png",
-        pasta_figuras="../reports/figures",
+        data_f,
+        title="",
+        label_x="",
+        label_y="",
+        color=None,
+        logo_path="../assets/IESB_Logo.png",
+        output_path="../../outputs/figures",
     ):
-        self.db = db
-        self.titulo = titulo
-        self.rotulo_x = rotulo_x
-        self.rotulo_y = rotulo_y
-        self.cor = cor or ["#C6D9F1", "#1B4965"]
-        self.caminho_logo = caminho_logo
-        self.pasta_figuras = Path(pasta_figuras)
+        self.data_f = data_f
+        self.title = title
+        self.label_x = label_x
+        self.label_y = label_y
+        self.color = color or ["#C6D9F1", "#1B4965"]
+        self.logo_path = logo_path
+        self.output_path = Path(output_path)
 
         # A pasta será criada automaticamente caso ainda não exista.
-        self.pasta_figuras.mkdir(parents=True, exist_ok=True)
+        self.output_path.mkdir(parents=True, exist_ok=True)
 
         sns.set_theme(style="whitegrid")
 
@@ -111,13 +103,13 @@ class PlotBar:
         ax.tick_params(
             axis="x",
             length=0,
-            labelcolor=self.cor[1],
+            labelcolor=self.color[1],
             labelsize=10,
         )
         ax.tick_params(
             axis="y",
             length=0,
-            labelcolor=self.cor[1],
+            labelcolor=self.color[1],
             labelsize=11,
         )
 
@@ -144,7 +136,7 @@ class PlotBar:
             loc="left",
             fontsize=16,
             fontweight="bold",
-            color=self.cor[1],
+            color=self.color[1],
             pad=pad_titulo,
             wrap=True,
         )
@@ -172,7 +164,7 @@ class PlotBar:
         """
         Adiciona uma anotação ligada ao dado por uma seta.
         """
-        cor = cor or self.cor[1]
+        cor = cor or self.color[1]
 
         ax.annotate(
             texto,
@@ -215,8 +207,8 @@ class PlotBar:
         As coordenadas x e y são relativas ao eixo:
         0 representa o início e 1 representa o final.
         """
-        cor_texto = cor_texto or self.cor[0]
-        cor_fundo = cor_fundo or self.cor[1]
+        cor_texto = cor_texto or self.color[0]
+        cor_fundo = cor_fundo or self.color[1]
 
         ax.text(
             x,
@@ -255,7 +247,7 @@ class PlotBar:
         Adiciona o logotipo, caso o arquivo esteja disponível.
         """
         try:
-            logo = plt.imread(self.caminho_logo)
+            logo = plt.imread(self.logo_path)
             imagebox = OffsetImage(logo, zoom=0.30)
 
             ab = AnnotationBbox(
@@ -288,7 +280,7 @@ class PlotBar:
             bottom=0.14,
         )
 
-        caminho_saida = self.pasta_figuras / nome_arquivo
+        caminho_saida = self.output_path / nome_arquivo
 
         fig.savefig(
             caminho_saida,
@@ -305,7 +297,7 @@ class PlotBar:
     # =======================================================
 
     def plot_crescimento_pais(self):
-        brasil = self._obter_linha_brasil(self.db)
+        brasil = self._obter_linha_brasil(self.data_f)
 
         valor_2010 = float(brasil["Indígenas 2010 Total"])
         valor_2022 = float(brasil["Indígenas 2022 Total"])
@@ -322,7 +314,7 @@ class PlotBar:
         barras = ax.barh(
             anos,
             valores,
-            color=[self.cor[0], self.cor[1]],
+            color=[self.color[0], self.color[1]],
             height=0.56,
         )
 
@@ -330,7 +322,7 @@ class PlotBar:
         for indice, barra in enumerate(barras):
             largura = barra.get_width()
 
-            cor_rotulo = self.cor[1] if indice == 0 else "white"
+            cor_rotulo = self.color[1] if indice == 0 else "white"
 
             ax.text(
                 largura * 0.975,
@@ -398,7 +390,7 @@ class PlotBar:
     # =======================================================
 
     def plot_crescimento_area(self):
-        brasil = self._obter_linha_brasil(self.db)
+        brasil = self._obter_linha_brasil(self.data_f)
 
         categorias = ["Urbana", "Rural"]
 
@@ -446,7 +438,7 @@ class PlotBar:
             y_pos - altura / 2 - intervalo,
             valores_2010,
             height=altura,
-            color=self.cor[0],
+            color=self.color[0],
             label="2010",
         )
 
@@ -454,7 +446,7 @@ class PlotBar:
             y_pos + altura / 2 + intervalo,
             valores_2022,
             height=altura,
-            color=self.cor[1],
+            color=self.color[1],
             label="2022",
         )
 
@@ -468,7 +460,7 @@ class PlotBar:
                 va="center",
                 fontsize=10.5,
                 fontweight="bold",
-                color=self.cor[1],
+                color=self.color[1],
             )
 
         for barra in barras_2022:
@@ -558,7 +550,7 @@ class PlotBar:
         a composição urbana e rural de cada contexto.
         """
 
-        brasil = self._obter_linha_brasil(self.db)
+        brasil = self._obter_linha_brasil(self.data_f)
 
         # =======================================================
         # DADOS
@@ -733,7 +725,7 @@ class PlotBar:
             va="center",
             fontsize=8.3,
             fontweight="bold",
-            color=self.cor[1],
+            color=self.color[1],
         )
 
         # Fora de TI — 2010 — Urbana.
@@ -748,7 +740,7 @@ class PlotBar:
             va="center",
             fontsize=9,
             fontweight="bold",
-            color=self.cor[1],
+            color=self.color[1],
         )
 
         # Fora de TI — 2022 — Rural.
@@ -797,7 +789,7 @@ class PlotBar:
             va="center",
             fontsize=9,
             fontweight="bold",
-            color=self.cor[1],
+            color=self.color[1],
         )
 
         # Em TI — 2022 — Rural.
@@ -849,7 +841,7 @@ class PlotBar:
             va="center",
             fontsize=9,
             fontweight="bold",
-            color=self.cor[1],
+            color=self.color[1],
         )
 
         # =======================================================
@@ -890,7 +882,7 @@ class PlotBar:
             va="center",
             fontsize=10,
             fontweight="bold",
-            color=self.cor[1],
+            color=self.color[1],
         )
 
         # Nome do segundo contexto acima das barras.
@@ -902,7 +894,7 @@ class PlotBar:
             va="center",
             fontsize=10,
             fontweight="bold",
-            color=self.cor[1],
+            color=self.color[1],
         )
 
         # Separação visual entre os dois contextos.
