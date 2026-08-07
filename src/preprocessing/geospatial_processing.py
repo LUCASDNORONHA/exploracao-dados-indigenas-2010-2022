@@ -44,22 +44,16 @@ class PrepararBaseGeografica:
         """Verifica se um arquivo de entrada existe."""
 
         if not caminho.exists():
-            raise FileNotFoundError(
-                f"Arquivo não encontrado: {caminho.resolve()}"
-            )
+            raise FileNotFoundError(f"Arquivo não encontrado: {caminho.resolve()}")
 
     def carregar_malha(
         self,
     ) -> gpd.GeoDataFrame:
         """Carrega a malha territorial oficial do IBGE."""
 
-        self._validar_arquivo(
-            self.caminho_malha
-        )
+        self._validar_arquivo(self.caminho_malha)
 
-        self.malha = gpd.read_file(
-            self.caminho_malha
-        )
+        self.malha = gpd.read_file(self.caminho_malha)
 
         if self.coluna_malha not in self.malha.columns:
             raise KeyError(
@@ -74,14 +68,11 @@ class PrepararBaseGeografica:
             )
 
         if "geometry" not in self.malha.columns:
-            raise ValueError(
-                "A malha carregada não possui a coluna 'geometry'."
-            )
+            raise ValueError("A malha carregada não possui a coluna 'geometry'.")
 
         if self.malha.crs is None:
             raise ValueError(
-                "A malha territorial não possui sistema "
-                "de referência definido."
+                "A malha territorial não possui sistema de referência definido."
             )
 
         return self.malha
@@ -91,13 +82,9 @@ class PrepararBaseGeografica:
     ) -> pd.DataFrame:
         """Carrega a base estadual processada."""
 
-        self._validar_arquivo(
-            self.caminho_base_estados
-        )
+        self._validar_arquivo(self.caminho_base_estados)
 
-        self.base_estados = pd.read_csv(
-            self.caminho_base_estados
-        )
+        self.base_estados = pd.read_csv(self.caminho_base_estados)
 
         if self.coluna_base not in self.base_estados.columns:
             raise KeyError(
@@ -127,9 +114,7 @@ class PrepararBaseGeografica:
             self.carregar_base_estados()
 
         if self.malha is None or self.base_estados is None:
-            raise RuntimeError(
-                "Não foi possível carregar as bases de entrada."
-            )
+            raise RuntimeError("Não foi possível carregar as bases de entrada.")
 
         self.base_geografica = self.malha.merge(
             self.base_estados,
@@ -151,34 +136,19 @@ class PrepararBaseGeografica:
         """
 
         if self.base_geografica is None:
-            raise RuntimeError(
-                "Execute integrar_bases() antes da validação."
-            )
+            raise RuntimeError("Execute integrar_bases() antes da validação.")
 
-        quantidade_linhas = len(
-            self.base_geografica
-        )
+        quantidade_linhas = len(self.base_geografica)
 
-        quantidade_ufs = self.base_geografica[
-            self.coluna_malha
-        ].nunique()
+        quantidade_ufs = self.base_geografica[self.coluna_malha].nunique()
 
         correspondencias_invalidas = int(
-            (
-                self.base_geografica["_merge"]
-                != "both"
-            ).sum()
+            (self.base_geografica["_merge"] != "both").sum()
         )
 
-        geometrias_ausentes = int(
-            self.base_geografica.geometry.isna().sum()
-        )
+        geometrias_ausentes = int(self.base_geografica.geometry.isna().sum())
 
-        geometrias_invalidas = int(
-            (
-                ~self.base_geografica.geometry.is_valid
-            ).sum()
-        )
+        geometrias_invalidas = int((~self.base_geografica.geometry.is_valid).sum())
 
         integracao_valida = (
             quantidade_linhas == self.QUANTIDADE_UFS
@@ -198,10 +168,7 @@ class PrepararBaseGeografica:
         }
 
         if not integracao_valida:
-            raise ValueError(
-                "A integração apresentou inconsistências: "
-                f"{resultado}"
-            )
+            raise ValueError(f"A integração apresentou inconsistências: {resultado}")
 
         return resultado
 
@@ -211,28 +178,21 @@ class PrepararBaseGeografica:
         """Remove colunas auxiliares utilizadas na integração."""
 
         if self.base_geografica is None:
-            raise RuntimeError(
-                "Execute integrar_bases() antes da limpeza."
-            )
+            raise RuntimeError("Execute integrar_bases() antes da limpeza.")
 
         colunas_remover = [
             "_merge",
         ]
 
         if self.coluna_base != self.coluna_malha:
-            colunas_remover.append(
-                self.coluna_base
-            )
+            colunas_remover.append(self.coluna_base)
 
-        self.base_geografica = (
-            self.base_geografica
-            .drop(
-                columns=[
-                    coluna
-                    for coluna in colunas_remover
-                    if coluna in self.base_geografica.columns
-                ]
-            )
+        self.base_geografica = self.base_geografica.drop(
+            columns=[
+                coluna
+                for coluna in colunas_remover
+                if coluna in self.base_geografica.columns
+            ]
         )
 
         return self.base_geografica
@@ -250,10 +210,7 @@ class PrepararBaseGeografica:
         """
 
         if self.base_geografica is None:
-            raise RuntimeError(
-                "Execute limpar_base() antes de criar "
-                "a base regional."
-            )
+            raise RuntimeError("Execute limpar_base() antes de criar a base regional.")
 
         if self.coluna_regiao not in self.base_geografica.columns:
             raise KeyError(
@@ -267,9 +224,7 @@ class PrepararBaseGeografica:
                 for coluna in self.base_geografica.columns
                 if (
                     coluna.startswith("Indígenas")
-                    and pd.api.types.is_numeric_dtype(
-                        self.base_geografica[coluna]
-                    )
+                    and pd.api.types.is_numeric_dtype(self.base_geografica[coluna])
                 )
             ]
 
@@ -289,9 +244,7 @@ class PrepararBaseGeografica:
         colunas_nao_numericas = [
             coluna
             for coluna in colunas_somar
-            if not pd.api.types.is_numeric_dtype(
-                self.base_geografica[coluna]
-            )
+            if not pd.api.types.is_numeric_dtype(self.base_geografica[coluna])
         ]
 
         if colunas_nao_numericas:
@@ -303,23 +256,15 @@ class PrepararBaseGeografica:
 
         if not colunas_somar:
             raise ValueError(
-                "Nenhuma coluna numérica foi selecionada "
-                "para agregação regional."
+                "Nenhuma coluna numérica foi selecionada para agregação regional."
             )
 
-        agregacoes = {
-            coluna: "sum"
-            for coluna in colunas_somar
-        }
+        agregacoes = {coluna: "sum" for coluna in colunas_somar}
 
-        self.base_regional = (
-            self.base_geografica
-            .dissolve(
-                by=self.coluna_regiao,
-                aggfunc=agregacoes,
-            )
-            .reset_index()
-        )
+        self.base_regional = self.base_geografica.dissolve(
+            by=self.coluna_regiao,
+            aggfunc=agregacoes,
+        ).reset_index()
 
         if len(self.base_regional) != self.QUANTIDADE_REGIOES:
             raise ValueError(
@@ -330,37 +275,26 @@ class PrepararBaseGeografica:
             )
 
         if self.base_regional.geometry.isna().any():
-            raise ValueError(
-                "A base regional possui geometrias ausentes."
-            )
+            raise ValueError("A base regional possui geometrias ausentes.")
 
-        if (
-            ~self.base_regional.geometry.is_valid
-        ).any():
-            raise ValueError(
-                "A base regional possui geometrias inválidas."
-            )
+        if (~self.base_regional.geometry.is_valid).any():
+            raise ValueError("A base regional possui geometrias inválidas.")
 
         return self.base_regional
 
     def exportar_base_estadual(
         self,
         diretorio_saida: str | Path,
-        nome_arquivo: str = "db_estados_geo",
+        nome_arquivo: str = "gdf_estados",
         salvar_geojson: bool = True,
         salvar_parquet: bool = True,
     ) -> dict[str, Path]:
         """Exporta a base geográfica estadual."""
 
         if self.base_geografica is None:
-            raise RuntimeError(
-                "Não existe uma base geográfica estadual "
-                "para exportar."
-            )
+            raise RuntimeError("Não existe uma base geográfica estadual para exportar.")
 
-        diretorio_saida = Path(
-            diretorio_saida
-        )
+        diretorio_saida = Path(diretorio_saida)
 
         diretorio_saida.mkdir(
             parents=True,
@@ -370,55 +304,40 @@ class PrepararBaseGeografica:
         arquivos_gerados: dict[str, Path] = {}
 
         if salvar_geojson:
-            caminho_geojson = (
-                diretorio_saida
-                / f"{nome_arquivo}.geojson"
-            )
+            caminho_geojson = diretorio_saida / f"{nome_arquivo}.geojson"
 
             self.base_geografica.to_file(
                 caminho_geojson,
                 driver="GeoJSON",
             )
 
-            arquivos_gerados[
-                "geojson"
-            ] = caminho_geojson
+            arquivos_gerados["geojson"] = caminho_geojson
 
         if salvar_parquet:
-            caminho_parquet = (
-                diretorio_saida
-                / f"{nome_arquivo}.parquet"
-            )
+            caminho_parquet = diretorio_saida / f"{nome_arquivo}.parquet"
 
             self.base_geografica.to_parquet(
                 caminho_parquet,
                 index=False,
             )
 
-            arquivos_gerados[
-                "parquet"
-            ] = caminho_parquet
+            arquivos_gerados["parquet"] = caminho_parquet
 
         return arquivos_gerados
 
     def exportar_base_regional(
         self,
         diretorio_saida: str | Path,
-        nome_arquivo: str = "db_regioes_geo",
+        nome_arquivo: str = "gdf_regioes",
         salvar_geojson: bool = True,
         salvar_parquet: bool = True,
     ) -> dict[str, Path]:
         """Exporta a base geográfica regional."""
 
         if self.base_regional is None:
-            raise RuntimeError(
-                "Não existe uma base geográfica regional "
-                "para exportar."
-            )
+            raise RuntimeError("Não existe uma base geográfica regional para exportar.")
 
-        diretorio_saida = Path(
-            diretorio_saida
-        )
+        diretorio_saida = Path(diretorio_saida)
 
         diretorio_saida.mkdir(
             parents=True,
@@ -428,34 +347,24 @@ class PrepararBaseGeografica:
         arquivos_gerados: dict[str, Path] = {}
 
         if salvar_geojson:
-            caminho_geojson = (
-                diretorio_saida
-                / f"{nome_arquivo}.geojson"
-            )
+            caminho_geojson = diretorio_saida / f"{nome_arquivo}.geojson"
 
             self.base_regional.to_file(
                 caminho_geojson,
                 driver="GeoJSON",
             )
 
-            arquivos_gerados[
-                "geojson"
-            ] = caminho_geojson
+            arquivos_gerados["geojson"] = caminho_geojson
 
         if salvar_parquet:
-            caminho_parquet = (
-                diretorio_saida
-                / f"{nome_arquivo}.parquet"
-            )
+            caminho_parquet = diretorio_saida / f"{nome_arquivo}.parquet"
 
             self.base_regional.to_parquet(
                 caminho_parquet,
                 index=False,
             )
 
-            arquivos_gerados[
-                "parquet"
-            ] = caminho_parquet
+            arquivos_gerados["parquet"] = caminho_parquet
 
         return arquivos_gerados
 
@@ -469,16 +378,12 @@ class PrepararBaseGeografica:
         Retorna os caminhos dos arquivos produzidos.
         """
 
-        arquivos_estaduais = (
-            self.exportar_base_estadual(
-                diretorio_saida=diretorio_saida,
-            )
+        arquivos_estaduais = self.exportar_base_estadual(
+            diretorio_saida=diretorio_saida,
         )
 
-        arquivos_regionais = (
-            self.exportar_base_regional(
-                diretorio_saida=diretorio_saida,
-            )
+        arquivos_regionais = self.exportar_base_regional(
+            diretorio_saida=diretorio_saida,
         )
 
         return {
@@ -514,8 +419,6 @@ class PrepararBaseGeografica:
             )
 
         if self.base_geografica is None:
-            raise RuntimeError(
-                "A base geográfica estadual não foi gerada."
-            )
+            raise RuntimeError("A base geográfica estadual não foi gerada.")
 
         return self.base_geografica

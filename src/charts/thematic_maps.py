@@ -59,19 +59,13 @@ class PlotMapas:
         """Verifica se a base possui os elementos necessários."""
 
         if not isinstance(self.gdf, gpd.GeoDataFrame):
-            raise TypeError(
-                "O objeto informado deve ser um GeoDataFrame."
-            )
+            raise TypeError("O objeto informado deve ser um GeoDataFrame.")
 
         if "geometry" not in self.gdf.columns:
-            raise ValueError(
-                "O GeoDataFrame não possui a coluna 'geometry'."
-            )
+            raise ValueError("O GeoDataFrame não possui a coluna 'geometry'.")
 
         if self.gdf.empty:
-            raise ValueError(
-                "O GeoDataFrame está vazio."
-            )
+            raise ValueError("O GeoDataFrame está vazio.")
 
         if self.gdf.crs is None:
             raise ValueError(
@@ -94,7 +88,7 @@ class PlotMapas:
             )
 
     @staticmethod
-    def _formatar_inteiro(valor: float | int) -> str:
+    def _formatar_inteiro(valor: float) -> str:
         """Formata valores inteiros segundo a notação brasileira."""
 
         return f"{valor:,.0f}".replace(",", ".")
@@ -203,20 +197,15 @@ class PlotMapas:
             gdf=gdf,
         )
 
-        estado_selecionado = gdf.loc[
-            gdf[coluna_estado].eq(estado)
-        ]
+        estado_selecionado = gdf.loc[gdf[coluna_estado].eq(estado)]
 
         if estado_selecionado.empty:
             raise ValueError(
-                f"O estado '{estado}' não foi encontrado "
-                f"na coluna '{coluna_estado}'."
+                f"O estado '{estado}' não foi encontrado na coluna '{coluna_estado}'."
             )
 
         if len(estado_selecionado) > 1:
-            raise ValueError(
-                f"O estado '{estado}' possui mais de um registro."
-            )
+            raise ValueError(f"O estado '{estado}' possui mais de um registro.")
 
         cor_borda = cor_borda or self.cor_escura
 
@@ -227,12 +216,7 @@ class PlotMapas:
             zorder=7,
         )
 
-        ponto = (
-            estado_selecionado
-            .geometry
-            .representative_point()
-            .iloc[0]
-        )
+        ponto = estado_selecionado.geometry.representative_point().iloc[0]
 
         ax.annotate(
             texto,
@@ -294,9 +278,7 @@ class PlotMapas:
         valores = gdf[coluna].dropna()
 
         if valores.empty:
-            raise ValueError(
-                f"A coluna '{coluna}' não possui valores válidos."
-            )
+            raise ValueError(f"A coluna '{coluna}' não possui valores válidos.")
 
         cmap = self.mapa_cores if cmap is None else cmap
 
@@ -365,14 +347,10 @@ class PlotMapas:
         self._validar_coluna(coluna)
         self._validar_coluna(coluna_estado)
 
-        dados_validos = self.gdf.dropna(
-            subset=[coluna, "geometry"]
-        ).copy()
+        dados_validos = self.gdf.dropna(subset=[coluna, "geometry"]).copy()
 
         if dados_validos.empty:
-            raise ValueError(
-                "Não existem registros válidos para construir o mapa."
-            )
+            raise ValueError("Não existem registros válidos para construir o mapa.")
 
         fig, ax = plt.subplots(
             figsize=(13, 9),
@@ -406,8 +384,7 @@ class PlotMapas:
                 "da população indígena brasileira em 2022"
             ),
             subtitulo=(
-                "Distribuição absoluta da população indígena "
-                "por Unidade da Federação"
+                "Distribuição absoluta da população indígena por Unidade da Federação"
             ),
         )
 
@@ -416,13 +393,9 @@ class PlotMapas:
         indice_maior = dados_validos[coluna].idxmax()
         maior_registro = dados_validos.loc[indice_maior]
 
-        estado_destaque = str(
-            maior_registro[coluna_estado]
-        )
+        estado_destaque = str(maior_registro[coluna_estado])
 
-        valor_destaque = float(
-            maior_registro[coluna]
-        )
+        valor_destaque = float(maior_registro[coluna])
 
         texto_anotacao = (
             f"{estado_destaque} concentrou\n"
@@ -475,8 +448,7 @@ class PlotMapas:
         self._adicionar_fonte(
             fig=fig,
             texto=(
-                "Fonte: IBGE — Censo Demográfico 2022. "
-                "Elaboração: Lucas Dias Noronha."
+                "Fonte: IBGE — Censo Demográfico 2022. Elaboração: Lucas Dias Noronha."
             ),
         )
 
@@ -507,10 +479,7 @@ class PlotMapas:
         denominador = dados[coluna_2010]
 
         dados[coluna_variacao] = (
-            (
-                dados[coluna_2022]
-                - dados[coluna_2010]
-            )
+            (dados[coluna_2022] - dados[coluna_2010])
             .div(denominador.where(denominador.ne(0)))
             .mul(100)
         )
@@ -523,9 +492,7 @@ class PlotMapas:
         ).copy()
 
         if dados_validos.empty:
-            raise ValueError(
-                "Não existem registros válidos para construir o mapa."
-            )
+            raise ValueError("Não existem registros válidos para construir o mapa.")
 
         fig, ax = plt.subplots(
             figsize=(13, 9),
@@ -555,8 +522,8 @@ class PlotMapas:
         self._adicionar_titulo_subtitulo(
             ax=ax,
             titulo=(
-                    "O crescimento percentual da população indígena\n"
-                    "foi liderado pelo Nordeste entre 2010 e 2022"
+                "O crescimento percentual da população indígena\n"
+                "foi liderado pelo Nordeste entre 2010 e 2022"
             ),
             subtitulo=(
                 "Variação percentual da população indígena "
@@ -569,13 +536,9 @@ class PlotMapas:
         indice_maior = dados_validos[coluna_variacao].idxmax()
         maior_registro = dados_validos.loc[indice_maior]
 
-        estado_destaque = str(
-            maior_registro[coluna_estado]
-        )
+        estado_destaque = str(maior_registro[coluna_estado])
 
-        valor_destaque = float(
-            maior_registro[coluna_variacao]
-        )
+        valor_destaque = float(maior_registro[coluna_variacao])
 
         texto_anotacao = (
             f"{estado_destaque} apresentou\n"
@@ -600,9 +563,7 @@ class PlotMapas:
             coluna_variacao,
         )
 
-        estados_destaque = ranking[
-            coluna_estado
-        ].tolist()
+        estados_destaque = ranking[coluna_estado].tolist()
 
         texto_insight = (
             f"{estados_destaque[0]}, {estados_destaque[1]},\n"
@@ -680,21 +641,12 @@ class PlotMapas:
         coluna_participacao_2022 = "Participação 2022 (%)"
         coluna_mudanca = "Mudança participação (p.p.)"
 
-        dados[coluna_participacao_2010] = (
-            dados[coluna_2010]
-            .div(total_2010)
-            .mul(100)
-        )
+        dados[coluna_participacao_2010] = dados[coluna_2010].div(total_2010).mul(100)
 
-        dados[coluna_participacao_2022] = (
-            dados[coluna_2022]
-            .div(total_2022)
-            .mul(100)
-        )
+        dados[coluna_participacao_2022] = dados[coluna_2022].div(total_2022).mul(100)
 
         dados[coluna_mudanca] = (
-            dados[coluna_participacao_2022]
-            - dados[coluna_participacao_2010]
+            dados[coluna_participacao_2022] - dados[coluna_participacao_2010]
         )
 
         dados_validos = dados.dropna(
@@ -705,9 +657,7 @@ class PlotMapas:
         ).copy()
 
         if dados_validos.empty:
-            raise ValueError(
-                "Não existem registros válidos para construir o mapa."
-            )
+            raise ValueError("Não existem registros válidos para construir o mapa.")
 
         valores = dados_validos[coluna_mudanca]
 
@@ -769,13 +719,9 @@ class PlotMapas:
         indice_maior = dados_validos[coluna_mudanca].idxmax()
         maior_registro = dados_validos.loc[indice_maior]
 
-        estado_destaque = str(
-            maior_registro[coluna_estado]
-        )
+        estado_destaque = str(maior_registro[coluna_estado])
 
-        valor_destaque = float(
-            maior_registro[coluna_mudanca]
-        )
+        valor_destaque = float(maior_registro[coluna_mudanca])
 
         texto_anotacao = (
             f"{estado_destaque} ampliou sua\n"
@@ -805,21 +751,13 @@ class PlotMapas:
             coluna_mudanca,
         ).iloc[0]
 
-        primeiro = str(
-            maiores_ganhos.iloc[0][coluna_estado]
-        )
+        primeiro = str(maiores_ganhos.iloc[0][coluna_estado])
 
-        segundo = str(
-            maiores_ganhos.iloc[1][coluna_estado]
-        )
+        segundo = str(maiores_ganhos.iloc[1][coluna_estado])
 
-        estado_maior_perda = str(
-            maior_perda[coluna_estado]
-        )
+        estado_maior_perda = str(maior_perda[coluna_estado])
 
-        valor_maior_perda = float(
-            maior_perda[coluna_mudanca]
-        )
+        valor_maior_perda = float(maior_perda[coluna_mudanca])
 
         texto_insight = (
             f"{primeiro} e {segundo} ampliaram\n"
@@ -895,33 +833,21 @@ class PlotMapas:
                 "Não existem registros válidos para construir o mapa regional."
             )
 
-        regioes = (
-            dados_validos
-            .dissolve(
-                by=coluna_regiao,
-                aggfunc={
-                    coluna: "sum",
-                },
-            )
-            .reset_index()
-        )
+        regioes = dados_validos.dissolve(
+            by=coluna_regiao,
+            aggfunc={
+                coluna: "sum",
+            },
+        ).reset_index()
 
-        total_nacional = float(
-            regioes[coluna].sum()
-        )
+        total_nacional = float(regioes[coluna].sum())
 
         if total_nacional <= 0:
-            raise ValueError(
-                "O total nacional deve ser maior que zero."
-            )
+            raise ValueError("O total nacional deve ser maior que zero.")
 
         coluna_participacao = "Participação regional (%)"
 
-        regioes[coluna_participacao] = (
-            regioes[coluna]
-            .div(total_nacional)
-            .mul(100)
-        )
+        regioes[coluna_participacao] = regioes[coluna].div(total_nacional).mul(100)
 
         fig, ax = plt.subplots(
             figsize=(13, 9),
@@ -970,23 +896,14 @@ class PlotMapas:
             "Sul": "SUL",
         }
 
-        participacao_maxima = float(
-            regioes[coluna_participacao].max()
-        )
+        participacao_maxima = float(regioes[coluna_participacao].max())
 
         for _, linha in regioes.iterrows():
-            regiao = str(
-                linha[coluna_regiao]
-            )
+            regiao = str(linha[coluna_regiao])
 
-            participacao = float(
-                linha[coluna_participacao]
-            )
+            participacao = float(linha[coluna_participacao])
 
-            ponto = (
-                linha.geometry
-                .representative_point()
-            )
+            ponto = linha.geometry.representative_point()
 
             cor_rotulo = (
                 "white"
@@ -999,10 +916,7 @@ class PlotMapas:
                 regiao.upper(),
             )
 
-            texto_rotulo = (
-                f"{nome_rotulo}\n"
-                f"{self._formatar_percentual(participacao)}%"
-            )
+            texto_rotulo = f"{nome_rotulo}\n{self._formatar_percentual(participacao)}%"
 
             ax.text(
                 ponto.x,
@@ -1033,7 +947,7 @@ class PlotMapas:
             "Norte e Nordeste concentram\n"
             f"{self._formatar_percentual(participacao_norte_nordeste)}% "
             "da população indígena\n"
-            "brasileira, evidenciando uma\n" 
+            "brasileira, evidenciando uma\n"
             "forte concentração regional."
         )
 
@@ -1061,8 +975,7 @@ class PlotMapas:
         self._adicionar_fonte(
             fig=fig,
             texto=(
-                "Fonte: IBGE — Censo Demográfico 2022. "
-                "Elaboração: Lucas Dias Noronha."
+                "Fonte: IBGE — Censo Demográfico 2022. Elaboração: Lucas Dias Noronha."
             ),
         )
 

@@ -1,8 +1,9 @@
 from pathlib import Path
+from typing import ClassVar
 
-import matplotlib.patches as patches
 import matplotlib.pyplot as plt
 import pandas as pd
+from matplotlib import patches
 
 
 class PainelSinteseRegional:
@@ -15,7 +16,7 @@ class PainelSinteseRegional:
     delas, com base no Censo Demográfico de 2022.
     """
 
-    COLUNAS_OBRIGATORIAS = [
+    COLUNAS_OBRIGATORIAS : ClassVar[list[str]] = [
         "NM_REGIAO",
         "Indígenas 2022 TI Total",
         "Indígenas 2022 TI Urbano",
@@ -52,9 +53,7 @@ class PainelSinteseRegional:
         """Verifica se a base possui as colunas necessárias."""
 
         if self.gdf.empty:
-            raise ValueError(
-                "A base regional está vazia."
-            )
+            raise ValueError("A base regional está vazia.")
 
         colunas_ausentes = [
             coluna
@@ -64,13 +63,10 @@ class PainelSinteseRegional:
 
         if colunas_ausentes:
             raise KeyError(
-                "As seguintes colunas não existem na base: "
-                f"{colunas_ausentes}"
+                f"As seguintes colunas não existem na base: {colunas_ausentes}"
             )
 
-        quantidade_regioes = self.gdf[
-            "NM_REGIAO"
-        ].nunique()
+        quantidade_regioes = self.gdf["NM_REGIAO"].nunique()
 
         if quantidade_regioes != 5:
             raise ValueError(
@@ -121,17 +117,11 @@ class PainelSinteseRegional:
         dados: dict[str, dict[str, float]] = {}
 
         for _, linha in self.gdf.iterrows():
-            regiao = self._normalizar_regiao(
-                linha["NM_REGIAO"]
-            )
+            regiao = self._normalizar_regiao(linha["NM_REGIAO"])
 
-            ti_total = float(
-                linha["Indígenas 2022 TI Total"]
-            )
+            ti_total = float(linha["Indígenas 2022 TI Total"])
 
-            fora_ti_total = float(
-                linha["Indígenas 2022 Fora TI Total"]
-            )
+            fora_ti_total = float(linha["Indígenas 2022 Fora TI Total"])
 
             if ti_total <= 0:
                 raise ValueError(
@@ -145,36 +135,16 @@ class PainelSinteseRegional:
                     f"Terras Indígenas é inválido para {regiao}."
                 )
 
-            ti_urbano = (
-                float(
-                    linha["Indígenas 2022 TI Urbano"]
-                )
-                / ti_total
-                * 100
-            )
+            ti_urbano = float(linha["Indígenas 2022 TI Urbano"]) / ti_total * 100
 
-            ti_rural = (
-                float(
-                    linha["Indígenas 2022 TI Rural"]
-                )
-                / ti_total
-                * 100
-            )
+            ti_rural = float(linha["Indígenas 2022 TI Rural"]) / ti_total * 100
 
             fora_ti_urbano = (
-                float(
-                    linha["Indígenas 2022 Fora TI Urbano"]
-                )
-                / fora_ti_total
-                * 100
+                float(linha["Indígenas 2022 Fora TI Urbano"]) / fora_ti_total * 100
             )
 
             fora_ti_rural = (
-                float(
-                    linha["Indígenas 2022 Fora TI Rural"]
-                )
-                / fora_ti_total
-                * 100
+                float(linha["Indígenas 2022 Fora TI Rural"]) / fora_ti_total * 100
             )
 
             dados[regiao] = {
@@ -192,10 +162,7 @@ class PainelSinteseRegional:
             "Sul",
         }
 
-        regioes_ausentes = (
-            regioes_esperadas
-            - set(dados)
-        )
+        regioes_ausentes = regioes_esperadas - set(dados)
 
         if regioes_ausentes:
             raise ValueError(
@@ -243,10 +210,7 @@ class PainelSinteseRegional:
         )
 
         if categoria_destaque == "rural":
-            posicao_x = (
-                percentual_urbano
-                + percentual_rural / 2
-            )
+            posicao_x = percentual_urbano + percentual_rural / 2
 
             valor = percentual_rural
             cor_rotulo = "white"
@@ -257,17 +221,12 @@ class PainelSinteseRegional:
             cor_rotulo = self.cor_rural
 
         else:
-            raise ValueError(
-                "A categoria de destaque deve ser "
-                "'urbano' ou 'rural'."
-            )
+            raise ValueError("A categoria de destaque deve ser 'urbano' ou 'rural'.")
 
         ax.text(
             posicao_x,
             y + altura / 2,
-            (
-                f"{self._formatar_percentual(valor)}%"
-            ),
+            (f"{self._formatar_percentual(valor)}%"),
             ha="center",
             va="center",
             fontsize=9.3,
@@ -326,12 +285,8 @@ class PainelSinteseRegional:
         self._desenhar_barra(
             ax=ax,
             y=0.58,
-            percentual_urbano=dados[
-                "ti_urbano"
-            ],
-            percentual_rural=dados[
-                "ti_rural"
-            ],
+            percentual_urbano=dados["ti_urbano"],
+            percentual_rural=dados["ti_rural"],
             categoria_destaque="rural",
         )
 
@@ -348,12 +303,8 @@ class PainelSinteseRegional:
         self._desenhar_barra(
             ax=ax,
             y=0.22,
-            percentual_urbano=dados[
-                "fora_ti_urbano"
-            ],
-            percentual_rural=dados[
-                "fora_ti_rural"
-            ],
+            percentual_urbano=dados["fora_ti_urbano"],
+            percentual_rural=dados["fora_ti_rural"],
             categoria_destaque="urbano",
         )
 
@@ -397,9 +348,7 @@ class PainelSinteseRegional:
     ) -> None:
         """Adiciona o quadro de resumo executivo."""
 
-        ax = fig.add_axes(
-            posicao
-        )
+        ax = fig.add_axes(posicao)
 
         ax.axis("off")
 
@@ -449,9 +398,7 @@ class PainelSinteseRegional:
     ) -> None:
         """Adiciona a síntese interpretativa final."""
 
-        ax = fig.add_axes(
-            posicao
-        )
+        ax = fig.add_axes(posicao)
 
         ax.axis("off")
 
@@ -527,7 +474,7 @@ class PainelSinteseRegional:
             1.02,
             (
                 "O perfil de residência da população indígena\n"
-                "varia conforme o contexto territorial"  
+                "varia conforme o contexto territorial"
             ),
             ha="left",
             va="top",
@@ -542,7 +489,7 @@ class PainelSinteseRegional:
             0.930,
             (
                 "Em todas as Grandes Regiões, o perfil de residência da população indígena\n"
-                "inverte-se conforme o contexto territorial: nas Terras Indígenas predomina\n" 
+                "inverte-se conforme o contexto territorial: nas Terras Indígenas predomina\n"
                 "a residência rural; fora delas, predomina a residência urbana."
             ),
             ha="left",
@@ -551,9 +498,7 @@ class PainelSinteseRegional:
             color=self.cor_rural,
         )
 
-        self._adicionar_legenda(
-            fig
-        )
+        self._adicionar_legenda(fig)
 
         posicoes = {
             "Norte": [
@@ -607,9 +552,7 @@ class PainelSinteseRegional:
             "Sudeste",
             "Sul",
         ]:
-            ax_regiao = fig.add_axes(
-                posicoes[regiao]
-            )
+            ax_regiao = fig.add_axes(posicoes[regiao])
 
             self._desenhar_painel_regional(
                 ax=ax_regiao,
@@ -630,10 +573,7 @@ class PainelSinteseRegional:
         fig.text(
             0.05,
             0.038,
-            (
-                "Fonte: IBGE — Censo Demográfico 2022. "
-                "Elaboração: Lucas Dias Noronha."
-            ),
+            ("Fonte: IBGE — Censo Demográfico 2022. Elaboração: Lucas Dias Noronha."),
             ha="left",
             va="bottom",
             fontsize=8.5,
@@ -645,10 +585,7 @@ class PainelSinteseRegional:
             exist_ok=True,
         )
 
-        caminho_saida = (
-            self.diretorio_saida
-            / "grafico_sintese_regional.png"
-        )
+        caminho_saida = self.diretorio_saida / "grafico_sintese_regional.png"
 
         fig.savefig(
             caminho_saida,
@@ -660,6 +597,4 @@ class PainelSinteseRegional:
         if exibir:
             plt.show()
 
-        plt.close(
-            fig
-        )
+        plt.close(fig)

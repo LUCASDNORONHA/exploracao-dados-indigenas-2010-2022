@@ -1,9 +1,10 @@
-import matplotlib.pyplot as plt
-import seaborn as sns
-import numpy as np
-from matplotlib import ticker
-from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 from pathlib import Path
+
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
+from matplotlib import ticker
+from matplotlib.offsetbox import AnnotationBbox, OffsetImage
 
 
 class PlotBar:
@@ -113,9 +114,7 @@ class PlotBar:
             labelsize=11,
         )
 
-        ax.xaxis.set_major_formatter(
-            ticker.FuncFormatter(self._formatter_milhoes)
-        )
+        ax.xaxis.set_major_formatter(ticker.FuncFormatter(self._formatter_milhoes))
 
     def _adicionar_titulo_subtitulo(
         self,
@@ -341,10 +340,7 @@ class PlotBar:
                 "A população indígena registrada no Brasil "
                 f"cresceu {self._formatar_percentual(crescimento_pct, 0)}%"
             ),
-            (
-                "Comparação do total de pessoas indígenas recenseadas "
-                "em 2010 e 2022"
-            ),
+            ("Comparação do total de pessoas indígenas recenseadas em 2010 e 2022"),
         )
 
         self._aplicar_estilo_base(ax)
@@ -356,10 +352,10 @@ class PlotBar:
         self._adicionar_anotacao(
             ax=ax,
             texto=(
-                    f"Em apenas 12 anos,\n"
-                    f"o Brasil passou de\n"
-                    f"897 mil para quase\n"
-                    f"1,7 milhão de indígenas."
+                "Em apenas 12 anos,\n"
+                "o Brasil passou de\n"
+                "897 mil para quase\n"
+                "1,7 milhão de indígenas."
             ),
             xy=(valor_2022, 1),
             xytext=(valor_2022 * 1.08, 1.18),
@@ -377,7 +373,6 @@ class PlotBar:
             x=0.50,
             y=0.45,
             fontsize=8.5,
-
         )
 
         self._finalizar_grafico(
@@ -411,14 +406,14 @@ class PlotBar:
         diferencas = valores_2022 - valores_2010
         crescimentos_pct = (diferencas / valores_2010) * 100
 
-        percentuais_2010 = np.array(
+        np.array(
             [
                 float(brasil["% Indígenas 2010 Urbano"]),
                 float(brasil["% Indígenas 2010 Rural"]),
             ]
         )
 
-        percentuais_2022 = np.array(
+        np.array(
             [
                 float(brasil["% Indígenas 2022 Urbano"]),
                 float(brasil["% Indígenas 2022 Rural"]),
@@ -594,10 +589,8 @@ class PlotBar:
         aumento_ti = total_ti[1] - total_ti[0]
         aumento_fora_ti = total_fora_ti[1] - total_fora_ti[0]
 
-        crescimento_ti = (aumento_ti / total_ti[0]) * 100
-        crescimento_fora_ti = (
-            aumento_fora_ti / total_fora_ti[0]
-        ) * 100
+        (aumento_ti / total_ti[0]) * 100
+        crescimento_fora_ti = (aumento_fora_ti / total_fora_ti[0]) * 100
 
         # =======================================================
         # CONFIGURAÇÃO DO GRÁFICO
@@ -717,10 +710,7 @@ class PlotBar:
         ax.text(
             fora_ti_rural[0] / 2,
             y_fora_ti[0],
-            (
-                "Rural\n"
-                f"{self._formatar_inteiro(fora_ti_rural[0])}"
-            ),
+            (f"Rural\n{self._formatar_inteiro(fora_ti_rural[0])}"),
             ha="center",
             va="center",
             fontsize=8.3,
@@ -732,10 +722,7 @@ class PlotBar:
         ax.text(
             fora_ti_rural[0] + fora_ti_urbana[0] / 2,
             y_fora_ti[0],
-            (
-                "Urbana\n"
-                f"{self._formatar_inteiro(fora_ti_urbana[0])}"
-            ),
+            (f"Urbana\n{self._formatar_inteiro(fora_ti_urbana[0])}"),
             ha="center",
             va="center",
             fontsize=9,
@@ -747,10 +734,7 @@ class PlotBar:
         ax.text(
             fora_ti_rural[1] / 2,
             y_fora_ti[1],
-            (
-                "Rural\n"
-                f"{self._formatar_inteiro(fora_ti_rural[1])}"
-            ),
+            (f"Rural\n{self._formatar_inteiro(fora_ti_rural[1])}"),
             ha="center",
             va="center",
             fontsize=9,
@@ -762,10 +746,7 @@ class PlotBar:
         ax.text(
             fora_ti_rural[1] + fora_ti_urbana[1] / 2,
             y_fora_ti[1],
-            (
-                "Urbana\n"
-                f"{self._formatar_inteiro(fora_ti_urbana[1])}"
-            ),
+            (f"Urbana\n{self._formatar_inteiro(fora_ti_urbana[1])}"),
             ha="center",
             va="center",
             fontsize=9,
@@ -781,10 +762,7 @@ class PlotBar:
         ax.text(
             ti_rural[0] / 2,
             y_ti[0],
-            (
-                "Rural\n"
-                f"{self._formatar_inteiro(ti_rural[0])}"
-            ),
+            (f"Rural\n{self._formatar_inteiro(ti_rural[0])}"),
             ha="center",
             va="center",
             fontsize=9,
@@ -796,10 +774,7 @@ class PlotBar:
         ax.text(
             ti_rural[1] / 2,
             y_ti[1],
-            (
-                "Rural\n"
-                f"{self._formatar_inteiro(ti_rural[1])}"
-            ),
+            (f"Rural\n{self._formatar_inteiro(ti_rural[1])}"),
             ha="center",
             va="center",
             fontsize=9,
@@ -820,10 +795,7 @@ class PlotBar:
         ax.text(
             total_ti[0] + deslocamento,
             y_ti[0],
-            (
-                "Urbana: "
-                f"{self._formatar_inteiro(ti_urbana[0])}"
-            ),
+            (f"Urbana: {self._formatar_inteiro(ti_urbana[0])}"),
             ha="left",
             va="center",
             fontsize=9,
@@ -833,10 +805,7 @@ class PlotBar:
         ax.text(
             total_ti[1] + deslocamento,
             y_ti[1],
-            (
-                "Urbana: "
-                f"{self._formatar_inteiro(ti_urbana[1])}"
-            ),
+            (f"Urbana: {self._formatar_inteiro(ti_urbana[1])}"),
             ha="left",
             va="center",
             fontsize=9,

@@ -39,14 +39,10 @@ class PlotPerfilRegional:
         """Verifica se a base regional possui estrutura válida."""
 
         if not isinstance(self.gdf, gpd.GeoDataFrame):
-            raise TypeError(
-                "O objeto informado deve ser um GeoDataFrame."
-            )
+            raise TypeError("O objeto informado deve ser um GeoDataFrame.")
 
         if self.gdf.empty:
-            raise ValueError(
-                "O GeoDataFrame regional está vazio."
-            )
+            raise ValueError("O GeoDataFrame regional está vazio.")
 
         if len(self.gdf) != 5:
             raise ValueError(
@@ -55,18 +51,13 @@ class PlotPerfilRegional:
             )
 
         if "NM_REGIAO" not in self.gdf.columns:
-            raise KeyError(
-                "A coluna 'NM_REGIAO' não existe na base regional."
-            )
+            raise KeyError("A coluna 'NM_REGIAO' não existe na base regional.")
 
-        quantidade_regioes = self.gdf[
-            "NM_REGIAO"
-        ].nunique()
+        quantidade_regioes = self.gdf["NM_REGIAO"].nunique()
 
         if quantidade_regioes != 5:
             raise ValueError(
-                "A coluna 'NM_REGIAO' deve conter cinco "
-                "Grandes Regiões distintas."
+                "A coluna 'NM_REGIAO' deve conter cinco Grandes Regiões distintas."
             )
 
     def _validar_coluna(
@@ -83,7 +74,7 @@ class PlotPerfilRegional:
 
     @staticmethod
     def _formatar_inteiro(
-        valor: float | int,
+        valor: float,
     ) -> str:
         """Formata valores inteiros segundo a notação brasileira."""
 
@@ -96,10 +87,7 @@ class PlotPerfilRegional:
     ) -> str:
         """Formata percentuais segundo a notação brasileira."""
 
-        return (
-            f"{valor:.{casas_decimais}f}"
-            .replace(".", ",")
-        )
+        return f"{valor:.{casas_decimais}f}".replace(".", ",")
 
     def _adicionar_titulo_subtitulo(
         self,
@@ -222,9 +210,7 @@ class PlotPerfilRegional:
     ) -> None:
         """Aplica o estilo visual padronizado do projeto."""
 
-        ax.set_facecolor(
-            self.cor_fundo
-        )
+        ax.set_facecolor(self.cor_fundo)
 
         ax.spines["top"].set_visible(False)
         ax.spines["right"].set_visible(False)
@@ -246,7 +232,6 @@ class PlotPerfilRegional:
         )
 
         ax.set_axisbelow(True)
-    
 
     def _finalizar_grafico(
         self,
@@ -255,10 +240,7 @@ class PlotPerfilRegional:
     ) -> None:
         """Salva e exibe o gráfico."""
 
-        caminho_saida = (
-            self.diretorio_saida
-            / nome_arquivo
-        )
+        caminho_saida = self.diretorio_saida / nome_arquivo
 
         fig.savefig(
             caminho_saida,
@@ -280,17 +262,11 @@ class PlotPerfilRegional:
         população indígena por Grande Região entre 2010 e 2022.
         """
 
-        self._validar_coluna(
-            coluna_2010
-        )
+        self._validar_coluna(coluna_2010)
 
-        self._validar_coluna(
-            coluna_2022
-        )
+        self._validar_coluna(coluna_2022)
 
-        self._validar_coluna(
-            coluna_regiao
-        )
+        self._validar_coluna(coluna_regiao)
 
         dados = self.gdf[
             [
@@ -300,26 +276,16 @@ class PlotPerfilRegional:
             ]
         ].copy()
 
-        denominador = dados[
-            coluna_2010
-        ]
+        denominador = dados[coluna_2010]
 
         dados["Crescimento (%)"] = (
-            (
-                dados[coluna_2022]
-                - dados[coluna_2010]
-            )
-            .div(
-                denominador.where(
-                    denominador.ne(0)
-                )
-            )
+            (dados[coluna_2022] - dados[coluna_2010])
+            .div(denominador.where(denominador.ne(0)))
             .mul(100)
         )
 
         dados = (
-            dados
-            .dropna(
+            dados.dropna(
                 subset=[
                     "Crescimento (%)",
                 ]
@@ -328,20 +294,13 @@ class PlotPerfilRegional:
                 "Crescimento (%)",
                 ascending=True,
             )
-            .reset_index(
-                drop=True
-            )
+            .reset_index(drop=True)
         )
 
         if dados.empty:
-            raise ValueError(
-                "Não existem registros válidos "
-                "para construir o gráfico."
-            )
+            raise ValueError("Não existem registros válidos para construir o gráfico.")
 
-        indice_maior = int(
-            dados["Crescimento (%)"].idxmax()
-        )
+        indice_maior = int(dados["Crescimento (%)"].idxmax())
 
         regiao_destaque = str(
             dados.loc[
@@ -358,11 +317,7 @@ class PlotPerfilRegional:
         )
 
         cores_barras = [
-            (
-                self.cor_escura
-                if indice == indice_maior
-                else self.cor_media
-            )
+            (self.cor_escura if indice == indice_maior else self.cor_media)
             for indice in dados.index
         ]
 
@@ -380,9 +335,7 @@ class PlotPerfilRegional:
             bottom=0.12,
         )
 
-        y_pos = np.arange(
-            len(dados)
-        )
+        y_pos = np.arange(len(dados))
 
         barras = ax.barh(
             y_pos,
@@ -391,26 +344,18 @@ class PlotPerfilRegional:
             height=0.58,
         )
 
-        ax.set_yticks(
-            y_pos
-        )
+        ax.set_yticks(y_pos)
 
         ax.set_yticklabels(
             dados[coluna_regiao],
             fontsize=10,
         )
 
-        maior_valor = float(
-            dados["Crescimento (%)"].max()
-        )
+        maior_valor = float(dados["Crescimento (%)"].max())
 
-        deslocamento_rotulo = (
-            maior_valor * 0.025
-        )
+        deslocamento_rotulo = maior_valor * 0.025
 
-        for indice, barra in enumerate(
-            barras
-        ):
+        for indice, barra in enumerate(barras):
             valor = float(
                 dados.loc[
                     indice,
@@ -419,23 +364,15 @@ class PlotPerfilRegional:
             )
 
             ax.text(
-                barra.get_width()
-                + deslocamento_rotulo,
-                barra.get_y()
-                + barra.get_height() / 2,
+                barra.get_width() + deslocamento_rotulo,
+                barra.get_y() + barra.get_height() / 2,
                 f"{self._formatar_percentual(valor)}%",
                 ha="left",
                 va="center",
                 fontsize=10,
-                fontweight=(
-                    "bold"
-                    if indice == indice_maior
-                    else "normal"
-                ),
+                fontweight=("bold" if indice == indice_maior else "normal"),
                 color=(
-                    self.cor_escura
-                    if indice == indice_maior
-                    else self.cor_secundaria
+                    self.cor_escura if indice == indice_maior else self.cor_secundaria
                 ),
             )
 
@@ -446,8 +383,7 @@ class PlotPerfilRegional:
                 "no Nordeste entre 2010 e 2022"
             ),
             subtitulo=(
-                "Crescimento percentual da população indígena "
-                "por Grande Região"
+                "Crescimento percentual da população indígena por Grande Região"
             ),
         )
 
@@ -455,22 +391,14 @@ class PlotPerfilRegional:
             ax=ax,
         )
 
-        ax.set_xlabel(
-            ""
-        )
-        ax.set_xticks(
-            []
-        )
+        ax.set_xlabel("")
+        ax.set_xticks([])
         ax.set_xlim(
             0,
             maior_valor * 1.48,
         )
 
-        y_destaque = float(
-            y_pos[
-                indice_maior
-            ]
-        )
+        y_destaque = float(y_pos[indice_maior])
 
         self._adicionar_anotacao(
             ax=ax,
@@ -490,16 +418,10 @@ class PlotPerfilRegional:
             fontsize=11.2,
         )
 
-        ranking = (
-            dados
-            .sort_values(
-                "Crescimento (%)",
-                ascending=False,
-            )
-            .reset_index(
-                drop=True
-            )
-        )
+        ranking = dados.sort_values(
+            "Crescimento (%)",
+            ascending=False,
+        ).reset_index(drop=True)
 
         primeira_regiao = str(
             ranking.loc[
@@ -515,14 +437,14 @@ class PlotPerfilRegional:
             ]
         )
 
-        primeiro_valor = float(
+        float(
             ranking.loc[
                 0,
                 "Crescimento (%)",
             ]
         )
 
-        segundo_valor = float(
+        float(
             ranking.loc[
                 1,
                 "Crescimento (%)",
@@ -538,7 +460,7 @@ class PlotPerfilRegional:
             "o maior contingente indígena do país,\n"
             "o crescimento proporcional mais intenso\n"
             "foi registrado no Nordeste."
-        )        
+        )
 
         self._adicionar_caixa_insight(
             ax=ax,
@@ -558,15 +480,14 @@ class PlotPerfilRegional:
 
         self._finalizar_grafico(
             fig=fig,
-            nome_arquivo=(
-                "grafico_crescimento_regional_2010_2022.png"
-            ),
+            nome_arquivo=("grafico_crescimento_regional_2010_2022.png"),
         )
+
     def plot_urbanizacao_regional(
-    self,
-    coluna_urbano: str = "Indígenas 2022 Urbano",
-    coluna_total: str = "Indígenas 2022 Total",
-    coluna_regiao: str = "NM_REGIAO",
+        self,
+        coluna_urbano: str = "Indígenas 2022 Urbano",
+        coluna_total: str = "Indígenas 2022 Total",
+        coluna_regiao: str = "NM_REGIAO",
     ) -> None:
         """
         Constrói o gráfico da proporção da população indígena
@@ -588,18 +509,11 @@ class PlotPerfilRegional:
         denominador = dados[coluna_total]
 
         dados["Percentual Urbano"] = (
-            dados[coluna_urbano]
-            .div(
-                denominador.where(
-                    denominador.ne(0)
-                )
-            )
-            .mul(100)
+            dados[coluna_urbano].div(denominador.where(denominador.ne(0))).mul(100)
         )
 
         dados = (
-            dados
-            .dropna(
+            dados.dropna(
                 subset=[
                     "Percentual Urbano",
                 ]
@@ -612,14 +526,9 @@ class PlotPerfilRegional:
         )
 
         if dados.empty:
-            raise ValueError(
-                "Não existem registros válidos "
-                "para construir o gráfico."
-            )
+            raise ValueError("Não existem registros válidos para construir o gráfico.")
 
-        indice_maior = int(
-            dados["Percentual Urbano"].idxmax()
-        )
+        indice_maior = int(dados["Percentual Urbano"].idxmax())
 
         regiao_destaque = str(
             dados.loc[
@@ -636,11 +545,7 @@ class PlotPerfilRegional:
         )
 
         cores_barras = [
-            (
-                self.cor_escura
-                if indice == indice_maior
-                else self.cor_media
-            )
+            (self.cor_escura if indice == indice_maior else self.cor_media)
             for indice in dados.index
         ]
 
@@ -655,9 +560,7 @@ class PlotPerfilRegional:
             bottom=0.08,
         )
 
-        y_pos = np.arange(
-            len(dados)
-        )
+        y_pos = np.arange(len(dados))
 
         barras = ax.barh(
             y_pos,
@@ -666,26 +569,18 @@ class PlotPerfilRegional:
             height=0.58,
         )
 
-        ax.set_yticks(
-            y_pos
-        )
+        ax.set_yticks(y_pos)
 
         ax.set_yticklabels(
             dados[coluna_regiao],
             fontsize=10,
         )
 
-        maior_valor = float(
-            dados["Percentual Urbano"].max()
-        )
+        maior_valor = float(dados["Percentual Urbano"].max())
 
-        deslocamento_rotulo = (
-            maior_valor * 0.025
-        )
+        deslocamento_rotulo = maior_valor * 0.025
 
-        for indice, barra in enumerate(
-            barras
-        ):
+        for indice, barra in enumerate(barras):
             valor = float(
                 dados.loc[
                     indice,
@@ -694,31 +589,21 @@ class PlotPerfilRegional:
             )
 
             ax.text(
-                barra.get_width()
-                + deslocamento_rotulo,
-                barra.get_y()
-                + barra.get_height() / 2,
+                barra.get_width() + deslocamento_rotulo,
+                barra.get_y() + barra.get_height() / 2,
                 f"{self._formatar_percentual(valor)}%",
                 ha="left",
                 va="center",
                 fontsize=10,
-                fontweight=(
-                    "bold"
-                    if indice == indice_maior
-                    else "normal"
-                ),
+                fontweight=("bold" if indice == indice_maior else "normal"),
                 color=(
-                    self.cor_escura
-                    if indice == indice_maior
-                    else self.cor_secundaria
+                    self.cor_escura if indice == indice_maior else self.cor_secundaria
                 ),
             )
 
         self._adicionar_titulo_subtitulo(
             ax=ax,
-            titulo=(
-                "O Sudeste possui a população indígena mais urbanizada do país"
-            ),
+            titulo=("O Sudeste possui a população indígena mais urbanizada do país"),
             subtitulo=(
                 "Distribuição da população indígena residente em Terras Indígenas entre áreas urbanas e rurais — 2022"
             ),
@@ -741,15 +626,11 @@ class PlotPerfilRegional:
             maior_valor * 1.48,
         )
 
-        for indice, label in enumerate(
-            ax.get_yticklabels()
-        ):
+        for indice, label in enumerate(ax.get_yticklabels()):
             if indice == indice_maior:
                 label.set_fontweight("bold")
 
-        y_destaque = float(
-            y_pos[indice_maior]
-        )
+        y_destaque = float(y_pos[indice_maior])
 
         self._adicionar_anotacao(
             ax=ax,
@@ -770,28 +651,16 @@ class PlotPerfilRegional:
             fontsize=10.2,
         )
 
-        ranking = (
-            dados
-            .sort_values(
-                "Percentual Urbano",
-                ascending=False,
-            )
-            .reset_index(drop=True)
-        )
+        ranking = dados.sort_values(
+            "Percentual Urbano",
+            ascending=False,
+        ).reset_index(drop=True)
 
-        regiao_menor = str(
-            ranking.iloc[-1][
-                coluna_regiao
-            ]
-        )
+        str(ranking.iloc[-1][coluna_regiao])
 
-        valor_menor = float(
-            ranking.iloc[-1][
-                "Percentual Urbano"
-            ]
-        )
+        float(ranking.iloc[-1]["Percentual Urbano"])
 
-        valor_norte = float(
+        float(
             dados.loc[
                 dados[coluna_regiao].eq("Norte"),
                 "Percentual Urbano",
@@ -819,16 +688,13 @@ class PlotPerfilRegional:
         self._adicionar_fonte(
             fig=fig,
             texto=(
-                "Fonte: IBGE — Censo Demográfico 2022. "
-                "Elaboração: Lucas Dias Noronha."
+                "Fonte: IBGE — Censo Demográfico 2022. Elaboração: Lucas Dias Noronha."
             ),
         )
 
         self._finalizar_grafico(
             fig=fig,
-            nome_arquivo=(
-                "grafico_urbanizacao_regional_2022.png"
-            ),
+            nome_arquivo=("grafico_urbanizacao_regional_2022.png"),
         )
 
     def plot_urbanizacao_terras_indigenas(
@@ -861,28 +727,15 @@ class PlotPerfilRegional:
         denominador = dados[coluna_ti_total]
 
         dados["Percentual TI Urbano"] = (
-            dados[coluna_ti_urbano]
-            .div(
-                denominador.where(
-                    denominador.ne(0)
-                )
-            )
-            .mul(100)
+            dados[coluna_ti_urbano].div(denominador.where(denominador.ne(0))).mul(100)
         )
 
         dados["Percentual TI Rural"] = (
-            dados[coluna_ti_rural]
-            .div(
-                denominador.where(
-                    denominador.ne(0)
-                )
-            )
-            .mul(100)
+            dados[coluna_ti_rural].div(denominador.where(denominador.ne(0))).mul(100)
         )
 
         dados = (
-            dados
-            .dropna(
+            dados.dropna(
                 subset=[
                     "Percentual TI Urbano",
                     "Percentual TI Rural",
@@ -896,14 +749,9 @@ class PlotPerfilRegional:
         )
 
         if dados.empty:
-            raise ValueError(
-                "Não existem registros válidos para construir o gráfico."
-            )
+            raise ValueError("Não existem registros válidos para construir o gráfico.")
 
-        soma_percentuais = (
-            dados["Percentual TI Urbano"]
-            + dados["Percentual TI Rural"]
-        )
+        soma_percentuais = dados["Percentual TI Urbano"] + dados["Percentual TI Rural"]
 
         if not np.allclose(
             soma_percentuais,
@@ -911,8 +759,7 @@ class PlotPerfilRegional:
             atol=0.01,
         ):
             raise ValueError(
-                "Os percentuais urbano e rural não totalizam 100% "
-                "em todas as regiões."
+                "Os percentuais urbano e rural não totalizam 100% em todas as regiões."
             )
 
         fig, ax = plt.subplots(
@@ -927,14 +774,12 @@ class PlotPerfilRegional:
             bottom=0.09,
         )
 
-        y_pos = np.arange(
-            len(dados)
-        )
+        y_pos = np.arange(len(dados))
 
-        barras_urbanas = ax.barh(
+        ax.barh(
             y_pos,
             dados["Percentual TI Urbano"],
-            color= "#8FB7CF",
+            color="#8FB7CF",
             height=0.48,
             label="Urbano",
         )
@@ -948,9 +793,7 @@ class PlotPerfilRegional:
             label="Rural",
         )
 
-        ax.set_yticks(
-            y_pos
-        )
+        ax.set_yticks(y_pos)
 
         ax.set_yticklabels(
             dados[coluna_regiao],
@@ -962,9 +805,7 @@ class PlotPerfilRegional:
 
         # Exibe apenas os percentuais rurais, pois eles representam
         # a principal descoberta comunicada pelo gráfico.
-        for indice, barra_rural in enumerate(
-            barras_rurais
-        ):
+        for indice, barra_rural in enumerate(barras_rurais):
             percentual_urbano = float(
                 dados.loc[
                     indice,
@@ -979,15 +820,11 @@ class PlotPerfilRegional:
                 ]
             )
 
-            posicao_rotulo = (
-                percentual_urbano
-                + percentual_rural / 2
-            )
+            posicao_rotulo = percentual_urbano + percentual_rural / 2
 
             ax.text(
                 posicao_rotulo,
-                barra_rural.get_y()
-                + barra_rural.get_height() / 2,
+                barra_rural.get_y() + barra_rural.get_height() / 2,
                 f"{self._formatar_percentual(percentual_rural)}%",
                 ha="center",
                 va="center",
@@ -1036,36 +873,32 @@ class PlotPerfilRegional:
             columnspacing=1.5,
         )
 
-        indice_maior_urbano = int(
-            dados["Percentual TI Urbano"].idxmax()
-        )
+        indice_maior_urbano = int(dados["Percentual TI Urbano"].idxmax())
 
-        regiao_maior_urbano = str(
+        str(
             dados.loc[
                 indice_maior_urbano,
                 coluna_regiao,
             ]
         )
 
-        valor_maior_urbano = float(
+        float(
             dados.loc[
                 indice_maior_urbano,
                 "Percentual TI Urbano",
             ]
         )
 
-        indice_maior_rural = int(
-            dados["Percentual TI Rural"].idxmax()
-        )
+        indice_maior_rural = int(dados["Percentual TI Rural"].idxmax())
 
-        regiao_maior_rural = str(
+        str(
             dados.loc[
                 indice_maior_rural,
                 coluna_regiao,
             ]
         )
 
-        valor_maior_rural = float(
+        float(
             dados.loc[
                 indice_maior_rural,
                 "Percentual TI Rural",
@@ -1114,16 +947,13 @@ class PlotPerfilRegional:
         self._adicionar_fonte(
             fig=fig,
             texto=(
-                "Fonte: IBGE — Censo Demográfico 2022. "
-                "Elaboração: Lucas Dias Noronha."
+                "Fonte: IBGE — Censo Demográfico 2022. Elaboração: Lucas Dias Noronha."
             ),
         )
 
         self._finalizar_grafico(
             fig=fig,
-            nome_arquivo=(
-                "grafico_urbano_rural_terras_indigenas_2022.png"
-            ),
+            nome_arquivo=("grafico_urbano_rural_terras_indigenas_2022.png"),
         )
 
     def plot_urbanizacao_fora_terras_indigenas(
@@ -1157,27 +987,18 @@ class PlotPerfilRegional:
 
         dados["Percentual Fora TI Urbano"] = (
             dados[coluna_fora_ti_urbano]
-            .div(
-                denominador.where(
-                    denominador.ne(0)
-                )
-            )
+            .div(denominador.where(denominador.ne(0)))
             .mul(100)
         )
 
         dados["Percentual Fora TI Rural"] = (
             dados[coluna_fora_ti_rural]
-            .div(
-                denominador.where(
-                    denominador.ne(0)
-                )
-            )
+            .div(denominador.where(denominador.ne(0)))
             .mul(100)
         )
 
         dados = (
-            dados
-            .dropna(
+            dados.dropna(
                 subset=[
                     "Percentual Fora TI Urbano",
                     "Percentual Fora TI Rural",
@@ -1191,13 +1012,10 @@ class PlotPerfilRegional:
         )
 
         if dados.empty:
-            raise ValueError(
-                "Não existem registros válidos para construir o gráfico."
-            )
+            raise ValueError("Não existem registros válidos para construir o gráfico.")
 
         soma_percentuais = (
-            dados["Percentual Fora TI Urbano"]
-            + dados["Percentual Fora TI Rural"]
+            dados["Percentual Fora TI Urbano"] + dados["Percentual Fora TI Rural"]
         )
 
         if not np.allclose(
@@ -1230,7 +1048,7 @@ class PlotPerfilRegional:
             label="Urbano",
         )
 
-        barras_rurais = ax.barh(
+        ax.barh(
             y_pos,
             dados["Percentual Fora TI Rural"],
             left=dados["Percentual Fora TI Urbano"],
@@ -1249,10 +1067,7 @@ class PlotPerfilRegional:
         ax.invert_yaxis()
 
         # Exibe apenas os percentuais urbanos.
-        for indice, barra_urbana in enumerate(
-            barras_urbanas
-        ):
-
+        for indice, barra_urbana in enumerate(barras_urbanas):
             percentual_urbano = float(
                 dados.loc[
                     indice,
@@ -1262,8 +1077,7 @@ class PlotPerfilRegional:
 
             ax.text(
                 percentual_urbano / 2,
-                barra_urbana.get_y()
-                + barra_urbana.get_height() / 2,
+                barra_urbana.get_y() + barra_urbana.get_height() / 2,
                 f"{self._formatar_percentual(percentual_urbano)}%",
                 ha="center",
                 va="center",
@@ -1313,9 +1127,7 @@ class PlotPerfilRegional:
             columnspacing=1.5,
         )
 
-        indice_maior_urbano = int(
-            dados["Percentual Fora TI Urbano"].idxmax()
-        )
+        indice_maior_urbano = int(dados["Percentual Fora TI Urbano"].idxmax())
 
         regiao_maior_urbano = str(
             dados.loc[
@@ -1331,9 +1143,7 @@ class PlotPerfilRegional:
             ]
         )
 
-        indice_maior_rural = int(
-            dados["Percentual Fora TI Rural"].idxmax()
-        )
+        indice_maior_rural = int(dados["Percentual Fora TI Rural"].idxmax())
 
         regiao_maior_rural = str(
             dados.loc[
@@ -1391,14 +1201,11 @@ class PlotPerfilRegional:
         self._adicionar_fonte(
             fig=fig,
             texto=(
-                "Fonte: IBGE — Censo Demográfico 2022. "
-                "Elaboração: Lucas Dias Noronha."
+                "Fonte: IBGE — Censo Demográfico 2022. Elaboração: Lucas Dias Noronha."
             ),
         )
 
         self._finalizar_grafico(
             fig=fig,
-            nome_arquivo=(
-                "grafico_urbano_rural_fora_terras_indigenas_2022.png"
-            ),
+            nome_arquivo=("grafico_urbano_rural_fora_terras_indigenas_2022.png"),
         )
