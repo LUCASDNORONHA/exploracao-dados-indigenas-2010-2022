@@ -50,6 +50,7 @@ dev = [
     "flake8",
     "ipykernel>=7.0.1",
     "isort",
+    "ruff>=0.16.2",
 ]
 
 
