@@ -1,71 +1,65 @@
+# Sistema utilizado para construir e instalar o projeto como pacote Python.
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
+
+# Metadados gerais do projeto.
 [project]
-name = "panorama_indigena_2010_2022_IBGE"
+name = "panorama-indigena-2010-2022-ibge"
 version = "0.1.2"
-description = "Análise exploratória e explicativa da população indígena brasileira (2010–2022), baseada nos Censos Demográficos do IBGE."
-authors = [
-  { name="Lucas Dias Noronha", email="lucasdiasnoronha1998@gmail.com" }
-]
+description = """
+Análise exploratória e explicativa da população indígena brasileira
+entre 2010 e 2022, baseada nos Censos Demográficos do IBGE.
+"""
 readme = "README.md"
-requires-python = ">=3.12.3"
-dependencies = [
-    "asttokens==3.0.0",
-    "comm==0.2.3",
-    "contourpy==1.3.3",
-    "cycler==0.12.1",
-    "debugpy==1.8.17",
-    "decorator==5.2.1",
-    "et_xmlfile==2.0.0",
-    "executing==2.2.1",
-    "fonttools==4.60.1",
-    "geopandas>=1.1.4",
-    "ipykernel==7.0.1",
-    "ipython==9.6.0",
-    "ipython_pygments_lexers==1.1.1",
-    "jedi==0.19.2",
-    "jupyter_client==8.6.3",
-    "jupyter_core==5.9.1",
-    "kiwisolver==1.4.9",
-    "matplotlib==3.10.7",
-    "matplotlib-inline==0.2.1",
-    "nest-asyncio==1.6.0",
-    "numpy==2.3.4",
-    "openpyxl==3.1.5",
-    "packaging==25.0",
-    "pandas==2.3.3",
-    "parso==0.8.5",
-    "pexpect==4.9.0",
-    "pillow==12.0.0",
-    "platformdirs==4.5.0",
-    "prompt_toolkit==3.0.52",
-    "psutil==7.1.2",
-    "ptyprocess==0.7.0",
-    "pure_eval==0.2.3",
-    "pyarrow>=25.0.0",
-    "Pygments==2.19.2",
-    "pyparsing==3.2.5",
-    "python-dateutil==2.9.0.post0",
-    "pytz==2025.2",
-    "pyzmq==27.1.0",
-    "seaborn==0.13.2",
-    "six==1.17.0",
-    "stack-data==0.6.3",
-    "tornado==6.5.2",
-    "traitlets==5.14.3",
-    "tzdata==2025.2",
-    "wcwidth==0.2.14",
+requires-python = ">=3.12"
+
+authors = [
+    { name = "Lucas Dias Noronha", email = "lucasdiasnoronha1998@gmail.com" },
 ]
 
 
+# Bibliotecas importadas diretamente nas análises e no processamento dos dados.
+#
+# As dependências transitivas, como Shapely, PyProj, Pyogrio, ContourPy
+# e Python Dateutil, serão resolvidas automaticamente pelo uv.lock.
+dependencies = [
+    # Manipulação e processamento de dados
+    "numpy>=2.3.4",
+    "pandas>=2.3.3",
+    "pyarrow>=25.0.0",
+
+    # Leitura e escrita de planilhas
+    "openpyxl>=3.1.5",
+
+    # Análise e visualização
+    "matplotlib>=3.10.7",
+    "seaborn>=0.13.2",
+
+    # Processamento e análise geoespacial
+    "geopandas>=1.1.4",
+]
+
+
+# Ferramentas necessárias para desenvolver e executar os notebooks,
+# mas que não constituem dependências funcionais da análise.
+[dependency-groups]
+dev = [
+    "black",
+    "flake8",
+    "ipykernel>=7.0.1",
+    "isort",
+]
+
+
+# Padronização automática do código.
 [tool.black]
 line-length = 88
+target-version = ["py312"]
 
-[tool.flake8]
-max-line-length = 88
-ignore = ["E203", "W503"]
 
+# Organização automática dos imports.
 [tool.isort]
 profile = "black"
+line_length = 88
