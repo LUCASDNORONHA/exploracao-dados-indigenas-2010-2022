@@ -1,5 +1,45 @@
-.git/
+# Ambientes virtuais
+.venv/
 venv/
-*.egg-info/
+.venv-pip-backup/
+
+
+# Variáveis de ambiente e configurações locais
+.env
+.env.*
+!.env.example
+
+
+# Cache e arquivos compilados do Python
 __pycache__/
 *.py[cod]
+*$py.class
+
+
+# Metadados de empacotamento
+*.egg-info/
+.eggs/
+build/
+dist/
+
+
+# Cache de ferramentas
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+
+# Arquivos temporários do Jupyter
+.ipynb_checkpoints/
+
+
+# Configurações locais de editores
+.vscode/
+.idea/
+
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
