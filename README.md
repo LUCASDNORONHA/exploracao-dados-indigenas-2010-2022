@@ -1,19 +1,8 @@
 <!-- Cabeçalho -->
-<br />
-<p align="center">
-  <a href="https://github.com/LUCASDNORONHA/exploracao-dados-indigenas-2010-2022">
-    <img src="assets/IESB_Logo.png" alt="Logo" width="150" height="150">
-  </a>
-</p>
 
 <h1 align="center">
 Panorama da População Indígena Brasileira (2010–2022)
 </h1>
-
-<p align="center">
-Análise exploratória e explicativa baseada nos Censos Demográficos de 2010 e 2022 do IBGE.
-</p>
-
 ---
 
 ## Sobre o Projeto
@@ -67,63 +56,6 @@ O projeto busca responder questões como:
 │   └── visualization/
 └── README.md
 ```
-
----
-
-# Estudos Desenvolvidos
-
-## 1. Pré-processamento dos Dados
-
-- Limpeza dos dados do Censo.
-- Padronização das variáveis.
-- Criação das bases nacionais, regionais e estaduais.
-- integração entre a malha territorial oficial do IBGE e a base demográfica.
-- Organização da estrutura utilizada nas análises posteriores.
-
----
-
-## 2. Análise Demográfica
-
-Investiga:
-
-- crescimento da população indígena;
-- distribuição urbano × rural;
-- população residente em Terras Indígenas;
-- população residente fora das Terras Indígenas.
-
----
-
-## 3. Análise Espacial
-
-Objetivos:
-
-- mapas coropléticos;
-- distribuição por estados;
-- distribuição por regiões;
-- crescimento absoluto;
-- crescimento percentual.
-
----
-
-## 4. Dashboard Interativo *(Em andamento)*
-
-Construção de um dashboard em Streamlit contendo:
-
-- KPIs;
-- filtros por estado e região;
-- mapas;
-- gráficos interativos.
-
----
-
-## 5. Análise Estatística *(planejada)*
-
-Exploração estatística da base por meio de:
-
-- estatística descritiva;
-- correlação;
-- análise de distribuições;
-- identificação de padrões.
 
 ---
 

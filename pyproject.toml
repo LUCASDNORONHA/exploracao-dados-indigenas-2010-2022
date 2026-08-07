@@ -3,11 +3,11 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "analise_dados"
-version = "0.1.0"
-description = "Projeto de análise exploratória de dados demográficos do CENSO 2022 sobre dados a distribuição da população indígena brasileira em nível nacional, regional e estadual, divido por área urbana e rural, e dentro ou fora de terras indígenas."
+name = "panorama_indigena_2010_2022_IBGE"
+version = "0.1.2"
+description = "Análise exploratória e explicativa da população indígena brasileira (2010–2022), baseada nos Censos Demográficos do IBGE."
 authors = [
-  { name="Lucas Dias Noronha", email="lucasdiasnoronha1@gmail.com" }
+  { name="Lucas Dias Noronha", email="lucasdiasnoronha1998@gmail.com" }
 ]
 readme = "README.md"
 requires-python = ">=3.12.3"
@@ -21,6 +21,7 @@ dependencies = [
     "et_xmlfile==2.0.0",
     "executing==2.2.1",
     "fonttools==4.60.1",
+    "geopandas>=1.1.4",
     "ipykernel==7.0.1",
     "ipython==9.6.0",
     "ipython_pygments_lexers==1.1.1",
@@ -43,6 +44,7 @@ dependencies = [
     "psutil==7.1.2",
     "ptyprocess==0.7.0",
     "pure_eval==0.2.3",
+    "pyarrow>=25.0.0",
     "Pygments==2.19.2",
     "pyparsing==3.2.5",
     "python-dateutil==2.9.0.post0",
@@ -54,7 +56,7 @@ dependencies = [
     "tornado==6.5.2",
     "traitlets==5.14.3",
     "tzdata==2025.2",
-    "wcwidth==0.2.14"
+    "wcwidth==0.2.14",
 ]
 
 
