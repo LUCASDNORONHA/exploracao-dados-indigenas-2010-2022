@@ -1,12 +1,11 @@
-
-
 <!-- Cabeçalho -->
 
 <img src="./assets/banner/panorama_capa.png" alt="Capa Panorama da População Indígena Brasileira" width="100%">
 
-<h1 align="center">
-Panorama da População Indígena Brasileira (2010–2022)
-</h1>
+<h2 align="center">
+<em>Uma investigação baseada em dados sobre a evolução espacial e demográfica da população indígena ao longo de 12 anos.</em>
+</h2>
+
 ---
 
 ## Sobre o Projeto
@@ -21,7 +20,7 @@ O projeto investiga a evolução da população indígena sob diferentes perspec
 
 A escolha deste tema decorre da relevância social e demográfica da população indígena brasileira, bem como da disponibilidade dos dados publicados pelo Censo Demográfico de 2022. A divulgação dessa nova base pelo IBGE oferece a oportunidade de investigar as transformações ocorridas ao longo de doze anos, permitindo analisar mudanças na distribuição espacial, na urbanização e na ocupação de Terras Indígenas. Além de sua importância para a formulação de políticas públicas, o conjunto de dados apresenta características adequadas para a aplicação de técnicas de análise exploratória, visualização de dados e data storytelling.
 
-...
+---
 
 # Objetivos
 
