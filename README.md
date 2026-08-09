@@ -6,8 +6,6 @@
 <em>Uma investigação baseada em dados sobre a evolução espacial e demográfica da população indígena ao longo de 12 anos.</em>
 </h2>
 
----
-
 ## Sobre o Projeto
 
 Este repositório reúne um conjunto de estudos sobre a população indígena brasileira a partir dos dados dos Censos Demográficos de **2010** e **2022**, publicados pelo **Instituto Brasileiro de Geografia e Estatística (IBGE)**.
