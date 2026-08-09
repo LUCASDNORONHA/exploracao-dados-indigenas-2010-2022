@@ -1,4 +1,8 @@
+
+
 <!-- Cabeçalho -->
+
+<img src="./assets/banner/panorama_capa.png" alt="Capa Panorama da População Indígena Brasileira" width="100%">
 
 <h1 align="center">
 Panorama da População Indígena Brasileira (2010–2022)
