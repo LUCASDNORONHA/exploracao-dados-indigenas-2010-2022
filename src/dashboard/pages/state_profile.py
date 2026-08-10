@@ -38,13 +38,15 @@ def render() -> None:
         for linha in opcoes.itertuples()
     }
 
-    st.sidebar.header("Filtros")
-    uf_id = st.sidebar.selectbox(
-        "Unidade da Federação",
-        options=list(rotulos),
-        format_func=rotulos.get,
-        key="perfil_estadual_uf",
-    )
+    st.subheader("Filtros")
+    coluna_filtro, _ = st.columns([1, 1], gap="large")
+    with coluna_filtro:
+        uf_id = st.selectbox(
+            "Unidade da Federação",
+            options=list(rotulos),
+            format_func=rotulos.get,
+            key="perfil_estadual_uf",
+        )
 
     indicadores = calcular_indicadores_uf(perfil, uf_id)
     composicao_domicilio = calcular_composicao_uf(fato, uf_id, "domicilio")

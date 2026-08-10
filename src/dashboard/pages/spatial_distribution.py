@@ -28,7 +28,7 @@ FILTROS_DOMICILIO = {
 
 
 def _selecionar_filtros() -> tuple[str, str, str, str]:
-    with st.sidebar:
+    with st.container():
         st.subheader("Filtros da distribuição espacial")
         indicador = st.selectbox(
             "Indicador",

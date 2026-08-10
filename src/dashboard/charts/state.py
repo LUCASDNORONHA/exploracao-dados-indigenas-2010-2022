@@ -100,7 +100,7 @@ def criar_composicao_uf(
     aplicar_layout_padrao(figura, titulo, altura=350)
     figura.update_layout(
         barmode="stack",
-        legend={"orientation": "h", "y": 1.02, "x": 0},
+        legend={"orientation": "h", "y": 1.10, "x": 0},
         uniformtext={"minsize": 10, "mode": "hide"},
     )
     figura.update_xaxes(

@@ -47,12 +47,7 @@ FILTROS_DOMICILIO = {
 }
 
 
-def _contexto_filtros(
-    rotulo_localizacao: str,
-    rotulo_domicilio: str,
-) -> str:
-    """Constrói uma descrição legível do recorte selecionado."""
-
+def _contexto_filtros(rotulo_localizacao: str, rotulo_domicilio: str) -> str:
     localizacao = {
         "Todas as localizações": "",
         "Em Terras Indígenas": "em Terras Indígenas",
@@ -64,72 +59,45 @@ def _contexto_filtros(
         "Rural": "em domicílios rurais",
     }[rotulo_domicilio]
     complementos = " e ".join(trecho for trecho in [localizacao, domicilio] if trecho)
-
     return complementos or "no Brasil"
 
 
-def _titulo_principal(
-    indicadores: IndicadoresVisaoGeral,
-    contexto: str,
-) -> str:
-    """Produz um título factual que acompanha a seleção atual."""
-
+def _titulo_principal(indicadores: IndicadoresVisaoGeral, contexto: str) -> str:
     variacao = indicadores.crescimento_relativo
-
     if variacao is None:
         return f"A população indígena {contexto} não possui base comparável"
-
     verbo = "cresceu" if variacao >= 0 else "diminuiu"
-
     return (
         f"A população indígena {contexto} {verbo} "
         f"{formatar_percentual(abs(variacao))} entre os Censos"
     )
 
 
-def _titulo_variacao(
-    variacao: float,
-    indicador: str,
-) -> str:
-    """Transforma uma diferença proporcional em título analítico."""
-
+def _titulo_variacao(variacao: float, indicador: str) -> str:
     if variacao > 0:
         movimento = "aumentou"
     elif variacao < 0:
         movimento = "diminuiu"
     else:
         return f"{indicador} permaneceu estável"
-
     return f"{indicador} {movimento} " f"{formatar_pontos_percentuais(variacao)}"
 
 
-def _variacao_categoria(
-    composicao: pd.DataFrame,
-    categoria: str,
-) -> float:
-    """Obtém a mudança 2010–2022 de uma categoria da composição."""
-
+def _variacao_categoria(composicao: pd.DataFrame, categoria: str) -> float:
     valores = (
         composicao.loc[composicao["categoria"] == categoria]
         .set_index("ano")["proporcao"]
         .reindex([2010, 2022], fill_value=0)
     )
-
     return float(valores.loc[2022] - valores.loc[2010])
 
 
 def _renderizar_kpis(indicadores: IndicadoresVisaoGeral) -> None:
-    """Apresenta os quatro indicadores centrais em cartões."""
-
     colunas = st.columns(4)
-
     colunas[0].metric(
         "População indígena em 2022",
         formatar_inteiro(indicadores.populacao_2022),
-        delta=formatar_percentual(
-            indicadores.crescimento_relativo,
-            sinal=True,
-        ),
+        delta=formatar_percentual(indicadores.crescimento_relativo, sinal=True),
         delta_description="Variação relativa em comparação com 2010.",
         help="O total respeita os dois filtros selecionados.",
         border=True,
@@ -143,60 +111,51 @@ def _renderizar_kpis(indicadores: IndicadoresVisaoGeral) -> None:
     colunas[2].metric(
         "Parcela urbana em 2022",
         formatar_percentual(indicadores.proporcao_urbana_2022),
-        help=(
-            "Mantém Urbana e Rural no denominador e respeita o filtro "
-            "de localização territorial."
-        ),
+        help="Mantém Urbana e Rural no denominador e respeita o filtro de localização territorial.",
         border=True,
     )
     colunas[3].metric(
         "Parcela em TI em 2022",
         formatar_percentual(indicadores.proporcao_ti_2022),
-        help=(
-            "Mantém TI e Fora de TI no denominador e respeita o filtro "
-            "de situação do domicílio."
-        ),
+        help="Mantém TI e Fora de TI no denominador e respeita o filtro de situação do domicílio.",
         border=True,
     )
 
 
 def _selecionar_filtros() -> tuple[str, str]:
-    """Renderiza e devolve os filtros da página."""
+    """Renderiza os filtros permanentemente na área principal."""
 
-    with st.sidebar:
-        st.subheader("Filtros da visão geral")
+    st.subheader("Filtros")
+    coluna_localizacao, coluna_domicilio = st.columns(2, gap="large")
+
+    with coluna_localizacao:
         localizacao = st.selectbox(
             "Localização territorial",
             options=list(FILTROS_LOCALIZACAO),
             key="filtro_localizacao_visao_geral",
             help="Seleciona a população em TI, fora de TI ou ambas.",
         )
+
+    with coluna_domicilio:
         domicilio = st.selectbox(
             "Situação do domicílio",
             options=list(FILTROS_DOMICILIO),
             key="filtro_domicilio_visao_geral",
             help="Seleciona domicílios urbanos, rurais ou ambos.",
         )
-        st.caption(
-            "Os totais cruzam ambos os filtros. Cada composição preserva "
-            "as duas categorias da dimensão que está sendo comparada."
-        )
 
+    st.caption(
+        "Os totais cruzam ambos os filtros. Cada composição preserva "
+        "as duas categorias da dimensão que está sendo comparada."
+    )
     return str(localizacao), str(domicilio)
 
 
-def _ids_filtro(
-    rotulo: str,
-    opcoes: dict[str, tuple[int, ...]],
-) -> Iterable[int]:
-    """Resolve um rótulo de interface para as chaves da dimensão."""
-
+def _ids_filtro(rotulo: str, opcoes: dict[str, tuple[int, ...]]) -> Iterable[int]:
     return opcoes[rotulo]
 
 
 def render() -> None:
-    """Renderiza a síntese nacional e suas interações."""
-
     try:
         dados = obter_dados_dashboard()
     except (FileNotFoundError, TypeError, ValueError) as erro:
@@ -210,20 +169,12 @@ def render() -> None:
         st.stop()
 
     rotulo_localizacao, rotulo_domicilio = _selecionar_filtros()
-    localizacao_ids = _ids_filtro(
-        rotulo_localizacao,
-        FILTROS_LOCALIZACAO,
-    )
-    domicilio_ids = _ids_filtro(
-        rotulo_domicilio,
-        FILTROS_DOMICILIO,
-    )
+    localizacao_ids = _ids_filtro(rotulo_localizacao, FILTROS_LOCALIZACAO)
+    domicilio_ids = _ids_filtro(rotulo_domicilio, FILTROS_DOMICILIO)
 
     fato = dados.fact_population
     indicadores = calcular_indicadores_visao_geral(
-        fato,
-        localizacao_ids,
-        domicilio_ids,
+        fato, localizacao_ids, domicilio_ids
     )
     contexto = _contexto_filtros(rotulo_localizacao, rotulo_domicilio)
 
@@ -236,61 +187,47 @@ def render() -> None:
 
     fato_filtrado = filtrar_fato(fato, localizacao_ids, domicilio_ids)
     serie = serie_populacao_por_ano(fato_filtrado)
-    figura_evolucao = criar_grafico_evolucao(
-        serie,
-        "Dois retratos censitários mostram a dimensão da mudança",
-    )
     st.plotly_chart(
-        figura_evolucao,
+        criar_grafico_evolucao(
+            serie, "Dois retratos censitários mostram a dimensão da mudança"
+        ),
         theme=None,
         config=CONFIGURACAO_PLOTLY,
         key="evolucao_visao_geral",
     )
 
-    composicao_domiciliar = composicao_domiciliar_por_ano(
-        fato,
-        localizacao_ids,
-    )
-    composicao_territorial = composicao_territorial_por_ano(
-        fato,
-        domicilio_ids,
-    )
+    composicao_domiciliar = composicao_domiciliar_por_ano(fato, localizacao_ids)
+    composicao_territorial = composicao_territorial_por_ano(fato, domicilio_ids)
     variacao_urbana = _variacao_categoria(composicao_domiciliar, "Urbana")
     variacao_ti = _variacao_categoria(composicao_territorial, "Em TI")
 
     coluna_domicilio, coluna_territorio = st.columns(2)
-
     with coluna_domicilio:
-        figura_domicilio = criar_grafico_composicao(
-            composicao_domiciliar,
-            _titulo_variacao(variacao_urbana, "A parcela urbana"),
-            cores={"Urbana": AZUL_ESCURO, "Rural": AZUL_CLARO},
-        )
         st.plotly_chart(
-            figura_domicilio,
+            criar_grafico_composicao(
+                composicao_domiciliar,
+                _titulo_variacao(variacao_urbana, "A parcela urbana"),
+                cores={"Urbana": AZUL_ESCURO, "Rural": AZUL_CLARO},
+            ),
             theme=None,
             config=CONFIGURACAO_PLOTLY,
             key="composicao_domiciliar_visao_geral",
         )
         st.caption(
-            "Composição urbana-rural dentro da localização territorial " "selecionada."
+            "Composição urbana-rural dentro da localização territorial selecionada."
         )
 
     with coluna_territorio:
-        figura_territorio = criar_grafico_composicao(
-            composicao_territorial,
-            _titulo_variacao(variacao_ti, "A parcela em TI"),
-            cores={
-                "Em TI": AZUL_ESCURO,
-                "Fora de TI": AZUL_INTERMEDIARIO,
-            },
-        )
         st.plotly_chart(
-            figura_territorio,
+            criar_grafico_composicao(
+                composicao_territorial,
+                _titulo_variacao(variacao_ti, "A parcela em TI"),
+                cores={"Em TI": AZUL_ESCURO, "Fora de TI": AZUL_INTERMEDIARIO},
+            ),
             theme=None,
             config=CONFIGURACAO_PLOTLY,
             key="composicao_territorial_visao_geral",
         )
         st.caption(
-            "Composição TI–fora de TI dentro da situação do domicílio " "selecionada."
+            "Composição TI–fora de TI dentro da situação do domicílio selecionada."
         )
