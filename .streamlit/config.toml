@@ -1,0 +1,18 @@
+[theme]
+base = "light"
+primaryColor = "#39708E"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F3F7F9"
+textColor = "#263238"
+font = "sans serif"
+chartCategoricalColors = [
+    "#173F5F",
+    "#39708E",
+    "#8FB7CF",
+    "#DCEAF2",
+    "#607D8B",
+    "#B5483A",
+]
+
+[browser]
+gatherUsageStats = false
