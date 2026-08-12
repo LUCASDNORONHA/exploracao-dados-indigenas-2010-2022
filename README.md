@@ -156,9 +156,8 @@ exploracao-dados-indigenas-2010-2022/
 │
 ├── outputs/
 │   ├── figures/
-│   │   ├── charts/
-│   │   └── maps/
-│   └── tables/
+│       ├── charts/
+│       └── maps/   
 │
 ├── src/
 │   ├── dashboard/
