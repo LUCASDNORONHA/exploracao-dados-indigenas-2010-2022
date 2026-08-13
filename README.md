@@ -1,6 +1,6 @@
 <!-- Cabeçalho -->
 
-<img src="./assets/logo/banner/panorama-indigena.png" alt="Capa Panorama da População Indígena Brasileira" width="100%">
+<img src="./assets/banner/panorama-indigena.png" alt="Capa Panorama da População Indígena Brasileira" width="100%">
 
 <h2 align="center">
 <em>Uma investigação baseada em dados sobre a evolução espacial e demográfica da população indígena ao longo de 12 anos.</em>
