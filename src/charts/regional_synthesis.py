@@ -474,7 +474,7 @@ class PainelSinteseRegional:
             1.02,
             (
                 "Dentro de terras Indígenas, residência rural; fora delas,\n"
-                "residência urbana — um padrão que se repete em todo Brasil."
+                "residência urbana — um padrão que se repete em todo Brasil"
             ),
             ha="left",
             va="top",
