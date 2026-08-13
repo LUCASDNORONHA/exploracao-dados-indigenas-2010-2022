@@ -1,0 +1,8 @@
+Ordem da relação,Relação,Variável X,Variável Y,N,Ausentes pareados,Spearman (ρ),Magnitude absoluta (|ρ|),Direção
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,27,0,0.967032967032967,0.967032967032967,Positiva
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),27,0,-0.235042735042735,0.235042735042735,Negativa
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),27,0,0.36910395789521805,0.36910395789521805,Positiva
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),27,0,0.3345543345543345,0.3345543345543345,Positiva
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),27,0,-0.3141505150324065,0.3141505150324065,Negativa
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),27,0,-0.8319340655620092,0.8319340655620092,Negativa
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),25,2,-0.17563956155469798,0.17563956155469798,Negativa

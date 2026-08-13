@@ -1,0 +1,1166 @@
+K,Procedimento,Repetição ou elemento,N UFs comparadas,ARI
+2,Reinicialização,1,27,0.07879985743446846
+2,Reinicialização,10,27,1.0
+2,Reinicialização,100,27,1.0
+2,Reinicialização,11,27,-0.034928555227942845
+2,Reinicialização,12,27,0.20245398773006135
+2,Reinicialização,13,27,-0.034928555227942845
+2,Reinicialização,14,27,-0.0017838030681412772
+2,Reinicialização,15,27,1.0
+2,Reinicialização,16,27,-0.034928555227942845
+2,Reinicialização,17,27,0.07766423357664233
+2,Reinicialização,18,27,1.0
+2,Reinicialização,19,27,1.0
+2,Reinicialização,2,27,0.5897002954833263
+2,Reinicialização,20,27,0.20245398773006135
+2,Reinicialização,21,27,0.3732142857142857
+2,Reinicialização,22,27,1.0
+2,Reinicialização,23,27,1.0
+2,Reinicialização,24,27,-0.034928555227942845
+2,Reinicialização,25,27,1.0
+2,Reinicialização,26,27,1.0
+2,Reinicialização,27,27,-0.0017838030681412772
+2,Reinicialização,28,27,0.5897002954833263
+2,Reinicialização,29,27,1.0
+2,Reinicialização,3,27,-0.034928555227942845
+2,Reinicialização,30,27,0.07879985743446846
+2,Reinicialização,31,27,-0.034928555227942845
+2,Reinicialização,32,27,0.07879985743446846
+2,Reinicialização,33,27,1.0
+2,Reinicialização,34,27,-0.0020437956204379564
+2,Reinicialização,35,27,0.1353558926487748
+2,Reinicialização,36,27,1.0
+2,Reinicialização,37,27,1.0
+2,Reinicialização,38,27,0.07879985743446846
+2,Reinicialização,39,27,1.0
+2,Reinicialização,4,27,1.0
+2,Reinicialização,40,27,1.0
+2,Reinicialização,41,27,-0.0017838030681412772
+2,Reinicialização,42,27,0.8518410286382233
+2,Reinicialização,43,27,1.0
+2,Reinicialização,44,27,0.5897002954833263
+2,Reinicialização,45,27,-0.034928555227942845
+2,Reinicialização,46,27,0.8518410286382233
+2,Reinicialização,47,27,0.07879985743446846
+2,Reinicialização,48,27,0.07879985743446846
+2,Reinicialização,49,27,1.0
+2,Reinicialização,5,27,0.20245398773006135
+2,Reinicialização,50,27,0.03189694334479849
+2,Reinicialização,51,27,0.20245398773006135
+2,Reinicialização,52,27,0.20245398773006135
+2,Reinicialização,53,27,1.0
+2,Reinicialização,54,27,1.0
+2,Reinicialização,55,27,1.0
+2,Reinicialização,56,27,0.07879985743446846
+2,Reinicialização,57,27,0.8518410286382233
+2,Reinicialização,58,27,1.0
+2,Reinicialização,59,27,1.0
+2,Reinicialização,6,27,0.5897002954833263
+2,Reinicialização,60,27,-0.034928555227942845
+2,Reinicialização,61,27,0.5897002954833263
+2,Reinicialização,62,27,-0.034928555227942845
+2,Reinicialização,63,27,0.3732142857142857
+2,Reinicialização,64,27,-0.034928555227942845
+2,Reinicialização,65,27,1.0
+2,Reinicialização,66,27,0.8518410286382233
+2,Reinicialização,67,27,-0.0017838030681412772
+2,Reinicialização,68,27,0.03189694334479849
+2,Reinicialização,69,27,0.3732142857142857
+2,Reinicialização,7,27,1.0
+2,Reinicialização,70,27,-0.034928555227942845
+2,Reinicialização,71,27,0.07879985743446846
+2,Reinicialização,72,27,1.0
+2,Reinicialização,73,27,1.0
+2,Reinicialização,74,27,0.8518410286382233
+2,Reinicialização,75,27,0.07879985743446846
+2,Reinicialização,76,27,1.0
+2,Reinicialização,77,27,1.0
+2,Reinicialização,78,27,-0.034928555227942845
+2,Reinicialização,79,27,0.5897002954833263
+2,Reinicialização,8,27,1.0
+2,Reinicialização,80,27,1.0
+2,Reinicialização,81,27,1.0
+2,Reinicialização,82,27,1.0
+2,Reinicialização,83,27,-0.034928555227942845
+2,Reinicialização,84,27,1.0
+2,Reinicialização,85,27,-0.034928555227942845
+2,Reinicialização,86,27,1.0
+2,Reinicialização,87,27,1.0
+2,Reinicialização,88,27,-0.0017838030681412772
+2,Reinicialização,89,27,0.07879985743446846
+2,Reinicialização,9,27,0.07879985743446846
+2,Reinicialização,90,27,1.0
+2,Reinicialização,91,27,0.07879985743446846
+2,Reinicialização,92,27,-0.034928555227942845
+2,Reinicialização,93,27,0.20245398773006135
+2,Reinicialização,94,27,0.5897002954833263
+2,Reinicialização,95,27,1.0
+2,Reinicialização,96,27,0.20245398773006135
+2,Reinicialização,97,27,0.3732142857142857
+2,Reinicialização,98,27,1.0
+2,Reinicialização,99,27,0.5897002954833263
+2,Retirada de UF,Acre,26,1.0
+2,Retirada de UF,Alagoas,26,0.5751633986928104
+2,Retirada de UF,Amapá,26,0.8460736951785545
+2,Retirada de UF,Amazonas,26,1.0
+2,Retirada de UF,Bahia,26,1.0
+2,Retirada de UF,Ceará,26,0.8461902508282063
+2,Retirada de UF,Distrito Federal,26,1.0
+2,Retirada de UF,Espírito Santo,26,1.0
+2,Retirada de UF,Goiás,26,0.5756457564575646
+2,Retirada de UF,Maranhão,26,1.0
+2,Retirada de UF,Mato Grosso,26,1.0
+2,Retirada de UF,Mato Grosso do Sul,26,1.0
+2,Retirada de UF,Minas Gerais,26,1.0
+2,Retirada de UF,Paraná,26,1.0
+2,Retirada de UF,Paraíba,26,0.8460736951785545
+2,Retirada de UF,Pará,26,1.0
+2,Retirada de UF,Pernambuco,26,1.0
+2,Retirada de UF,Piauí,26,0.5756457564575646
+2,Retirada de UF,Rio Grande do Norte,26,0.5756457564575646
+2,Retirada de UF,Rio Grande do Sul,26,0.8460736951785545
+2,Retirada de UF,Rio de Janeiro,26,1.0
+2,Retirada de UF,Rondônia,26,0.5751633986928104
+2,Retirada de UF,Roraima,26,1.0
+2,Retirada de UF,Santa Catarina,26,1.0
+2,Retirada de UF,Sergipe,26,1.0
+2,Retirada de UF,São Paulo,26,1.0
+2,Retirada de UF,Tocantins,26,1.0
+2,Retirada de variável,Crescimento logarítmico,27,1.0
+2,Retirada de variável,Mudança na presença em TI (p.p.),27,0.5899000389458653
+2,Retirada de variável,Mudança na urbanização (p.p.),27,0.5897136177673875
+2,Retirada de variável,População 2022 (log10),27,1.0
+2,Retirada de variável,Presença em TI 2022 (%),27,0.3732142857142857
+2,Retirada de variável,Urbanização 2022 (%),27,0.20245398773006135
+2,Subamostra de 80%,1,27,1.0
+2,Subamostra de 80%,10,27,0.20245398773006135
+2,Subamostra de 80%,100,27,0.13398045644904716
+2,Subamostra de 80%,11,27,0.13482307916842345
+2,Subamostra de 80%,12,27,1.0
+2,Subamostra de 80%,13,27,0.20245398773006135
+2,Subamostra de 80%,14,27,0.5897002954833263
+2,Subamostra de 80%,15,27,0.5897002954833263
+2,Subamostra de 80%,16,27,0.20245398773006135
+2,Subamostra de 80%,17,27,0.5897002954833263
+2,Subamostra de 80%,18,27,1.0
+2,Subamostra de 80%,19,27,1.0
+2,Subamostra de 80%,2,27,0.5897002954833263
+2,Subamostra de 80%,20,27,0.13482307916842345
+2,Subamostra de 80%,21,27,0.5897002954833263
+2,Subamostra de 80%,22,27,0.5897002954833263
+2,Subamostra de 80%,23,27,-0.034928555227942845
+2,Subamostra de 80%,24,27,1.0
+2,Subamostra de 80%,25,27,0.7151621384750219
+2,Subamostra de 80%,26,27,1.0
+2,Subamostra de 80%,27,27,0.7150696496411988
+2,Subamostra de 80%,28,27,0.8518650780768107
+2,Subamostra de 80%,29,27,0.8518650780768107
+2,Subamostra de 80%,3,27,1.0
+2,Subamostra de 80%,30,27,0.8518650780768107
+2,Subamostra de 80%,31,27,1.0
+2,Subamostra de 80%,32,27,0.3732142857142857
+2,Subamostra de 80%,33,27,1.0
+2,Subamostra de 80%,34,27,0.20245398773006135
+2,Subamostra de 80%,35,27,1.0
+2,Subamostra de 80%,36,27,1.0
+2,Subamostra de 80%,37,27,0.20245398773006135
+2,Subamostra de 80%,38,27,1.0
+2,Subamostra de 80%,39,27,0.5897002954833263
+2,Subamostra de 80%,4,27,1.0
+2,Subamostra de 80%,40,27,1.0
+2,Subamostra de 80%,41,27,0.20245398773006135
+2,Subamostra de 80%,42,27,1.0
+2,Subamostra de 80%,43,27,1.0
+2,Subamostra de 80%,44,27,0.5897002954833263
+2,Subamostra de 80%,45,27,-0.034928555227942845
+2,Subamostra de 80%,46,27,0.13482307916842345
+2,Subamostra de 80%,47,27,0.3732142857142857
+2,Subamostra de 80%,48,27,1.0
+2,Subamostra de 80%,49,27,0.07766423357664233
+2,Subamostra de 80%,5,27,0.13482307916842345
+2,Subamostra de 80%,50,27,0.5897002954833263
+2,Subamostra de 80%,51,27,1.0
+2,Subamostra de 80%,52,27,1.0
+2,Subamostra de 80%,53,27,0.20245398773006135
+2,Subamostra de 80%,54,27,0.20245398773006135
+2,Subamostra de 80%,55,27,1.0
+2,Subamostra de 80%,56,27,0.07879985743446846
+2,Subamostra de 80%,57,27,1.0
+2,Subamostra de 80%,58,27,0.5897002954833263
+2,Subamostra de 80%,59,27,1.0
+2,Subamostra de 80%,6,27,1.0
+2,Subamostra de 80%,60,27,1.0
+2,Subamostra de 80%,61,27,0.5897002954833263
+2,Subamostra de 80%,62,27,1.0
+2,Subamostra de 80%,63,27,-0.034928555227942845
+2,Subamostra de 80%,64,27,0.8518410286382233
+2,Subamostra de 80%,65,27,1.0
+2,Subamostra de 80%,66,27,-0.0017838030681412772
+2,Subamostra de 80%,67,27,0.5897002954833263
+2,Subamostra de 80%,68,27,1.0
+2,Subamostra de 80%,69,27,1.0
+2,Subamostra de 80%,7,27,-0.034928555227942845
+2,Subamostra de 80%,70,27,1.0
+2,Subamostra de 80%,71,27,-0.034928555227942845
+2,Subamostra de 80%,72,27,1.0
+2,Subamostra de 80%,73,27,0.07879985743446846
+2,Subamostra de 80%,74,27,0.8518410286382233
+2,Subamostra de 80%,75,27,1.0
+2,Subamostra de 80%,76,27,0.7151621384750219
+2,Subamostra de 80%,77,27,0.7150696496411988
+2,Subamostra de 80%,78,27,-0.0352975495915986
+2,Subamostra de 80%,79,27,1.0
+2,Subamostra de 80%,8,27,0.8518410286382233
+2,Subamostra de 80%,80,27,0.5897002954833263
+2,Subamostra de 80%,81,27,1.0
+2,Subamostra de 80%,82,27,1.0
+2,Subamostra de 80%,83,27,1.0
+2,Subamostra de 80%,84,27,1.0
+2,Subamostra de 80%,85,27,-0.034928555227942845
+2,Subamostra de 80%,86,27,0.5897002954833263
+2,Subamostra de 80%,87,27,-0.024252642500486348
+2,Subamostra de 80%,88,27,1.0
+2,Subamostra de 80%,89,27,-0.024252642500486348
+2,Subamostra de 80%,9,27,1.0
+2,Subamostra de 80%,90,27,0.7150696496411988
+2,Subamostra de 80%,91,27,1.0
+2,Subamostra de 80%,92,27,0.8518650780768107
+2,Subamostra de 80%,93,27,-0.034928555227942845
+2,Subamostra de 80%,94,27,0.8518650780768107
+2,Subamostra de 80%,95,27,1.0
+2,Subamostra de 80%,96,27,0.5897136177673875
+2,Subamostra de 80%,97,27,0.8518650780768107
+2,Subamostra de 80%,98,27,0.5897002954833263
+2,Subamostra de 80%,99,27,1.0
+3,Reinicialização,1,27,0.2711615976548186
+3,Reinicialização,10,27,0.3985566942366626
+3,Reinicialização,100,27,1.0
+3,Reinicialização,11,27,1.0
+3,Reinicialização,12,27,0.13253369361057107
+3,Reinicialização,13,27,1.0
+3,Reinicialização,14,27,1.0
+3,Reinicialização,15,27,0.5266511580863761
+3,Reinicialização,16,27,1.0
+3,Reinicialização,17,27,0.16257266709230822
+3,Reinicialização,18,27,0.6933364696394368
+3,Reinicialização,19,27,0.3234727227017514
+3,Reinicialização,2,27,1.0
+3,Reinicialização,20,27,0.476146364057434
+3,Reinicialização,21,27,0.20709587402830376
+3,Reinicialização,22,27,0.3985566942366626
+3,Reinicialização,23,27,0.13253369361057107
+3,Reinicialização,24,27,1.0
+3,Reinicialização,25,27,0.3234727227017514
+3,Reinicialização,26,27,0.3234727227017514
+3,Reinicialização,27,27,1.0
+3,Reinicialização,28,27,1.0
+3,Reinicialização,29,27,0.476146364057434
+3,Reinicialização,3,27,0.2711615976548186
+3,Reinicialização,30,27,0.3985566942366626
+3,Reinicialização,31,27,1.0
+3,Reinicialização,32,27,1.0
+3,Reinicialização,33,27,0.8826322477094898
+3,Reinicialização,34,27,1.0
+3,Reinicialização,35,27,0.314495628991258
+3,Reinicialização,36,27,1.0
+3,Reinicialização,37,27,0.3985566942366626
+3,Reinicialização,38,27,0.13253369361057107
+3,Reinicialização,39,27,0.3234727227017514
+3,Reinicialização,4,27,0.3985566942366626
+3,Reinicialização,40,27,0.35672832173765484
+3,Reinicialização,41,27,0.3342761122017769
+3,Reinicialização,42,27,1.0
+3,Reinicialização,43,27,1.0
+3,Reinicialização,44,27,0.13253369361057107
+3,Reinicialização,45,27,0.6933364696394368
+3,Reinicialização,46,27,1.0
+3,Reinicialização,47,27,1.0
+3,Reinicialização,48,27,0.3342761122017769
+3,Reinicialização,49,27,0.476146364057434
+3,Reinicialização,5,27,0.2711615976548186
+3,Reinicialização,50,27,0.8826322477094898
+3,Reinicialização,51,27,0.13253369361057107
+3,Reinicialização,52,27,0.13253369361057107
+3,Reinicialização,53,27,0.3342761122017769
+3,Reinicialização,54,27,1.0
+3,Reinicialização,55,27,1.0
+3,Reinicialização,56,27,0.1666889587373771
+3,Reinicialização,57,27,0.3342761122017769
+3,Reinicialização,58,27,0.3985566942366626
+3,Reinicialização,59,27,1.0
+3,Reinicialização,6,27,1.0
+3,Reinicialização,60,27,0.5266511580863761
+3,Reinicialização,61,27,0.3342761122017769
+3,Reinicialização,62,27,0.2711615976548186
+3,Reinicialização,63,27,0.20709587402830376
+3,Reinicialização,64,27,0.3711852154508596
+3,Reinicialização,65,27,0.5266511580863761
+3,Reinicialização,66,27,0.3342761122017769
+3,Reinicialização,67,27,1.0
+3,Reinicialização,68,27,0.3711852154508596
+3,Reinicialização,69,27,1.0
+3,Reinicialização,7,27,0.3342761122017769
+3,Reinicialização,70,27,1.0
+3,Reinicialização,71,27,0.3342761122017769
+3,Reinicialização,72,27,0.16257266709230822
+3,Reinicialização,73,27,0.3342761122017769
+3,Reinicialização,74,27,1.0
+3,Reinicialização,75,27,0.13253369361057107
+3,Reinicialização,76,27,0.6933364696394368
+3,Reinicialização,77,27,1.0
+3,Reinicialização,78,27,1.0
+3,Reinicialização,79,27,0.5266511580863761
+3,Reinicialização,8,27,0.3342761122017769
+3,Reinicialização,80,27,0.21768202080237742
+3,Reinicialização,81,27,0.3985566942366626
+3,Reinicialização,82,27,0.3985566942366626
+3,Reinicialização,83,27,0.2711615976548186
+3,Reinicialização,84,27,0.3985566942366626
+3,Reinicialização,85,27,1.0
+3,Reinicialização,86,27,0.3985566942366626
+3,Reinicialização,87,27,0.16257266709230822
+3,Reinicialização,88,27,1.0
+3,Reinicialização,89,27,0.6933364696394368
+3,Reinicialização,9,27,0.13253369361057107
+3,Reinicialização,90,27,1.0
+3,Reinicialização,91,27,0.3711852154508596
+3,Reinicialização,92,27,0.2711615976548186
+3,Reinicialização,93,27,0.16257266709230822
+3,Reinicialização,94,27,0.20709587402830376
+3,Reinicialização,95,27,0.3234727227017514
+3,Reinicialização,96,27,1.0
+3,Reinicialização,97,27,0.20709587402830376
+3,Reinicialização,98,27,1.0
+3,Reinicialização,99,27,0.21768202080237742
+3,Retirada de UF,Acre,26,1.0
+3,Retirada de UF,Alagoas,26,1.0
+3,Retirada de UF,Amapá,26,1.0
+3,Retirada de UF,Amazonas,26,0.357177148343735
+3,Retirada de UF,Bahia,26,1.0
+3,Retirada de UF,Ceará,26,1.0
+3,Retirada de UF,Distrito Federal,26,1.0
+3,Retirada de UF,Espírito Santo,26,1.0
+3,Retirada de UF,Goiás,26,1.0
+3,Retirada de UF,Maranhão,26,1.0
+3,Retirada de UF,Mato Grosso,26,1.0
+3,Retirada de UF,Mato Grosso do Sul,26,1.0
+3,Retirada de UF,Minas Gerais,26,1.0
+3,Retirada de UF,Paraná,26,1.0
+3,Retirada de UF,Paraíba,26,1.0
+3,Retirada de UF,Pará,26,1.0
+3,Retirada de UF,Pernambuco,26,1.0
+3,Retirada de UF,Piauí,26,1.0
+3,Retirada de UF,Rio Grande do Norte,26,1.0
+3,Retirada de UF,Rio Grande do Sul,26,1.0
+3,Retirada de UF,Rio de Janeiro,26,0.8569624370921755
+3,Retirada de UF,Rondônia,26,0.8544558889386475
+3,Retirada de UF,Roraima,26,1.0
+3,Retirada de UF,Santa Catarina,26,1.0
+3,Retirada de UF,Sergipe,26,1.0
+3,Retirada de UF,São Paulo,26,1.0
+3,Retirada de UF,Tocantins,26,1.0
+3,Retirada de variável,Crescimento logarítmico,27,1.0
+3,Retirada de variável,Mudança na presença em TI (p.p.),27,0.8612053909776913
+3,Retirada de variável,Mudança na urbanização (p.p.),27,1.0
+3,Retirada de variável,População 2022 (log10),27,0.3234727227017514
+3,Retirada de variável,Presença em TI 2022 (%),27,1.0
+3,Retirada de variável,Urbanização 2022 (%),27,0.13253369361057107
+3,Subamostra de 80%,1,27,0.3342761122017769
+3,Subamostra de 80%,10,27,0.860075742475583
+3,Subamostra de 80%,100,27,1.0
+3,Subamostra de 80%,11,27,0.3342761122017769
+3,Subamostra de 80%,12,27,1.0
+3,Subamostra de 80%,13,27,0.13253369361057107
+3,Subamostra de 80%,14,27,1.0
+3,Subamostra de 80%,15,27,0.8612053909776913
+3,Subamostra de 80%,16,27,0.775003698164067
+3,Subamostra de 80%,17,27,1.0
+3,Subamostra de 80%,18,27,0.7430539380427911
+3,Subamostra de 80%,19,27,0.2711615976548186
+3,Subamostra de 80%,2,27,0.3234727227017514
+3,Subamostra de 80%,20,27,1.0
+3,Subamostra de 80%,21,27,1.0
+3,Subamostra de 80%,22,27,1.0
+3,Subamostra de 80%,23,27,0.7356841174737255
+3,Subamostra de 80%,24,27,0.31427152317880797
+3,Subamostra de 80%,25,27,1.0
+3,Subamostra de 80%,26,27,0.3985566942366626
+3,Subamostra de 80%,27,27,0.860075742475583
+3,Subamostra de 80%,28,27,1.0
+3,Subamostra de 80%,29,27,1.0
+3,Subamostra de 80%,3,27,0.7667929041259717
+3,Subamostra de 80%,30,27,0.13995226730310262
+3,Subamostra de 80%,31,27,1.0
+3,Subamostra de 80%,32,27,1.0
+3,Subamostra de 80%,33,27,0.860075742475583
+3,Subamostra de 80%,34,27,0.860075742475583
+3,Subamostra de 80%,35,27,1.0
+3,Subamostra de 80%,36,27,1.0
+3,Subamostra de 80%,37,27,0.8612053909776913
+3,Subamostra de 80%,38,27,0.860075742475583
+3,Subamostra de 80%,39,27,0.3342761122017769
+3,Subamostra de 80%,4,27,1.0
+3,Subamostra de 80%,40,27,1.0
+3,Subamostra de 80%,41,27,0.8612053909776913
+3,Subamostra de 80%,42,27,1.0
+3,Subamostra de 80%,43,27,0.6183148251886512
+3,Subamostra de 80%,44,27,1.0
+3,Subamostra de 80%,45,27,0.860075742475583
+3,Subamostra de 80%,46,27,0.3711852154508596
+3,Subamostra de 80%,47,27,0.13253369361057107
+3,Subamostra de 80%,48,27,0.13253369361057107
+3,Subamostra de 80%,49,27,0.860075742475583
+3,Subamostra de 80%,5,27,0.8612053909776913
+3,Subamostra de 80%,50,27,0.8612053909776913
+3,Subamostra de 80%,51,27,0.2711615976548186
+3,Subamostra de 80%,52,27,0.2711615976548186
+3,Subamostra de 80%,53,27,0.3342761122017769
+3,Subamostra de 80%,54,27,1.0
+3,Subamostra de 80%,55,27,0.2711615976548186
+3,Subamostra de 80%,56,27,1.0
+3,Subamostra de 80%,57,27,1.0
+3,Subamostra de 80%,58,27,1.0
+3,Subamostra de 80%,59,27,0.8612053909776913
+3,Subamostra de 80%,6,27,1.0
+3,Subamostra de 80%,60,27,1.0
+3,Subamostra de 80%,61,27,0.8612053909776913
+3,Subamostra de 80%,62,27,0.5266511580863761
+3,Subamostra de 80%,63,27,0.860075742475583
+3,Subamostra de 80%,64,27,0.7523102254780066
+3,Subamostra de 80%,65,27,0.7159906948518256
+3,Subamostra de 80%,66,27,0.3342761122017769
+3,Subamostra de 80%,67,27,0.860075742475583
+3,Subamostra de 80%,68,27,0.860075742475583
+3,Subamostra de 80%,69,27,0.8612053909776913
+3,Subamostra de 80%,7,27,1.0
+3,Subamostra de 80%,70,27,0.7356841174737255
+3,Subamostra de 80%,71,27,0.8612053909776913
+3,Subamostra de 80%,72,27,1.0
+3,Subamostra de 80%,73,27,0.860075742475583
+3,Subamostra de 80%,74,27,1.0
+3,Subamostra de 80%,75,27,1.0
+3,Subamostra de 80%,76,27,0.860075742475583
+3,Subamostra de 80%,77,27,1.0
+3,Subamostra de 80%,78,27,0.3342761122017769
+3,Subamostra de 80%,79,27,1.0
+3,Subamostra de 80%,8,27,0.860075742475583
+3,Subamostra de 80%,80,27,1.0
+3,Subamostra de 80%,81,27,1.0
+3,Subamostra de 80%,82,27,1.0
+3,Subamostra de 80%,83,27,0.3342761122017769
+3,Subamostra de 80%,84,27,0.860075742475583
+3,Subamostra de 80%,85,27,0.31427152317880797
+3,Subamostra de 80%,86,27,0.8612053909776913
+3,Subamostra de 80%,87,27,0.860075742475583
+3,Subamostra de 80%,88,27,0.6009809016499935
+3,Subamostra de 80%,89,27,1.0
+3,Subamostra de 80%,9,27,0.860075742475583
+3,Subamostra de 80%,90,27,1.0
+3,Subamostra de 80%,91,27,0.3342761122017769
+3,Subamostra de 80%,92,27,0.13253369361057107
+3,Subamostra de 80%,93,27,1.0
+3,Subamostra de 80%,94,27,0.860075742475583
+3,Subamostra de 80%,95,27,0.3342761122017769
+3,Subamostra de 80%,96,27,1.0
+3,Subamostra de 80%,97,27,0.860075742475583
+3,Subamostra de 80%,98,27,0.7430539380427911
+3,Subamostra de 80%,99,27,0.860075742475583
+4,Reinicialização,1,27,0.9454545454545454
+4,Reinicialização,10,27,0.8982487253380625
+4,Reinicialização,100,27,1.0
+4,Reinicialização,11,27,1.0
+4,Reinicialização,12,27,0.31491581693146786
+4,Reinicialização,13,27,0.42994241842610365
+4,Reinicialização,14,27,0.8982487253380625
+4,Reinicialização,15,27,0.3316510454217736
+4,Reinicialização,16,27,0.8982487253380625
+4,Reinicialização,17,27,1.0
+4,Reinicialização,18,27,1.0
+4,Reinicialização,19,27,1.0
+4,Reinicialização,2,27,1.0
+4,Reinicialização,20,27,0.9454545454545454
+4,Reinicialização,21,27,0.8103331067301156
+4,Reinicialização,22,27,0.8982487253380625
+4,Reinicialização,23,27,0.7202394658070458
+4,Reinicialização,24,27,0.8982487253380625
+4,Reinicialização,25,27,0.3096590909090909
+4,Reinicialização,26,27,0.3096590909090909
+4,Reinicialização,27,27,0.8697368421052631
+4,Reinicialização,28,27,0.42994241842610365
+4,Reinicialização,29,27,0.9454545454545454
+4,Reinicialização,3,27,0.9454545454545454
+4,Reinicialização,30,27,0.8982487253380625
+4,Reinicialização,31,27,0.9454545454545454
+4,Reinicialização,32,27,0.9454545454545454
+4,Reinicialização,33,27,1.0
+4,Reinicialização,34,27,0.9454545454545454
+4,Reinicialização,35,27,0.9454545454545454
+4,Reinicialização,36,27,1.0
+4,Reinicialização,37,27,0.8982487253380625
+4,Reinicialização,38,27,0.8103331067301156
+4,Reinicialização,39,27,1.0
+4,Reinicialização,4,27,0.8982487253380625
+4,Reinicialização,40,27,0.7049523366658916
+4,Reinicialização,41,27,0.9454545454545454
+4,Reinicialização,42,27,0.9454545454545454
+4,Reinicialização,43,27,0.8103331067301156
+4,Reinicialização,44,27,0.9454545454545454
+4,Reinicialização,45,27,0.6139180171591992
+4,Reinicialização,46,27,0.42994241842610365
+4,Reinicialização,47,27,0.42994241842610365
+4,Reinicialização,48,27,0.9454545454545454
+4,Reinicialização,49,27,0.9454545454545454
+4,Reinicialização,5,27,0.9454545454545454
+4,Reinicialização,50,27,1.0
+4,Reinicialização,51,27,0.3096590909090909
+4,Reinicialização,52,27,0.6139180171591992
+4,Reinicialização,53,27,0.8103331067301156
+4,Reinicialização,54,27,0.8103331067301156
+4,Reinicialização,55,27,0.5584112149532711
+4,Reinicialização,56,27,1.0
+4,Reinicialização,57,27,0.8103331067301156
+4,Reinicialização,58,27,0.8982487253380625
+4,Reinicialização,59,27,1.0
+4,Reinicialização,6,27,0.8103331067301156
+4,Reinicialização,60,27,1.0
+4,Reinicialização,61,27,0.9454545454545454
+4,Reinicialização,62,27,0.8103331067301156
+4,Reinicialização,63,27,0.8103331067301156
+4,Reinicialização,64,27,0.8982487253380625
+4,Reinicialização,65,27,0.629968021927821
+4,Reinicialização,66,27,0.9454545454545454
+4,Reinicialização,67,27,0.42994241842610365
+4,Reinicialização,68,27,0.7049523366658916
+4,Reinicialização,69,27,0.8103331067301156
+4,Reinicialização,7,27,0.9454545454545454
+4,Reinicialização,70,27,0.8103331067301156
+4,Reinicialização,71,27,0.4305909617612978
+4,Reinicialização,72,27,0.9454545454545454
+4,Reinicialização,73,27,0.9454545454545454
+4,Reinicialização,74,27,0.8103331067301156
+4,Reinicialização,75,27,0.31491581693146786
+4,Reinicialização,76,27,0.8197098779645406
+4,Reinicialização,77,27,0.40951694304253783
+4,Reinicialização,78,27,1.0
+4,Reinicialização,79,27,1.0
+4,Reinicialização,8,27,0.8103331067301156
+4,Reinicialização,80,27,0.7049523366658916
+4,Reinicialização,81,27,0.3096590909090909
+4,Reinicialização,82,27,0.8982487253380625
+4,Reinicialização,83,27,0.8103331067301156
+4,Reinicialização,84,27,0.6873079650200898
+4,Reinicialização,85,27,0.9454545454545454
+4,Reinicialização,86,27,0.3096590909090909
+4,Reinicialização,87,27,0.3316510454217736
+4,Reinicialização,88,27,0.42994241842610365
+4,Reinicialização,89,27,0.45217391304347826
+4,Reinicialização,9,27,0.9454545454545454
+4,Reinicialização,90,27,0.8103331067301156
+4,Reinicialização,91,27,0.7049523366658916
+4,Reinicialização,92,27,0.9454545454545454
+4,Reinicialização,93,27,0.3316510454217736
+4,Reinicialização,94,27,0.8103331067301156
+4,Reinicialização,95,27,0.3096590909090909
+4,Reinicialização,96,27,0.7049523366658916
+4,Reinicialização,97,27,0.3096590909090909
+4,Reinicialização,98,27,0.9454545454545454
+4,Reinicialização,99,27,0.7049523366658916
+4,Retirada de UF,Acre,26,0.940248810083141
+4,Retirada de UF,Alagoas,26,0.7989193202441841
+4,Retirada de UF,Amapá,26,1.0
+4,Retirada de UF,Amazonas,26,0.5024849539706838
+4,Retirada de UF,Bahia,26,0.8004990000198016
+4,Retirada de UF,Ceará,26,1.0
+4,Retirada de UF,Distrito Federal,26,0.9481617353855969
+4,Retirada de UF,Espírito Santo,26,1.0
+4,Retirada de UF,Goiás,26,1.0
+4,Retirada de UF,Maranhão,26,1.0
+4,Retirada de UF,Mato Grosso,26,1.0
+4,Retirada de UF,Mato Grosso do Sul,26,0.940248810083141
+4,Retirada de UF,Minas Gerais,26,1.0
+4,Retirada de UF,Paraná,26,1.0
+4,Retirada de UF,Paraíba,26,1.0
+4,Retirada de UF,Pará,26,0.940248810083141
+4,Retirada de UF,Pernambuco,26,0.940248810083141
+4,Retirada de UF,Piauí,26,1.0
+4,Retirada de UF,Rio Grande do Norte,26,0.8704043384639923
+4,Retirada de UF,Rio Grande do Sul,26,1.0
+4,Retirada de UF,Rio de Janeiro,26,1.0
+4,Retirada de UF,Rondônia,26,0.7989193202441841
+4,Retirada de UF,Roraima,26,1.0
+4,Retirada de UF,Santa Catarina,26,1.0
+4,Retirada de UF,Sergipe,26,0.9481617353855969
+4,Retirada de UF,São Paulo,26,1.0
+4,Retirada de UF,Tocantins,26,1.0
+4,Retirada de variável,Crescimento logarítmico,27,0.9454545454545454
+4,Retirada de variável,Mudança na presença em TI (p.p.),27,0.8982487253380625
+4,Retirada de variável,Mudança na urbanização (p.p.),27,0.9447601727665379
+4,Retirada de variável,População 2022 (log10),27,1.0
+4,Retirada de variável,Presença em TI 2022 (%),27,0.5737817433081674
+4,Retirada de variável,Urbanização 2022 (%),27,0.24264538198403648
+4,Subamostra de 80%,1,27,0.4557742470950913
+4,Subamostra de 80%,10,27,0.9454545454545454
+4,Subamostra de 80%,100,27,0.6798418972332015
+4,Subamostra de 80%,11,27,0.4761676646706587
+4,Subamostra de 80%,12,27,0.8103331067301156
+4,Subamostra de 80%,13,27,1.0
+4,Subamostra de 80%,14,27,0.38768202434948673
+4,Subamostra de 80%,15,27,0.9454545454545454
+4,Subamostra de 80%,16,27,1.0
+4,Subamostra de 80%,17,27,0.9454545454545454
+4,Subamostra de 80%,18,27,1.0
+4,Subamostra de 80%,19,27,0.8103331067301156
+4,Subamostra de 80%,2,27,0.42994241842610365
+4,Subamostra de 80%,20,27,0.18756863606413354
+4,Subamostra de 80%,21,27,0.9454545454545454
+4,Subamostra de 80%,22,27,0.8103331067301156
+4,Subamostra de 80%,23,27,0.3904218928164196
+4,Subamostra de 80%,24,27,0.9454545454545454
+4,Subamostra de 80%,25,27,0.9454545454545454
+4,Subamostra de 80%,26,27,0.5487465181058496
+4,Subamostra de 80%,27,27,0.9454545454545454
+4,Subamostra de 80%,28,27,0.7643768180801074
+4,Subamostra de 80%,29,27,0.40951694304253783
+4,Subamostra de 80%,3,27,0.9454545454545454
+4,Subamostra de 80%,30,27,0.40951694304253783
+4,Subamostra de 80%,31,27,0.9454545454545454
+4,Subamostra de 80%,32,27,0.7049523366658916
+4,Subamostra de 80%,33,27,0.8982487253380625
+4,Subamostra de 80%,34,27,0.9454545454545454
+4,Subamostra de 80%,35,27,0.8103331067301156
+4,Subamostra de 80%,36,27,1.0
+4,Subamostra de 80%,37,27,0.7220315717227179
+4,Subamostra de 80%,38,27,0.6798418972332015
+4,Subamostra de 80%,39,27,0.9454545454545454
+4,Subamostra de 80%,4,27,0.413463833850561
+4,Subamostra de 80%,40,27,1.0
+4,Subamostra de 80%,41,27,0.3316510454217736
+4,Subamostra de 80%,42,27,0.511857243484386
+4,Subamostra de 80%,43,27,0.7651126477805041
+4,Subamostra de 80%,44,27,0.8103331067301156
+4,Subamostra de 80%,45,27,0.8103331067301156
+4,Subamostra de 80%,46,27,0.9454545454545454
+4,Subamostra de 80%,47,27,0.8982487253380625
+4,Subamostra de 80%,48,27,0.9447601727665379
+4,Subamostra de 80%,49,27,1.0
+4,Subamostra de 80%,5,27,0.7242451154529307
+4,Subamostra de 80%,50,27,0.869445084043288
+4,Subamostra de 80%,51,27,0.2278873863888273
+4,Subamostra de 80%,52,27,0.9454545454545454
+4,Subamostra de 80%,53,27,0.9454545454545454
+4,Subamostra de 80%,54,27,0.9454545454545454
+4,Subamostra de 80%,55,27,0.5020359281437126
+4,Subamostra de 80%,56,27,0.5020359281437126
+4,Subamostra de 80%,57,27,0.8103331067301156
+4,Subamostra de 80%,58,27,0.8103331067301156
+4,Subamostra de 80%,59,27,0.7049523366658916
+4,Subamostra de 80%,6,27,0.42994241842610365
+4,Subamostra de 80%,60,27,0.8982487253380625
+4,Subamostra de 80%,61,27,0.9447601727665379
+4,Subamostra de 80%,62,27,0.7049523366658916
+4,Subamostra de 80%,63,27,0.42994241842610365
+4,Subamostra de 80%,64,27,0.8103331067301156
+4,Subamostra de 80%,65,27,0.48738284066330206
+4,Subamostra de 80%,66,27,0.9454545454545454
+4,Subamostra de 80%,67,27,0.8197098779645406
+4,Subamostra de 80%,68,27,0.9454545454545454
+4,Subamostra de 80%,69,27,0.9454545454545454
+4,Subamostra de 80%,7,27,0.8103331067301156
+4,Subamostra de 80%,70,27,1.0
+4,Subamostra de 80%,71,27,0.9454545454545454
+4,Subamostra de 80%,72,27,0.8103331067301156
+4,Subamostra de 80%,73,27,0.9454545454545454
+4,Subamostra de 80%,74,27,0.8982487253380625
+4,Subamostra de 80%,75,27,0.8982487253380625
+4,Subamostra de 80%,76,27,0.8197098779645406
+4,Subamostra de 80%,77,27,0.9447601727665379
+4,Subamostra de 80%,78,27,0.9447601727665379
+4,Subamostra de 80%,79,27,0.9454545454545454
+4,Subamostra de 80%,8,27,1.0
+4,Subamostra de 80%,80,27,0.869445084043288
+4,Subamostra de 80%,81,27,1.0
+4,Subamostra de 80%,82,27,0.7948422749251669
+4,Subamostra de 80%,83,27,0.42994241842610365
+4,Subamostra de 80%,84,27,0.43578304766377085
+4,Subamostra de 80%,85,27,0.8103331067301156
+4,Subamostra de 80%,86,27,0.511857243484386
+4,Subamostra de 80%,87,27,1.0
+4,Subamostra de 80%,88,27,1.0
+4,Subamostra de 80%,89,27,0.7651126477805041
+4,Subamostra de 80%,9,27,1.0
+4,Subamostra de 80%,90,27,0.9454545454545454
+4,Subamostra de 80%,91,27,0.6859749144811859
+4,Subamostra de 80%,92,27,1.0
+4,Subamostra de 80%,93,27,0.9454545454545454
+4,Subamostra de 80%,94,27,0.3347826086956522
+4,Subamostra de 80%,95,27,0.9454545454545454
+4,Subamostra de 80%,96,27,0.47494852436513385
+4,Subamostra de 80%,97,27,0.9454545454545454
+4,Subamostra de 80%,98,27,0.9454545454545454
+4,Subamostra de 80%,99,27,0.48738284066330206
+5,Reinicialização,1,27,0.5448758752387015
+5,Reinicialização,10,27,0.8096753660089115
+5,Reinicialização,100,27,0.27875118760909434
+5,Reinicialização,11,27,0.6164375682981538
+5,Reinicialização,12,27,0.6541097424412095
+5,Reinicialização,13,27,0.9248054081074004
+5,Reinicialização,14,27,0.7158157718198431
+5,Reinicialização,15,27,0.7242864963938016
+5,Reinicialização,16,27,0.6541097424412095
+5,Reinicialização,17,27,0.6670984755603877
+5,Reinicialização,18,27,0.5118607700560257
+5,Reinicialização,19,27,0.7838157957075852
+5,Reinicialização,2,27,0.4395273507003057
+5,Reinicialização,20,27,0.5996623933573612
+5,Reinicialização,21,27,0.5268442337191466
+5,Reinicialização,22,27,0.3668998284281378
+5,Reinicialização,23,27,0.35974420798825874
+5,Reinicialização,24,27,0.526021897810219
+5,Reinicialização,25,27,0.5268442337191466
+5,Reinicialização,26,27,0.36764993162727094
+5,Reinicialização,27,27,0.7417564042538961
+5,Reinicialização,28,27,0.9248054081074004
+5,Reinicialização,29,27,0.5996623933573612
+5,Reinicialização,3,27,0.48396709977351293
+5,Reinicialização,30,27,0.7950867524461154
+5,Reinicialização,31,27,0.8619676605982095
+5,Reinicialização,32,27,0.6104847301136364
+5,Reinicialização,33,27,0.8813100816385682
+5,Reinicialização,34,27,0.9248054081074004
+5,Reinicialização,35,27,0.9248054081074004
+5,Reinicialização,36,27,0.3585555992505031
+5,Reinicialização,37,27,0.5209465867820213
+5,Reinicialização,38,27,0.9248054081074004
+5,Reinicialização,39,27,0.5118607700560257
+5,Reinicialização,4,27,0.48396709977351293
+5,Reinicialização,40,27,0.31968801812110315
+5,Reinicialização,41,27,0.5643523394012336
+5,Reinicialização,42,27,0.9248054081074004
+5,Reinicialização,43,27,0.5000962315716541
+5,Reinicialização,44,27,0.6226651735722284
+5,Reinicialização,45,27,0.6226651735722284
+5,Reinicialização,46,27,0.4555408549660112
+5,Reinicialização,47,27,0.7417564042538961
+5,Reinicialização,48,27,0.28969249043156925
+5,Reinicialização,49,27,0.9248054081074004
+5,Reinicialização,5,27,0.5448758752387015
+5,Reinicialização,50,27,0.673236302536273
+5,Reinicialização,51,27,0.6957434189515945
+5,Reinicialização,52,27,0.8545312212193774
+5,Reinicialização,53,27,0.9248054081074004
+5,Reinicialização,54,27,0.9248054081074004
+5,Reinicialização,55,27,0.6104847301136364
+5,Reinicialização,56,27,0.7838157957075852
+5,Reinicialização,57,27,0.36764993162727094
+5,Reinicialização,58,27,0.5209465867820213
+5,Reinicialização,59,27,0.5118607700560257
+5,Reinicialização,6,27,0.9248054081074004
+5,Reinicialização,60,27,0.9334817832946416
+5,Reinicialização,61,27,0.3927734588853608
+5,Reinicialização,62,27,0.4344394367512785
+5,Reinicialização,63,27,0.5268442337191466
+5,Reinicialização,64,27,0.7437839317487112
+5,Reinicialização,65,27,0.48396709977351293
+5,Reinicialização,66,27,0.9248054081074004
+5,Reinicialização,67,27,0.9248054081074004
+5,Reinicialização,68,27,0.43321464060947334
+5,Reinicialização,69,27,0.5000962315716541
+5,Reinicialização,7,27,0.5118607700560257
+5,Reinicialização,70,27,0.5000962315716541
+5,Reinicialização,71,27,0.6147630945986969
+5,Reinicialização,72,27,0.5448758752387015
+5,Reinicialização,73,27,0.9248054081074004
+5,Reinicialização,74,27,0.4555408549660112
+5,Reinicialização,75,27,0.7158157718198431
+5,Reinicialização,76,27,0.4691677236803591
+5,Reinicialização,77,27,0.5448758752387015
+5,Reinicialização,78,27,0.9248054081074004
+5,Reinicialização,79,27,0.673236302536273
+5,Reinicialização,8,27,0.5000962315716541
+5,Reinicialização,80,27,0.5359932700396587
+5,Reinicialização,81,27,0.4395273507003057
+5,Reinicialização,82,27,0.5268442337191466
+5,Reinicialização,83,27,0.9248054081074004
+5,Reinicialização,84,27,0.5242162790197302
+5,Reinicialização,85,27,0.6104847301136364
+5,Reinicialização,86,27,0.36764993162727094
+5,Reinicialização,87,27,0.6475492142073185
+5,Reinicialização,88,27,0.7417564042538961
+5,Reinicialização,89,27,0.7242864963938016
+5,Reinicialização,9,27,0.9248054081074004
+5,Reinicialização,90,27,0.9248054081074004
+5,Reinicialização,91,27,0.45235064668445907
+5,Reinicialização,92,27,0.48396709977351293
+5,Reinicialização,93,27,0.7242864963938016
+5,Reinicialização,94,27,0.9248054081074004
+5,Reinicialização,95,27,0.5268442337191466
+5,Reinicialização,96,27,0.7242864963938016
+5,Reinicialização,97,27,0.5268442337191466
+5,Reinicialização,98,27,0.9248054081074004
+5,Reinicialização,99,27,0.43321464060947334
+5,Retirada de UF,Acre,26,0.9185168677048221
+5,Retirada de UF,Alagoas,26,0.9185168677048221
+5,Retirada de UF,Amapá,26,0.38207820120691083
+5,Retirada de UF,Amazonas,26,0.9004095049725603
+5,Retirada de UF,Bahia,26,0.9223870300103484
+5,Retirada de UF,Ceará,26,1.0
+5,Retirada de UF,Distrito Federal,26,0.9271871849445502
+5,Retirada de UF,Espírito Santo,26,0.8039161913119789
+5,Retirada de UF,Goiás,26,1.0
+5,Retirada de UF,Maranhão,26,1.0
+5,Retirada de UF,Mato Grosso,26,1.0
+5,Retirada de UF,Mato Grosso do Sul,26,0.9185168677048221
+5,Retirada de UF,Minas Gerais,26,1.0
+5,Retirada de UF,Paraná,26,1.0
+5,Retirada de UF,Paraíba,26,1.0
+5,Retirada de UF,Pará,26,0.9185168677048221
+5,Retirada de UF,Pernambuco,26,0.9185168677048221
+5,Retirada de UF,Piauí,26,0.9306999306999307
+5,Retirada de UF,Rio Grande do Norte,26,0.7400071722159389
+5,Retirada de UF,Rio Grande do Sul,26,1.0
+5,Retirada de UF,Rio de Janeiro,26,0.8810495790985107
+5,Retirada de UF,Rondônia,26,0.9185168677048221
+5,Retirada de UF,Roraima,26,1.0
+5,Retirada de UF,Santa Catarina,26,1.0
+5,Retirada de UF,Sergipe,26,0.9271871849445502
+5,Retirada de UF,São Paulo,26,1.0
+5,Retirada de UF,Tocantins,26,0.4771357674583481
+5,Retirada de variável,Crescimento logarítmico,27,0.6104847301136364
+5,Retirada de variável,Mudança na presença em TI (p.p.),27,0.8096753660089115
+5,Retirada de variável,Mudança na urbanização (p.p.),27,0.3566684915855371
+5,Retirada de variável,População 2022 (log10),27,0.8801346472826618
+5,Retirada de variável,Presença em TI 2022 (%),27,0.9248054081074004
+5,Retirada de variável,Urbanização 2022 (%),27,0.5943348405279912
+5,Subamostra de 80%,1,27,1.0
+5,Subamostra de 80%,10,27,0.9248054081074004
+5,Subamostra de 80%,100,27,0.7437839317487112
+5,Subamostra de 80%,11,27,0.8096753660089115
+5,Subamostra de 80%,12,27,0.9248054081074004
+5,Subamostra de 80%,13,27,0.4942128015618463
+5,Subamostra de 80%,14,27,0.8619676605982095
+5,Subamostra de 80%,15,27,0.9248054081074004
+5,Subamostra de 80%,16,27,0.9248054081074004
+5,Subamostra de 80%,17,27,0.7313432835820896
+5,Subamostra de 80%,18,27,0.34115438761145
+5,Subamostra de 80%,19,27,0.6444096518695892
+5,Subamostra de 80%,2,27,0.8174907767350881
+5,Subamostra de 80%,20,27,0.9248054081074004
+5,Subamostra de 80%,21,27,0.5516218805602445
+5,Subamostra de 80%,22,27,0.4395273507003057
+5,Subamostra de 80%,23,27,0.5014204545454546
+5,Subamostra de 80%,24,27,0.7242864963938016
+5,Subamostra de 80%,25,27,0.9248054081074004
+5,Subamostra de 80%,26,27,1.0
+5,Subamostra de 80%,27,27,0.8381271390082283
+5,Subamostra de 80%,28,27,0.42847173761339846
+5,Subamostra de 80%,29,27,0.7838157957075852
+5,Subamostra de 80%,3,27,0.9248054081074004
+5,Subamostra de 80%,30,27,0.728708758031013
+5,Subamostra de 80%,31,27,0.7088984291150356
+5,Subamostra de 80%,32,27,0.728708758031013
+5,Subamostra de 80%,33,27,0.8619676605982095
+5,Subamostra de 80%,34,27,0.4395273507003057
+5,Subamostra de 80%,35,27,0.670577193805725
+5,Subamostra de 80%,36,27,0.548548588163128
+5,Subamostra de 80%,37,27,0.8116401600156112
+5,Subamostra de 80%,38,27,0.6104847301136364
+5,Subamostra de 80%,39,27,0.41855328547763665
+5,Subamostra de 80%,4,27,0.9248054081074004
+5,Subamostra de 80%,40,27,0.9248054081074004
+5,Subamostra de 80%,41,27,0.548548588163128
+5,Subamostra de 80%,42,27,1.0
+5,Subamostra de 80%,43,27,0.9248054081074004
+5,Subamostra de 80%,44,27,0.3585555992505031
+5,Subamostra de 80%,45,27,0.4942128015618463
+5,Subamostra de 80%,46,27,0.5000962315716541
+5,Subamostra de 80%,47,27,0.8170749040602644
+5,Subamostra de 80%,48,27,0.48939465039887375
+5,Subamostra de 80%,49,27,0.8170749040602644
+5,Subamostra de 80%,5,27,0.9248054081074004
+5,Subamostra de 80%,50,27,0.9248054081074004
+5,Subamostra de 80%,51,27,0.9248054081074004
+5,Subamostra de 80%,52,27,0.7437839317487112
+5,Subamostra de 80%,53,27,0.8381271390082283
+5,Subamostra de 80%,54,27,0.6199871848693078
+5,Subamostra de 80%,55,27,0.31968801812110315
+5,Subamostra de 80%,56,27,0.6541060534960113
+5,Subamostra de 80%,57,27,0.9248054081074004
+5,Subamostra de 80%,58,27,0.8619676605982095
+5,Subamostra de 80%,59,27,0.4395273507003057
+5,Subamostra de 80%,6,27,0.9080954987979338
+5,Subamostra de 80%,60,27,0.6444096518695892
+5,Subamostra de 80%,61,27,0.4036443953616786
+5,Subamostra de 80%,62,27,0.49469778381556806
+5,Subamostra de 80%,63,27,1.0
+5,Subamostra de 80%,64,27,0.4395273507003057
+5,Subamostra de 80%,65,27,0.8096753660089115
+5,Subamostra de 80%,66,27,0.4395273507003057
+5,Subamostra de 80%,67,27,0.8116401600156112
+5,Subamostra de 80%,68,27,0.8174907767350881
+5,Subamostra de 80%,69,27,0.9248054081074004
+5,Subamostra de 80%,7,27,0.728708758031013
+5,Subamostra de 80%,70,27,0.6541060534960113
+5,Subamostra de 80%,71,27,0.9248054081074004
+5,Subamostra de 80%,72,27,0.9248054081074004
+5,Subamostra de 80%,73,27,0.9657527563664747
+5,Subamostra de 80%,74,27,0.9248054081074004
+5,Subamostra de 80%,75,27,0.7158157718198431
+5,Subamostra de 80%,76,27,0.5058657907085875
+5,Subamostra de 80%,77,27,0.9217817614578949
+5,Subamostra de 80%,78,27,0.6957434189515945
+5,Subamostra de 80%,79,27,0.40508474576271186
+5,Subamostra de 80%,8,27,0.673236302536273
+5,Subamostra de 80%,80,27,0.9248054081074004
+5,Subamostra de 80%,81,27,0.7158157718198431
+5,Subamostra de 80%,82,27,0.6475492142073185
+5,Subamostra de 80%,83,27,0.7260220509317983
+5,Subamostra de 80%,84,27,0.44097153095759506
+5,Subamostra de 80%,85,27,0.9080954987979338
+5,Subamostra de 80%,86,27,0.9248054081074004
+5,Subamostra de 80%,87,27,0.8096753660089115
+5,Subamostra de 80%,88,27,0.42835054734368233
+5,Subamostra de 80%,89,27,0.8096753660089115
+5,Subamostra de 80%,9,27,0.7260220509317983
+5,Subamostra de 80%,90,27,0.3585555992505031
+5,Subamostra de 80%,91,27,1.0
+5,Subamostra de 80%,92,27,1.0
+5,Subamostra de 80%,93,27,0.9248054081074004
+5,Subamostra de 80%,94,27,1.0
+5,Subamostra de 80%,95,27,0.8096753660089115
+5,Subamostra de 80%,96,27,0.6957434189515945
+5,Subamostra de 80%,97,27,0.4527140807883412
+5,Subamostra de 80%,98,27,0.7242864963938016
+5,Subamostra de 80%,99,27,0.8619676605982095
+6,Reinicialização,1,27,0.5897535794292393
+6,Reinicialização,10,27,0.8290639914288497
+6,Reinicialização,100,27,0.32050616176401153
+6,Reinicialização,11,27,0.5540239253949608
+6,Reinicialização,12,27,0.7874427730542839
+6,Reinicialização,13,27,0.7581573896353166
+6,Reinicialização,14,27,0.8941123233948414
+6,Reinicialização,15,27,0.8099808061420346
+6,Reinicialização,16,27,0.3470259942681884
+6,Reinicialização,17,27,0.8290639914288497
+6,Reinicialização,18,27,0.4930849631606002
+6,Reinicialização,19,27,0.8023890534354882
+6,Reinicialização,2,27,0.43111831442463533
+6,Reinicialização,20,27,0.8023890534354882
+6,Reinicialização,21,27,1.0
+6,Reinicialização,22,27,0.661024702653248
+6,Reinicialização,23,27,0.8290639914288497
+6,Reinicialização,24,27,0.7063339731285988
+6,Reinicialização,25,27,0.5540239253949608
+6,Reinicialização,26,27,0.8880620814287233
+6,Reinicialização,27,27,0.8099808061420346
+6,Reinicialização,28,27,0.6447076847317593
+6,Reinicialização,29,27,0.8290639914288497
+6,Reinicialização,3,27,0.510262269225325
+6,Reinicialização,30,27,0.8139187430719552
+6,Reinicialização,31,27,0.42771229251864323
+6,Reinicialização,32,27,0.4930849631606002
+6,Reinicialização,33,27,0.8833976439322311
+6,Reinicialização,34,27,0.7063339731285988
+6,Reinicialização,35,27,0.8941123233948414
+6,Reinicialização,36,27,0.4267087451208371
+6,Reinicialização,37,27,0.5311963365769892
+6,Reinicialização,38,27,0.7581573896353166
+6,Reinicialização,39,27,0.661024702653248
+6,Reinicialização,4,27,1.0
+6,Reinicialização,40,27,0.3675367682867439
+6,Reinicialização,41,27,0.7581573896353166
+6,Reinicialização,42,27,0.7581573896353166
+6,Reinicialização,43,27,0.35894495412844035
+6,Reinicialização,44,27,0.4930849631606002
+6,Reinicialização,45,27,0.3433797547287466
+6,Reinicialização,46,27,0.517034509329077
+6,Reinicialização,47,27,0.7581573896353166
+6,Reinicialização,48,27,0.661024702653248
+6,Reinicialização,49,27,0.9452816462273955
+6,Reinicialização,5,27,0.850798889805716
+6,Reinicialização,50,27,0.45867270711841535
+6,Reinicialização,51,27,0.850798889805716
+6,Reinicialização,52,27,0.8196207410452747
+6,Reinicialização,53,27,0.8099808061420346
+6,Reinicialização,54,27,0.8880620814287233
+6,Reinicialização,55,27,0.6126438593725366
+6,Reinicialização,56,27,0.8941123233948414
+6,Reinicialização,57,27,0.8941123233948414
+6,Reinicialização,58,27,0.5311963365769892
+6,Reinicialização,59,27,0.661024702653248
+6,Reinicialização,6,27,0.8880620814287233
+6,Reinicialização,60,27,0.7628871336520474
+6,Reinicialização,61,27,0.3117301020664689
+6,Reinicialização,62,27,0.4248397513133163
+6,Reinicialização,63,27,0.5540239253949608
+6,Reinicialização,64,27,0.38671051955393393
+6,Reinicialização,65,27,0.5163147792706334
+6,Reinicialização,66,27,0.7581573896353166
+6,Reinicialização,67,27,0.7890680113918428
+6,Reinicialização,68,27,0.3675367682867439
+6,Reinicialização,69,27,0.4532093107262999
+6,Reinicialização,7,27,0.5163147792706334
+6,Reinicialização,70,27,0.4530903253222532
+6,Reinicialização,71,27,0.5163147792706334
+6,Reinicialização,72,27,0.8941123233948414
+6,Reinicialização,73,27,0.832093122143085
+6,Reinicialização,74,27,0.33218236910718063
+6,Reinicialização,75,27,0.7655981682884946
+6,Reinicialização,76,27,0.4459665144596651
+6,Reinicialização,77,27,0.8941123233948414
+6,Reinicialização,78,27,0.8880620814287233
+6,Reinicialização,79,27,0.45867270711841535
+6,Reinicialização,8,27,0.7581573896353166
+6,Reinicialização,80,27,0.5940972396802252
+6,Reinicialização,81,27,1.0
+6,Reinicialização,82,27,0.5540239253949608
+6,Reinicialização,83,27,0.7581573896353166
+6,Reinicialização,84,27,0.4776230466673754
+6,Reinicialização,85,27,0.5446356448730816
+6,Reinicialização,86,27,0.8880620814287233
+6,Reinicialização,87,27,0.825407879029049
+6,Reinicialização,88,27,0.7581573896353166
+6,Reinicialização,89,27,1.0
+6,Reinicialização,9,27,0.7581573896353166
+6,Reinicialização,90,27,0.7581573896353166
+6,Reinicialização,91,27,0.8099808061420346
+6,Reinicialização,92,27,0.8941123233948414
+6,Reinicialização,93,27,0.8941123233948414
+6,Reinicialização,94,27,0.7581573896353166
+6,Reinicialização,95,27,0.5540239253949608
+6,Reinicialização,96,27,0.8941123233948414
+6,Reinicialização,97,27,0.5940972396802252
+6,Reinicialização,98,27,0.7581573896353166
+6,Reinicialização,99,27,0.4417562292158658
+6,Retirada de UF,Acre,26,0.8773893360160966
+6,Retirada de UF,Alagoas,26,0.8773893360160966
+6,Retirada de UF,Amapá,26,1.0
+6,Retirada de UF,Amazonas,26,1.0
+6,Retirada de UF,Bahia,26,1.0
+6,Retirada de UF,Ceará,26,0.8910891089108911
+6,Retirada de UF,Distrito Federal,26,0.8054824036389754
+6,Retirada de UF,Espírito Santo,26,1.0
+6,Retirada de UF,Goiás,26,0.8910891089108911
+6,Retirada de UF,Maranhão,26,1.0
+6,Retirada de UF,Mato Grosso,26,0.8910891089108911
+6,Retirada de UF,Mato Grosso do Sul,26,0.8773893360160966
+6,Retirada de UF,Minas Gerais,26,1.0
+6,Retirada de UF,Paraná,26,1.0
+6,Retirada de UF,Paraíba,26,0.8853615520282186
+6,Retirada de UF,Pará,26,0.8773893360160966
+6,Retirada de UF,Pernambuco,26,1.0
+6,Retirada de UF,Piauí,26,1.0
+6,Retirada de UF,Rio Grande do Norte,26,1.0
+6,Retirada de UF,Rio Grande do Sul,26,1.0
+6,Retirada de UF,Rio de Janeiro,26,1.0
+6,Retirada de UF,Rondônia,26,1.0
+6,Retirada de UF,Roraima,26,0.8773893360160966
+6,Retirada de UF,Santa Catarina,26,0.8853615520282186
+6,Retirada de UF,Sergipe,26,0.8054824036389754
+6,Retirada de UF,São Paulo,26,1.0
+6,Retirada de UF,Tocantins,26,0.6534653465346535
+6,Retirada de variável,Crescimento logarítmico,27,0.3359609017814914
+6,Retirada de variável,Mudança na presença em TI (p.p.),27,0.661024702653248
+6,Retirada de variável,Mudança na urbanização (p.p.),27,0.36079903622559045
+6,Retirada de variável,População 2022 (log10),27,0.6352109748493037
+6,Retirada de variável,Presença em TI 2022 (%),27,1.0
+6,Retirada de variável,Urbanização 2022 (%),27,0.7474690374633846
+6,Subamostra de 80%,1,27,0.34701912260967377
+6,Subamostra de 80%,10,27,0.3452329236194516
+6,Subamostra de 80%,100,27,0.4530047725723191
+6,Subamostra de 80%,11,27,0.7890680113918428
+6,Subamostra de 80%,12,27,0.850798889805716
+6,Subamostra de 80%,13,27,0.41424780455776544
+6,Subamostra de 80%,14,27,0.5226827676240209
+6,Subamostra de 80%,15,27,0.7628871336520474
+6,Subamostra de 80%,16,27,0.30163151611619576
+6,Subamostra de 80%,17,27,0.6463064878691575
+6,Subamostra de 80%,18,27,0.7890680113918428
+6,Subamostra de 80%,19,27,0.850798889805716
+6,Subamostra de 80%,2,27,0.5335920059530137
+6,Subamostra de 80%,20,27,0.929408215596561
+6,Subamostra de 80%,21,27,0.7602081034210941
+6,Subamostra de 80%,22,27,0.37856406733081416
+6,Subamostra de 80%,23,27,0.3781190019193858
+6,Subamostra de 80%,24,27,0.3433797547287466
+6,Subamostra de 80%,25,27,0.7890680113918428
+6,Subamostra de 80%,26,27,0.661024702653248
+6,Subamostra de 80%,27,27,0.8880620814287233
+6,Subamostra de 80%,28,27,0.8099808061420346
+6,Subamostra de 80%,29,27,0.7249703005333266
+6,Subamostra de 80%,3,27,0.4530047725723191
+6,Subamostra de 80%,30,27,0.8196207410452747
+6,Subamostra de 80%,31,27,0.9210111769559673
+6,Subamostra de 80%,32,27,0.929408215596561
+6,Subamostra de 80%,33,27,0.8941123233948414
+6,Subamostra de 80%,34,27,0.7628871336520474
+6,Subamostra de 80%,35,27,0.39609656433141566
+6,Subamostra de 80%,36,27,0.7628871336520474
+6,Subamostra de 80%,37,27,0.3486716933267564
+6,Subamostra de 80%,38,27,0.38573106705343657
+6,Subamostra de 80%,39,27,1.0
+6,Subamostra de 80%,4,27,0.8880620814287233
+6,Subamostra de 80%,40,27,0.8290639914288497
+6,Subamostra de 80%,41,27,0.832093122143085
+6,Subamostra de 80%,42,27,0.7581573896353166
+6,Subamostra de 80%,43,27,0.5226827676240209
+6,Subamostra de 80%,44,27,0.8669211131612871
+6,Subamostra de 80%,45,27,0.7890680113918428
+6,Subamostra de 80%,46,27,1.0
+6,Subamostra de 80%,47,27,0.661024702653248
+6,Subamostra de 80%,48,27,0.8880620814287233
+6,Subamostra de 80%,49,27,0.38883797653958946
+6,Subamostra de 80%,5,27,0.850798889805716
+6,Subamostra de 80%,50,27,0.3470234688036634
+6,Subamostra de 80%,51,27,0.7474690374633846
+6,Subamostra de 80%,52,27,0.825407879029049
+6,Subamostra de 80%,53,27,1.0
+6,Subamostra de 80%,54,27,0.8764643772939816
+6,Subamostra de 80%,55,27,0.465239355304306
+6,Subamostra de 80%,56,27,0.7581573896353166
+6,Subamostra de 80%,57,27,0.4210583240948544
+6,Subamostra de 80%,58,27,1.0
+6,Subamostra de 80%,59,27,0.4397600308217293
+6,Subamostra de 80%,6,27,0.6477370082980443
+6,Subamostra de 80%,60,27,0.3452329236194516
+6,Subamostra de 80%,61,27,0.4397600308217293
+6,Subamostra de 80%,62,27,0.5433103562827007
+6,Subamostra de 80%,63,27,0.929408215596561
+6,Subamostra de 80%,64,27,0.7581573896353166
+6,Subamostra de 80%,65,27,0.4397600308217293
+6,Subamostra de 80%,66,27,0.4532093107262999
+6,Subamostra de 80%,67,27,0.7890680113918428
+6,Subamostra de 80%,68,27,0.7890680113918428
+6,Subamostra de 80%,69,27,0.8669211131612871
+6,Subamostra de 80%,7,27,0.7427141521118217
+6,Subamostra de 80%,70,27,0.5163147792706334
+6,Subamostra de 80%,71,27,0.8941123233948414
+6,Subamostra de 80%,72,27,1.0
+6,Subamostra de 80%,73,27,0.4391691394658754
+6,Subamostra de 80%,74,27,0.48261665141811527
+6,Subamostra de 80%,75,27,0.37285196279363075
+6,Subamostra de 80%,76,27,0.7890680113918428
+6,Subamostra de 80%,77,27,0.7427141521118217
+6,Subamostra de 80%,78,27,0.4210583240948544
+6,Subamostra de 80%,79,27,0.4391691394658754
+6,Subamostra de 80%,8,27,0.465239355304306
+6,Subamostra de 80%,80,27,0.7628871336520474
+6,Subamostra de 80%,81,27,0.7602081034210941
+6,Subamostra de 80%,82,27,0.7063339731285988
+6,Subamostra de 80%,83,27,1.0
+6,Subamostra de 80%,84,27,0.7890680113918428
+6,Subamostra de 80%,85,27,0.8880620814287233
+6,Subamostra de 80%,86,27,1.0
+6,Subamostra de 80%,87,27,0.3433797547287466
+6,Subamostra de 80%,88,27,0.3190907282132909
+6,Subamostra de 80%,89,27,0.5321725321158154
+6,Subamostra de 80%,9,27,0.43111831442463533
+6,Subamostra de 80%,90,27,0.7474690374633846
+6,Subamostra de 80%,91,27,0.43111831442463533
+6,Subamostra de 80%,92,27,0.8405099831609334
+6,Subamostra de 80%,93,27,0.7249703005333266
+6,Subamostra de 80%,94,27,0.3686725936584614
+6,Subamostra de 80%,95,27,1.0
+6,Subamostra de 80%,96,27,0.7177536783083042
+6,Subamostra de 80%,97,27,0.6558148656599333
+6,Subamostra de 80%,98,27,0.7581573896353166
+6,Subamostra de 80%,99,27,0.4759014025897731

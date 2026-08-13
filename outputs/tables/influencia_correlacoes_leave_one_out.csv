@@ -1,0 +1,188 @@
+Ordem da relação,Relação,Variável X,Variável Y,UF retirada hipoteticamente,Região,N completo,N sem UF,Spearman completo (ρ),Spearman sem UF (ρ),Variação de ρ,Variação absoluta de ρ,Rank de influência na relação
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Ceará,Nordeste,27,26,0.967032967032967,0.9753846153846153,0.008351648351648255,0.008351648351648255,1
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Amazonas,Norte,27,26,0.967032967032967,0.9630769230769229,-0.003956043956044097,0.003956043956044097,2
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Roraima,Norte,27,26,0.967032967032967,0.9630769230769229,-0.003956043956044097,0.003956043956044097,3
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Mato Grosso,Centro-Oeste,27,26,0.967032967032967,0.9637606837606837,-0.0032722832722833495,0.0032722832722833495,4
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Pará,Norte,27,26,0.967032967032967,0.9637606837606837,-0.0032722832722833495,0.0032722832722833495,5
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Rio Grande do Norte,Nordeste,27,26,0.967032967032967,0.9699145299145299,0.002881562881562827,0.002881562881562827,6
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Alagoas,Nordeste,27,26,0.967032967032967,0.9644444444444444,-0.0025885225885226015,0.0025885225885226015,7
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Espírito Santo,Sudeste,27,26,0.967032967032967,0.9644444444444444,-0.0025885225885226015,0.0025885225885226015,8
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Maranhão,Nordeste,27,26,0.967032967032967,0.9644444444444444,-0.0025885225885226015,0.0025885225885226015,9
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Mato Grosso do Sul,Centro-Oeste,27,26,0.967032967032967,0.9644444444444444,-0.0025885225885226015,0.0025885225885226015,10
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Pernambuco,Nordeste,27,26,0.967032967032967,0.9644444444444444,-0.0025885225885226015,0.0025885225885226015,11
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Acre,Norte,27,26,0.967032967032967,0.9692307692307691,0.002197802197802079,0.002197802197802079,12
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Paraná,Sul,27,26,0.967032967032967,0.9692307692307691,0.002197802197802079,0.002197802197802079,13
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Paraíba,Nordeste,27,26,0.967032967032967,0.9692307692307691,0.002197802197802079,0.002197802197802079,14
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Bahia,Nordeste,27,26,0.967032967032967,0.965128205128205,-0.0019047619047620756,0.0019047619047620756,15
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Amapá,Norte,27,26,0.967032967032967,0.9658119658119657,-0.0012210012210013277,0.0012210012210013277,16
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Rondônia,Norte,27,26,0.967032967032967,0.9658119658119657,-0.0012210012210013277,0.0012210012210013277,17
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Tocantins,Norte,27,26,0.967032967032967,0.9658119658119657,-0.0012210012210013277,0.0012210012210013277,18
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Piauí,Nordeste,27,26,0.967032967032967,0.9678632478632478,0.0008302808302808051,0.0008302808302808051,19
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Rio de Janeiro,Sudeste,27,26,0.967032967032967,0.9678632478632478,0.0008302808302808051,0.0008302808302808051,20
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,São Paulo,Sudeste,27,26,0.967032967032967,0.9678632478632478,0.0008302808302808051,0.0008302808302808051,21
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Goiás,Centro-Oeste,27,26,0.967032967032967,0.9664957264957265,-0.0005372405372405797,0.0005372405372405797,22
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Santa Catarina,Sul,27,26,0.967032967032967,0.9664957264957265,-0.0005372405372405797,0.0005372405372405797,23
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Distrito Federal,Centro-Oeste,27,26,0.967032967032967,0.967179487179487,0.00014652014651994616,0.00014652014651994616,24
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Minas Gerais,Sudeste,27,26,0.967032967032967,0.967179487179487,0.00014652014651994616,0.00014652014651994616,25
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Rio Grande do Sul,Sul,27,26,0.967032967032967,0.967179487179487,0.00014652014651994616,0.00014652014651994616,26
+1,Persistência da magnitude populacional,Indígenas 2010 Total,Indígenas 2022 Total,Sergipe,Nordeste,27,26,0.967032967032967,0.967179487179487,0.00014652014651994616,0.00014652014651994616,27
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Distrito Federal,Centro-Oeste,27,26,-0.235042735042735,-0.15350427350427348,0.08153846153846153,0.08153846153846153,1
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Amazonas,Norte,27,26,-0.235042735042735,-0.31487179487179484,-0.07982905982905983,0.07982905982905983,2
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Bahia,Nordeste,27,26,-0.235042735042735,-0.31487179487179484,-0.07982905982905983,0.07982905982905983,3
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Sergipe,Nordeste,27,26,-0.235042735042735,-0.16444444444444445,0.07059829059829056,0.07059829059829056,4
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Amapá,Norte,27,26,-0.235042735042735,-0.30393162393162393,-0.06888888888888892,0.06888888888888892,5
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Goiás,Centro-Oeste,27,26,-0.235042735042735,-0.18769230769230769,0.04735042735042733,0.04735042735042733,6
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Rio de Janeiro,Sudeste,27,26,-0.235042735042735,-0.18769230769230769,0.04735042735042733,0.04735042735042733,7
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Maranhão,Nordeste,27,26,-0.235042735042735,-0.1917948717948718,0.0432478632478632,0.0432478632478632,8
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Mato Grosso,Centro-Oeste,27,26,-0.235042735042735,-0.1917948717948718,0.0432478632478632,0.0432478632478632,9
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Roraima,Norte,27,26,-0.235042735042735,-0.19863247863247863,0.036410256410256386,0.036410256410256386,10
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Pernambuco,Nordeste,27,26,-0.235042735042735,-0.2711111111111111,-0.03606837606837607,0.03606837606837607,11
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Tocantins,Norte,27,26,-0.235042735042735,-0.26974358974358975,-0.03470085470085474,0.03470085470085474,12
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),São Paulo,Sudeste,27,26,-0.235042735042735,-0.26017094017094017,-0.025128205128205156,0.025128205128205156,13
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Ceará,Nordeste,27,26,-0.235042735042735,-0.2588034188034188,-0.02376068376068377,0.02376068376068377,14
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Mato Grosso do Sul,Centro-Oeste,27,26,-0.235042735042735,-0.212991452991453,0.022051282051282012,0.022051282051282012,15
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Rio Grande do Norte,Nordeste,27,26,-0.235042735042735,-0.2547008547008547,-0.01965811965811967,0.01965811965811967,16
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Pará,Norte,27,26,-0.235042735042735,-0.21572649572649572,0.019316239316239298,0.019316239316239298,17
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Minas Gerais,Sudeste,27,26,-0.235042735042735,-0.254017094017094,-0.01897435897435898,0.01897435897435898,18
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Espírito Santo,Sudeste,27,26,-0.235042735042735,-0.2239316239316239,0.0111111111111111,0.0111111111111111,19
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Piauí,Nordeste,27,26,-0.235042735042735,-0.2451282051282051,-0.010085470085470088,0.010085470085470088,20
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Rondônia,Norte,27,26,-0.235042735042735,-0.2423931623931624,-0.007350427350427374,0.007350427350427374,21
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Santa Catarina,Sul,27,26,-0.235042735042735,-0.24034188034188034,-0.005299145299145325,0.005299145299145325,22
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Paraná,Sul,27,26,-0.235042735042735,-0.2300854700854701,0.004957264957264923,0.004957264957264923,23
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Acre,Norte,27,26,-0.235042735042735,-0.23965811965811962,-0.0046153846153846045,0.0046153846153846045,24
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Rio Grande do Sul,Sul,27,26,-0.235042735042735,-0.23282051282051283,0.002222222222222181,0.002222222222222181,25
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Alagoas,Nordeste,27,26,-0.235042735042735,-0.23692307692307688,-0.0018803418803418626,0.0018803418803418626,26
+2,Magnitude populacional × urbanização em 2022,Indígenas 2022 Total,Urbanização 2022 (%),Paraíba,Nordeste,27,26,-0.235042735042735,-0.23692307692307688,-0.0018803418803418626,0.0018803418803418626,27
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Amapá,Norte,27,26,0.36910395789521805,0.44623013132943207,0.07712617343421402,0.07712617343421402,1
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Distrito Federal,Centro-Oeste,27,26,0.36910395789521805,0.29777777777777775,-0.0713261801174403,0.0713261801174403,2
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Piauí,Nordeste,27,26,0.36910395789521805,0.2985125706134822,-0.07059138728173586,0.07059138728173586,3
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Bahia,Nordeste,27,26,0.36910395789521805,0.4376816613805924,0.06857770348537434,0.06857770348537434,4
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Sergipe,Nordeste,27,26,0.36910395789521805,0.3070610405623218,-0.06204291733289624,0.06204291733289624,5
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Rio Grande do Norte,Nordeste,27,26,0.36910395789521805,0.31282051282051276,-0.056283445074705285,0.056283445074705285,6
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Goiás,Centro-Oeste,27,26,0.36910395789521805,0.31731920450092943,-0.05178475339428862,0.05178475339428862,7
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Rio de Janeiro,Sudeste,27,26,0.36910395789521805,0.31731920450092943,-0.05178475339428862,0.05178475339428862,8
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Amazonas,Norte,27,26,0.36910395789521805,0.4178492110992843,0.04874525320406625,0.04874525320406625,9
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Tocantins,Norte,27,26,0.36910395789521805,0.4164814559074699,0.04737749801225183,0.04737749801225183,10
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Pernambuco,Nordeste,27,26,0.36910395789521805,0.41511370071565556,0.046009742820437516,0.046009742820437516,11
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Mato Grosso,Centro-Oeste,27,26,0.36910395789521805,0.34057104276177347,-0.02853291513344458,0.02853291513344458,12
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Roraima,Norte,27,26,0.36910395789521805,0.34399043074130936,-0.025113527153908688,0.025113527153908688,13
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Maranhão,Nordeste,27,26,0.36910395789521805,0.34672594112493804,-0.022378016770280007,0.022378016770280007,14
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Paraíba,Nordeste,27,26,0.36910395789521805,0.39049410726299727,0.02139014936777922,0.02139014936777922,15
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Rondônia,Norte,27,26,0.36910395789521805,0.3884424744752757,0.01933851658005764,0.01933851658005764,16
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Acre,Norte,27,26,0.36910395789521805,0.3870747192834614,0.017970761388243328,0.017970761388243328,17
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Ceará,Nordeste,27,26,0.36910395789521805,0.38365533130392554,0.01455137340870749,0.01455137340870749,18
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Minas Gerais,Sudeste,27,26,0.36910395789521805,0.38365533130392554,0.01455137340870749,0.01455137340870749,19
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Rio Grande do Sul,Sul,27,26,0.36910395789521805,0.38365533130392554,0.01455137340870749,0.01455137340870749,20
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),São Paulo,Sudeste,27,26,0.36910395789521805,0.38365533130392554,0.01455137340870749,0.01455137340870749,21
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Santa Catarina,Sul,27,26,0.36910395789521805,0.3809198209202968,0.011815863025078754,0.011815863025078754,22
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Paraná,Sul,27,26,0.36910395789521805,0.38023594332438965,0.011131985429171598,0.011131985429171598,23
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Alagoas,Nordeste,27,26,0.36910395789521805,0.35835186025536,-0.010752097639858071,0.010752097639858071,24
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Pará,Norte,27,26,0.36910395789521805,0.37544880015303944,0.0063448422578213926,0.0063448422578213926,25
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Mato Grosso do Sul,Centro-Oeste,27,26,0.36910395789521805,0.365874513810339,-0.003229444084879074,0.003229444084879074,26
+3,Magnitude populacional × presença em TI em 2022,Indígenas 2022 Total,Presença em TI 2022 (%),Espírito Santo,Sudeste,27,26,0.36910395789521805,0.37134553457759634,0.002241576682378288,0.002241576682378288,27
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Rio Grande do Norte,Nordeste,27,26,0.3345543345543345,0.4947008547008547,0.1601465201465202,0.1601465201465202,1
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Piauí,Nordeste,27,26,0.3345543345543345,0.45777777777777773,0.12322344322344325,0.12322344322344325,2
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Ceará,Nordeste,27,26,0.3345543345543345,0.388034188034188,0.05347985347985351,0.05347985347985351,3
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Amazonas,Norte,27,26,0.3345543345543345,0.28683760683760684,-0.047716727716727636,0.047716727716727636,4
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Bahia,Nordeste,27,26,0.3345543345543345,0.29435897435897435,-0.04019536019536013,0.04019536019536013,5
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Distrito Federal,Centro-Oeste,27,26,0.3345543345543345,0.3005128205128205,-0.034041514041513954,0.034041514041513954,6
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Sergipe,Nordeste,27,26,0.3345543345543345,0.305982905982906,-0.02857142857142847,0.02857142857142847,7
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Rio Grande do Sul,Sul,27,26,0.3345543345543345,0.30735042735042734,-0.02720390720390714,0.02720390720390714,8
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Goiás,Centro-Oeste,27,26,0.3345543345543345,0.3613675213675213,0.02681318681318684,0.02681318681318684,9
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Minas Gerais,Sudeste,27,26,0.3345543345543345,0.31008547008547005,-0.024468864468864426,0.024468864468864426,10
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Paraná,Sul,27,26,0.3345543345543345,0.31008547008547005,-0.024468864468864426,0.024468864468864426,11
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Amapá,Norte,27,26,0.3345543345543345,0.3121367521367521,-0.02241758241758235,0.02241758241758235,12
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Tocantins,Norte,27,26,0.3345543345543345,0.3182905982905983,-0.016263736263736173,0.016263736263736173,13
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Paraíba,Nordeste,27,26,0.3345543345543345,0.31897435897435894,-0.015579975579975536,0.015579975579975536,14
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Acre,Norte,27,26,0.3345543345543345,0.31965811965811963,-0.014896214896214843,0.014896214896214843,15
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Pará,Norte,27,26,0.3345543345543345,0.3203418803418803,-0.01421245421245415,0.01421245421245415,16
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Pernambuco,Nordeste,27,26,0.3345543345543345,0.3217094017094017,-0.012844932844932766,0.012844932844932766,17
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Rio de Janeiro,Sudeste,27,26,0.3345543345543345,0.3217094017094017,-0.012844932844932766,0.012844932844932766,18
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Roraima,Norte,27,26,0.3345543345543345,0.3217094017094017,-0.012844932844932766,0.012844932844932766,19
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),São Paulo,Sudeste,27,26,0.3345543345543345,0.32307692307692304,-0.011477411477411437,0.011477411477411437,20
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Maranhão,Nordeste,27,26,0.3345543345543345,0.3244444444444444,-0.010109890109890052,0.010109890109890052,21
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Espírito Santo,Sudeste,27,26,0.3345543345543345,0.3429059829059829,0.008351648351648422,0.008351648351648422,22
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Mato Grosso,Centro-Oeste,27,26,0.3345543345543345,0.3429059829059829,0.008351648351648422,0.008351648351648422,23
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Rondônia,Norte,27,26,0.3345543345543345,0.3278632478632478,-0.006691086691086701,0.006691086691086701,24
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Alagoas,Nordeste,27,26,0.3345543345543345,0.3285470085470085,-0.006007326007325953,0.006007326007325953,25
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Santa Catarina,Sul,27,26,0.3345543345543345,0.32991452991452985,-0.004639804639804623,0.004639804639804623,26
+4,Crescimento × mudança da urbanização,Crescimento relativo (%),Mudança na urbanização (p.p.),Mato Grosso do Sul,Centro-Oeste,27,26,0.3345543345543345,0.3333333333333333,-0.0012210012210011612,0.0012210012210011612,27
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Ceará,Nordeste,27,26,-0.3141505150324065,-0.44896564171306075,-0.13481512668065426,0.13481512668065426,1
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Piauí,Nordeste,27,26,-0.3141505150324065,-0.42092666028086656,-0.10677614524846007,0.10677614524846007,2
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Bahia,Nordeste,27,26,-0.3141505150324065,-0.24517011813272244,0.06898039689968405,0.06898039689968405,3
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Rio Grande do Norte,Nordeste,27,26,-0.3141505150324065,-0.3764102564102564,-0.0622597413778499,0.0622597413778499,4
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Amazonas,Norte,27,26,-0.3141505150324065,-0.2622670580304018,0.051883457002004696,0.051883457002004696,5
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Goiás,Centro-Oeste,27,26,-0.3141505150324065,-0.34843563511470593,-0.03428512008229945,0.03428512008229945,6
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Rio Grande do Sul,Sul,27,26,-0.3141505150324065,-0.3470678799228916,-0.032917364890485135,0.032917364890485135,7
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Sergipe,Nordeste,27,26,-0.3141505150324065,-0.28175756951375636,0.03239294551865013,0.03239294551865013,8
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Minas Gerais,Sudeste,27,26,-0.3141505150324065,-0.2827833859076171,0.031367129124789395,0.031367129124789395,9
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Pernambuco,Nordeste,27,26,-0.3141505150324065,-0.29167379465441035,0.02247672037799614,0.02247672037799614,10
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Rio de Janeiro,Sudeste,27,26,-0.3141505150324065,-0.2923576722503176,0.021792842782088873,0.021792842782088873,11
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Alagoas,Nordeste,27,26,-0.3141505150324065,-0.29372542744213187,0.020425087590274615,0.020425087590274615,12
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Amapá,Norte,27,26,-0.3141505150324065,-0.29372542744213187,0.020425087590274615,0.020425087590274615,13
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Distrito Federal,Centro-Oeste,27,26,-0.3141505150324065,-0.29435897435897435,0.01979154067343214,0.01979154067343214,14
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Acre,Norte,27,26,-0.3141505150324065,-0.2950931826339463,0.01905733239846019,0.01905733239846019,15
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Paraná,Sul,27,26,-0.3141505150324065,-0.2964609378257606,0.01768957720664588,0.01768957720664588,16
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Pará,Norte,27,26,-0.3141505150324065,-0.29714481542166776,0.017005699610738723,0.017005699610738723,17
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Rondônia,Norte,27,26,-0.3141505150324065,-0.29714481542166776,0.017005699610738723,0.017005699610738723,18
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Santa Catarina,Sul,27,26,-0.3141505150324065,-0.3005642034012037,0.013586311631202774,0.013586311631202774,19
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Mato Grosso,Centro-Oeste,27,26,-0.3141505150324065,-0.3244999192579548,-0.010349404225548309,0.010349404225548309,20
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Tocantins,Norte,27,26,-0.3141505150324065,-0.3046674689766467,0.00948304605575978,0.00948304605575978,21
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Mato Grosso do Sul,Centro-Oeste,27,26,-0.3141505150324065,-0.3053513465725539,0.008799168459852569,0.008799168459852569,22
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Espírito Santo,Sudeste,27,26,-0.3141505150324065,-0.3210805312784189,-0.006930016246012416,0.006930016246012416,23
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Maranhão,Nordeste,27,26,-0.3141505150324065,-0.3087707345520897,0.005379780480316787,0.005379780480316787,24
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),São Paulo,Sudeste,27,26,-0.3141505150324065,-0.3087707345520897,0.005379780480316787,0.005379780480316787,25
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Paraíba,Nordeste,27,26,-0.3141505150324065,-0.3176611432988831,-0.003510628266476634,0.003510628266476634,26
+5,Crescimento × mudança da presença em TI,Crescimento relativo (%),Mudança na presença em TI (p.p.),Roraima,Norte,27,26,-0.3141505150324065,-0.31560951051116154,-0.001458995478755054,0.001458995478755054,27
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Rio Grande do Norte,Nordeste,27,26,-0.8319340655620092,-0.8947008547008547,-0.06276678913884548,0.06276678913884548,1
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Piauí,Nordeste,27,26,-0.8319340655620092,-0.8811762823263957,-0.04924221676438645,0.04924221676438645,2
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Paraíba,Nordeste,27,26,-0.8319340655620092,-0.8647632200246235,-0.03282915446261425,0.03282915446261425,3
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Amapá,Norte,27,26,-0.8319340655620092,-0.8117627063418175,0.020171359220191754,0.020171359220191754,4
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Mato Grosso,Centro-Oeste,27,26,-0.8319340655620092,-0.8117627063418175,0.020171359220191754,0.020171359220191754,5
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Roraima,Norte,27,26,-0.8319340655620092,-0.8131304615336318,0.01880360402837744,0.01880360402837744,6
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Tocantins,Norte,27,26,-0.8319340655620092,-0.8131304615336318,0.01880360402837744,0.01880360402837744,7
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Maranhão,Nordeste,27,26,-0.8319340655620092,-0.8138143391295389,0.018119726432470284,0.018119726432470284,8
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Acre,Norte,27,26,-0.8319340655620092,-0.8186014823008891,0.013332583261120079,0.013332583261120079,9
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Mato Grosso do Sul,Centro-Oeste,27,26,-0.8319340655620092,-0.8199692374927036,0.011964828069305655,0.011964828069305655,10
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Rondônia,Norte,27,26,-0.8319340655620092,-0.8199692374927036,0.011964828069305655,0.011964828069305655,11
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Pará,Norte,27,26,-0.8319340655620092,-0.8206531150886106,0.01128095047339861,0.01128095047339861,12
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Distrito Federal,Centro-Oeste,27,26,-0.8319340655620092,-0.8208547008547009,0.011079364707308303,0.011079364707308303,13
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Paraná,Sul,27,26,-0.8319340655620092,-0.8213369926845179,0.010597072877491343,0.010597072877491343,14
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Rio Grande do Sul,Sul,27,26,-0.8319340655620092,-0.8213369926845179,0.010597072877491343,0.010597072877491343,15
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Pernambuco,Nordeste,27,26,-0.8319340655620092,-0.8401436265719652,-0.008209561009955957,0.008209561009955957,16
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Alagoas,Nordeste,27,26,-0.8319340655620092,-0.8360403609965221,-0.004106295434512908,0.004106295434512908,17
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Espírito Santo,Sudeste,27,26,-0.8319340655620092,-0.8346726058047078,-0.002738540242698595,0.002738540242698595,18
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Minas Gerais,Sudeste,27,26,-0.8319340655620092,-0.8346726058047078,-0.002738540242698595,0.002738540242698595,19
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Amazonas,Norte,27,26,-0.8319340655620092,-0.8333048506128934,-0.0013707850508841712,0.0013707850508841712,20
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Bahia,Nordeste,27,26,-0.8319340655620092,-0.8312532178251719,0.0006808477368372978,0.0006808477368372978,21
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Ceará,Nordeste,27,26,-0.8319340655620092,-0.8312532178251719,0.0006808477368372978,0.0006808477368372978,22
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Santa Catarina,Sul,27,26,-0.8319340655620092,-0.8312532178251719,0.0006808477368372978,0.0006808477368372978,23
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Sergipe,Nordeste,27,26,-0.8319340655620092,-0.8312532178251719,0.0006808477368372978,0.0006808477368372978,24
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Goiás,Centro-Oeste,27,26,-0.8319340655620092,-0.8322790342190326,-0.0003449686570233812,0.0003449686570233812,25
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),Rio de Janeiro,Sudeste,27,26,-0.8319340655620092,-0.8322790342190326,-0.0003449686570233812,0.0003449686570233812,26
+6,Urbanização × presença em TI em 2022,Urbanização 2022 (%),Presença em TI 2022 (%),São Paulo,Sudeste,27,26,-0.8319340655620092,-0.8319370954210791,-3.0298590698585315e-06,3.0298590698585315e-06,27
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Piauí,Nordeste,25,24,-0.17563956155469798,-0.27728446402841267,-0.10164490247371469,0.10164490247371469,1
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Alagoas,Nordeste,25,24,-0.17563956155469798,-0.08306551832777442,0.09257404322692356,0.09257404322692356,2
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Ceará,Nordeste,25,24,-0.17563956155469798,-0.08306551832777442,0.09257404322692356,0.09257404322692356,3
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Goiás,Centro-Oeste,25,24,-0.17563956155469798,-0.26616692969544914,-0.09052736814075116,0.09052736814075116,4
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Paraíba,Nordeste,25,24,-0.17563956155469798,-0.2634873968461661,-0.08784783529146814,0.08784783529146814,5
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Rio de Janeiro,Sudeste,25,24,-0.17563956155469798,-0.1071930356148177,0.06844652593988028,0.06844652593988028,6
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Santa Catarina,Sul,25,24,-0.17563956155469798,-0.21882851602478204,-0.04318895447008406,0.04318895447008406,7
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Acre,Norte,25,24,-0.17563956155469798,-0.2072989283790689,-0.03165936682437093,0.03165936682437093,8
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Paraná,Sul,25,24,-0.17563956155469798,-0.2072989283790689,-0.03165936682437093,0.03165936682437093,9
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Pernambuco,Nordeste,25,24,-0.17563956155469798,-0.14469477386128446,0.030944787693413522,0.030944787693413522,10
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Espírito Santo,Sudeste,25,24,-0.17563956155469798,-0.14971589271821645,0.025923668836481534,0.025923668836481534,11
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Sergipe,Nordeste,25,24,-0.17563956155469798,-0.14971589271821645,0.025923668836481534,0.025923668836481534,12
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Tocantins,Norte,25,24,-0.17563956155469798,-0.14971589271821645,0.025923668836481534,0.025923668836481534,13
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Rio Grande do Sul,Sul,25,24,-0.17563956155469798,-0.15005383955985052,0.02558572199484746,0.02558572199484746,14
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Rondônia,Norte,25,24,-0.17563956155469798,-0.1563600891406225,0.019279472414075488,0.019279472414075488,15
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),São Paulo,Sudeste,25,24,-0.17563956155469798,-0.157199260491272,0.01844030106342598,0.01844030106342598,16
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Maranhão,Nordeste,25,24,-0.17563956155469798,-0.16345150380626577,0.012188057748432207,0.012188057748432207,17
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Bahia,Nordeste,25,24,-0.17563956155469798,-0.18578094421695782,-0.010141382662259835,0.010141382662259835,18
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Minas Gerais,Sudeste,25,24,-0.17563956155469798,-0.18578094421695782,-0.010141382662259835,0.010141382662259835,19
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Amapá,Norte,25,24,-0.17563956155469798,-0.1820509819739259,-0.006411420419227931,0.006411420419227931,20
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Amazonas,Norte,25,24,-0.17563956155469798,-0.18131505613481938,-0.0056754945801213985,0.0056754945801213985,21
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Pará,Norte,25,24,-0.17563956155469798,-0.18131505613481938,-0.0056754945801213985,0.0056754945801213985,22
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Mato Grosso,Centro-Oeste,25,24,-0.17563956155469798,-0.17863552328553636,-0.0029959617308383812,0.0029959617308383812,23
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Roraima,Norte,25,24,-0.17563956155469798,-0.17863552328553636,-0.0029959617308383812,0.0029959617308383812,24
+7,Urbanização em TI × fora de TI em 2022,TI urbano (%),Fora TI urbano (%),Mato Grosso do Sul,Centro-Oeste,25,24,-0.17563956155469798,-0.17684916805268097,-0.0012096064979829901,0.0012096064979829901,25

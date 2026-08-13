@@ -1,0 +1,55 @@
+Dimensão,Localidade,Região,Indicador original,Indicador transformado,Sinalizada na escala original,Sinalizada na escala transformada,Mudou com a transformação,Resultado
+Magnitude populacional,Amazonas,Norte,Indígenas 2022 Total,População 2022 (log10),True,True,False,Permaneceu sinalizada
+Magnitude populacional,Bahia,Nordeste,Indígenas 2022 Total,População 2022 (log10),True,False,True,Deixou de ser sinalizada
+Magnitude populacional,Mato Grosso do Sul,Centro-Oeste,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Pernambuco,Nordeste,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Roraima,Norte,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Pará,Norte,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Mato Grosso,Centro-Oeste,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Maranhão,Nordeste,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Ceará,Nordeste,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Sergipe,Nordeste,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,São Paulo,Sudeste,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Distrito Federal,Centro-Oeste,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Piauí,Nordeste,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Amapá,Norte,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Rio Grande do Norte,Nordeste,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Espírito Santo,Sudeste,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Rio de Janeiro,Sudeste,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Goiás,Centro-Oeste,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Tocantins,Norte,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Rondônia,Norte,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Santa Catarina,Sul,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Minas Gerais,Sudeste,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Rio Grande do Sul,Sul,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Alagoas,Nordeste,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Acre,Norte,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Paraíba,Nordeste,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Magnitude populacional,Paraná,Sul,Indígenas 2022 Total,População 2022 (log10),False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Rio Grande do Norte,Nordeste,Crescimento relativo (%),Crescimento logarítmico,True,True,False,Permaneceu sinalizada
+Crescimento populacional,Bahia,Nordeste,Crescimento relativo (%),Crescimento logarítmico,True,True,False,Permaneceu sinalizada
+Crescimento populacional,Ceará,Nordeste,Crescimento relativo (%),Crescimento logarítmico,True,False,True,Deixou de ser sinalizada
+Crescimento populacional,Amazonas,Norte,Crescimento relativo (%),Crescimento logarítmico,True,False,True,Deixou de ser sinalizada
+Crescimento populacional,Piauí,Nordeste,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Goiás,Centro-Oeste,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Sergipe,Nordeste,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Distrito Federal,Centro-Oeste,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Rio Grande do Sul,Sul,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Rio de Janeiro,Sudeste,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Mato Grosso,Centro-Oeste,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Paraná,Sul,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Minas Gerais,Sudeste,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Santa Catarina,Sul,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Paraíba,Nordeste,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Acre,Norte,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Pernambuco,Nordeste,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Roraima,Norte,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,São Paulo,Sudeste,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Rondônia,Norte,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Tocantins,Norte,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Pará,Norte,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Alagoas,Nordeste,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Maranhão,Nordeste,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Amapá,Norte,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Espírito Santo,Sudeste,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
+Crescimento populacional,Mato Grosso do Sul,Centro-Oeste,Crescimento relativo (%),Crescimento logarítmico,False,False,False,Não sinalizada nas duas escalas
