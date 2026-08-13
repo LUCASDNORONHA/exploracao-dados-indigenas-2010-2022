@@ -1,8 +1,8 @@
 """Testes da página de metodologia e dados."""
 
-from pathlib import Path
 import sys
 import types
+from pathlib import Path
 
 # Stub mínimo: os testes exercitam apenas metadados e funções puras do módulo.
 sys.modules.setdefault("streamlit", types.ModuleType("streamlit"))

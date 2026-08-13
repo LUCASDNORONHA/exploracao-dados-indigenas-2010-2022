@@ -6,7 +6,6 @@ from pathlib import Path
 
 import streamlit as st
 
-
 VERSAO_APLICACAO = "0.1.0"
 DATA_ATUALIZACAO = "10 de agosto de 2026"
 

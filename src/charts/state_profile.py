@@ -1049,7 +1049,7 @@ class PlotPerfilEstadual:
         )
 
         quantidade_padrao = int(padrao.sum())
-        quantidade_comparavel = int(len(comparaveis))
+        quantidade_comparavel = len(comparaveis)
 
         fig, ax = plt.subplots(
             figsize=(15, 9),

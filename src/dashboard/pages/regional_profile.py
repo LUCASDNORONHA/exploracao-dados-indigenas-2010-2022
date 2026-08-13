@@ -9,13 +9,13 @@ from dashboard.charts.regional import (
     criar_composicao_regional,
     criar_ranking_crescimento,
 )
-from dashboard.runtime import obter_dados_dashboard
 from dashboard.formatting import formatar_percentual
 from dashboard.regional import (
     calcular_composicao_regional,
     calcular_crescimento_regional,
     calcular_perfil_regional,
 )
+from dashboard.runtime import obter_dados_dashboard
 
 
 def render() -> None:
