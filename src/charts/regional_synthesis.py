@@ -473,8 +473,8 @@ class PainelSinteseRegional:
             0.05,
             1.02,
             (
-                "O perfil de residência da população indígena\n"
-                "varia conforme o contexto territorial"
+                "Dentro de terras Indígenas, residência rural; fora delas,\n"
+                "residência urbana — um padrão que se repete em todo Brasil."
             ),
             ha="left",
             va="top",
