@@ -227,7 +227,7 @@ https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriai
 
 # Próximos Estudos
 
-Com a conclusão do dashboard interativo, o projeto avança para novas etapas analíticas.
+Com a conclusão do dashboard interativo, o projeto fica disponível novas etapas analíticas.
 
 ### Estudo 6 — Análise Estatística
 
