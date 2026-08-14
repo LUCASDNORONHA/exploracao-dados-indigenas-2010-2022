@@ -690,7 +690,7 @@ class PlotPerfilEstadual:
 
         ax_insight.text(
             0,
-            1,
+            1.03,
             "PRINCIPAL ACHADO",
             ha="left",
             va="top",
@@ -711,7 +711,7 @@ class PlotPerfilEstadual:
             ),
             ha="left",
             va="top",
-            fontsize=11.0,
+            fontsize=14.0,
             color="white",
             linespacing=1.35,
             bbox={
@@ -943,7 +943,7 @@ class PlotPerfilEstadual:
 
         fig.text(
             0.735,
-            0.465,
+            0.448,
             "PRINCIPAL ACHADO",
             ha="left",
             va="top",
@@ -1229,8 +1229,8 @@ class PlotPerfilEstadual:
         )
 
         fig.text(
-            0.735,
-            0.715,
+            0.680,
+            0.690,
             "CONSISTÊNCIA DO PADRÃO",
             ha="left",
             va="top",
@@ -1240,7 +1240,7 @@ class PlotPerfilEstadual:
         )
 
         fig.text(
-            0.735,
+            0.680,
             0.655,
             (
                 f"{quantidade_padrao} de {quantidade_comparavel} UFs comparáveis\n"
@@ -1264,18 +1264,18 @@ class PlotPerfilEstadual:
         )
 
         fig.text(
-            0.735,
-            0.300,
+            0.680,
+            0.288,
             "CASOS SEM COMPARAÇÃO COMPLETA",
             ha="left",
             va="top",
-            fontsize=11.0,
+            fontsize=10.0,
             fontweight="bold",
             color=self.cor_escura,
         )
 
         fig.text(
-            0.735,
+            0.680,
             0.255,
             (
                 "Rio Grande do Norte e Distrito Federal\n"
@@ -1285,7 +1285,7 @@ class PlotPerfilEstadual:
             ),
             ha="left",
             va="top",
-            fontsize=9.5,
+            fontsize=9.0,
             color=self.cor_texto,
             linespacing=1.35,
             bbox={
